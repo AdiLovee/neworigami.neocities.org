@@ -19,6 +19,22 @@
           </th>
           <th align="right">
             A website by Adinah Levi
+            <br>
+            Dark/Light Toggle: 
+            <button 
+              id="theme-toggle"
+              style="
+                background-color: transparent; 
+                border: none;
+                color: inherit; 
+                cursor: pointer; 
+                transition: background-color 0.2s;"
+              onmouseover="handleHover(this, true)"
+              onmouseout="handleHover(this, false)"
+              onclick="darkModeToggle()"
+            >
+              🌒/☀️
+            </button>
           </th>
         </tr>
       </tbody>
@@ -30,24 +46,29 @@
       <p>
         Alphabetical list of models by Trang (Tracy) Chung.
       </p>
-      <table border="1">
-        <tbody>
+      <div id="pagination"></div>
+      <hr>
+      <table border="1" id="tablePaginated">
           <tr>
             <th><u>↓</u></th>
             <th>Difficulty</th>
             <th>Name</th>
             <th>Category</th>
-            <th>Notes</th>
           </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollarstar.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Money Star</td>
-            <td><a href="../category/bill.html">Bill Models</a></td>
-            <td>Diagram by <a href="./mkirschenbaum.html">Marc Kirschenbaum</a></td>
-          </tr>
-        </tbody>
       </table>
+      <script>
+        const DATA = [
+          {
+            download:'<a href="../assets/diagrams/dollarstar.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Money Star',
+            category:'<a href="../category/bill.html">Bill Models</a>',
+            notes:'Diagram by <a href="./mkirschenbaum.html">Marc Kirschenbaum</a>'
+          }
+        ];
+      </script>
+      <script src="../scripts/paginationCreator.js"></script>
+      <script src="../scripts/darkMode.js"></script>
       <p></p>
       <hr>
       <pre>

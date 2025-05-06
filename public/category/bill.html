@@ -19,6 +19,22 @@
           </th>
           <th align="right">
             A website by Adinah Levi
+            <br>
+            Dark/Light Toggle: 
+            <button 
+              id="theme-toggle"
+              style="
+                background-color: transparent; 
+                border: none;
+                color: inherit; 
+                cursor: pointer; 
+                transition: background-color 0.2s;"
+              onmouseover="handleHover(this, true)"
+              onmouseout="handleHover(this, false)"
+              onclick="darkModeToggle()"
+            >
+              🌒/☀️
+            </button>
           </th>
         </tr>
       </tbody>
@@ -30,7 +46,9 @@
       <p>
         Alphabetical list of dollar bill models.
       </p>
-      <table border="1">
+      <div id="pagination"></div>
+      <hr>
+      <table border="1" id="tablePaginated">
         <tbody>
           <tr>
             <th><u>↓</u></th>
@@ -38,92 +56,85 @@
             <th>Name</th>
             <th>Creator</th>
           </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollarbasket.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Basket</td>
-            <td><a href="../creators/aanselmo.html">Andrew Anselmo</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollarbull.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Bull</td>
-            <td><a href="../creators/aanselmo.html">Andrew Anselmo</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollarbutterflyaa.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Butterfly</td>
-            <td><a href="../creators/aanselmo.html">Andrew Anselmo</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollarbutterflyjg.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Butterfly</td>
-            <td><a href="../creators/jgilardi.html">Joe Gilardi</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollarbutterflysh.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Butterfly</td>
-            <td><a href="../creators/shecht.html">Stephen Hecht</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollarsign.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Dollar Sign</td>
-            <td><a href="../creators/aanselmo.html">Andrew Anselmo</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollardragonfly.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Dragonfly</td>
-            <td><a href="../creators/shecht.html">Steve Hecht</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollardragonfly2.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Dragonfly version 2</td>
-            <td><a href="../creators/shecht.html">Steve Hecht</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollarflowersh.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Flower</td>
-            <td><a href="../creators/shecht.html">Stephen Hecht</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollararrowheart.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Heart and Arrow</td>
-            <td><a href="../creators/shecht.html">Stephen Hecht</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollarheartring.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Heart Ring</td>
-            <td><a href="../creators/shecht.html">Stephen Hecht</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollarinflation.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Inflation</td>
-            <td><a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollarstar.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Money Star</td>
-            <td>Design by <a href="../creators/tchung.html">Trang (Tracy) Chung</a><br>Diagram by <a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollarpeacock.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Peacock</td>
-            <td><a href="../creators/rjlang.html">Robert J. Lang</a></td>
-          </tr>
         </tbody>
       </table>
+      <script>
+        const DATA = [
+          {
+            download:'<a href="../assets/diagrams/dollarbasket.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Basket',
+            creator:'<a href="../creators/aanselmo.html">Andrew Anselmo</a>'
+          },{
+            download:'<a href="../assets/diagrams/dollarbull.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Bull',
+            creator:'<a href="../creators/aanselmo.html">Andrew Anselmo</a>'
+          },{
+            download:'<a href="../assets/diagrams/dollarbutterflyaa.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Butterfly',
+            creator:'<a href="../creators/aanselmo.html">Andrew Anselmo</a>'
+          },{
+            download:'<a href="../assets/diagrams/dollarbutterflyjg.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Butterfly',
+            creator:'<a href="../creators/jgilardi.html">Joe Gilardi</a>'
+          },{
+            download:'<a href="../assets/diagrams/dollarbutterflysh.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Butterfly',
+            creator:'<a href="../creators/shecht.html">Stephen Hecht</a>'
+          },{
+            download:'<a href="../assets/diagrams/dollarsign.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Dollar Sign',
+            creator:'<a href="../creators/aanselmo.html">Andrew Anselmo</a>'
+          },{
+            download:'<a href="../assets/diagrams/dollardragonfly.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Dragonfly',
+            creator:'<a href="../creators/shecht.html">Steve Hecht</a>'
+          },{
+            download:'<a href="../assets/diagrams/dollardragonfly2.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Dragonfly version 2',
+            creator:'<a href="../creators/shecht.html">Steve Hecht</a>'
+          },{
+            download:'<a href="../assets/diagrams/dollarflowersh.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Flower',
+            creator:'<a href="../creators/shecht.html">Stephen Hecht</a>'
+          },{
+            download:'<a href="../assets/diagrams/dollararrowheart.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Heart and Arrow',
+            creator:'<a href="../creators/shecht.html">Stephen Hecht</a>'
+          },{
+            download:'<a href="../assets/diagrams/dollarheartring.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Heart Ring',
+            creator:'<a href="../creators/shecht.html">Stephen Hecht</a>'
+          },{
+            download:'<a href="../assets/diagrams/dollarinflation.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Inflation',
+            creator:'<a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a>'
+          },{
+            download:'<a href="../assets/diagrams/dollarstar.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Money Star',
+            creator:'Design by <a href="../creators/tchung.html">Trang (Tracy) Chung</a><br>Diagram by <a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a>'
+          },{
+            download:'<a href="../assets/diagrams/dollarpeacock.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Peacock',
+            creator:'<a href="../creators/rjlang.html">Robert J. Lang</a>'
+          }
+        ];
+      </script>
+      <script src="../scripts/paginationCategory.js"></script>
+      <script src="../scripts/darkMode.js"></script>
       <p></p>
       <hr>
       <pre>

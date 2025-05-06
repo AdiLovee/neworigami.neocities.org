@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NewOrigami - Diagrams (Kim Best)</title>
+    <title>NewOrigami - Diagrams (Kunihiko Kasahara)</title>
     <link href="../style.css" rel="stylesheet" type="text/css" media="all">
     <link rel="icon" href="../favicon.png">
   </head>
@@ -19,6 +19,22 @@
           </th>
           <th align="right">
             A website by Adinah Levi
+            <br>
+            Dark/Light Toggle: 
+            <button 
+              id="theme-toggle"
+              style="
+                background-color: transparent; 
+                border: none;
+                color: inherit; 
+                cursor: pointer; 
+                transition: background-color 0.2s;"
+              onmouseover="handleHover(this, true)"
+              onmouseout="handleHover(this, false)"
+              onclick="darkModeToggle()"
+            >
+              🌒/☀️
+            </button>
           </th>
         </tr>
       </tbody>
@@ -28,24 +44,32 @@
       </p>
       <hr>
       <p>
-        Alphabetical list of models by Kim Best.
+        Alphabetical list of models by Kunihiko Kasahara.
       </p>
-      <table border="1">
-        <tbody>
+      <div id="pagination"></div>
+      <hr>
+      <table border="1" id="tablePaginated">
           <tr>
             <th><u>↓</u></th>
             <th>Difficulty</th>
             <th>Name</th>
             <th>Category</th>
+            <th>Notes</th>
           </tr>
-          <tr>
-            <td><a href="../assets/diagrams/tematecube.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Temate Bake Cube<br>Diagram by <a href="./mvgelder.html">Maarten van Gelder</a></td>
-            <td><a href="../category/modular.html">Modular</a></td>
-          </tr>
-        </tbody>
       </table>
+      <script>
+        const DATA = [
+          {
+            download:'<a href="../assets/diagrams/tematecube.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Temate Bake Cube',
+            category:'<a href="../category/modular.html">Modular</a>',
+            notes:'Diagram by <a href="./mvgelder.html">Maarten van Gelder</a>'
+          }
+        ];
+      </script>
+      <script src="../scripts/paginationCreatorNote.js"></script>
+      <script src="../scripts/darkMode.js"></script>
       <p></p>
       <hr>
       <pre>
@@ -65,7 +89,7 @@
                           `|   \,/'''`\,     /'   >  \     /'
                            | ,/'  `. .  `\ ,/'   / \  \   /'
                    ___,----Y-'      Y     7'   .'.' `\ \ /'
-               _-/''        `\.     .   ,/'    /.'    `\\ 
+               _-/''        `\.     .   ,/'    /.'    `\ 
            _,-''          ---  \    `  /'    ./.'   __-' "
         _/''     .--            `\    /'     /,'_--'
      ,/''  ..                     `"\_     ./ /='

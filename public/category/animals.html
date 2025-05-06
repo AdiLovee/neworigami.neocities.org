@@ -19,6 +19,22 @@
           </th>
           <th align="right">
             A website by Adinah Levi
+            <br>
+            Dark/Light Toggle: 
+            <button 
+              id="theme-toggle"
+              style="
+                background-color: transparent; 
+                border: none;
+                color: inherit; 
+                cursor: pointer; 
+                transition: background-color 0.2s;"
+              onmouseover="handleHover(this, true)"
+              onmouseout="handleHover(this, false)"
+              onclick="darkModeToggle()"
+            >
+              🌒/☀️
+            </button>
           </th>
         </tr>
       </tbody>
@@ -30,7 +46,9 @@
       <p>
         Alphabetical list of animal models.
       </p>
-      <table border="1">
+      <div id="pagination"></div>
+      <hr>
+      <table border="1" id="tablePaginated">
         <tbody>
           <tr>
             <th><u>↓</u></th>
@@ -38,134 +56,120 @@
             <th>Name</th>
             <th>Creator</th>
           </tr>
-          <tr>
-            <td><a href="../assets/diagrams/armadillothreeband.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Armadillo (Three-Banded)</td>
-            <td><a href="../creators/jwu.html">Joseph Wu</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/bathappy.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Bat (Happy)</td>
-            <td><a href="../creators/mlafosse.html">Michael LaFosse</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/birdac.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Bird</td>
-            <td><a href="../creators/acarpenter.html">Andy Carpenter</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/bluecrab.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Blue Crab</td>
-            <td><a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/cathvg.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Cat</td>
-            <td><a href="../creators/hvgoubergen.html">Herman van Goubergen</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/deerteabag.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Deer (From Teabag)</td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dragonkw.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Dragon</td>
-            <td><a href="../creators/kweidner.html">Klaus Weidner</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dragoninflight.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Dragon in Flight</td>
-            <td><a href="../creators/cesseltine.html">Charles Esseltine</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dragon3heads.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Dragon With 3 Heads</td>
-            <td><a href="../creators/avoyer.html">Anibal Voyer</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/easterndragon.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Eastern Dragon</td>
-            <td><a href="../creators/jwu.html">Joseph Wu</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/elephantmkirsch.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Elephant</td>
-            <td><a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/firelizard.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Fire Lizard</td>
-            <td><a href="../creators/pbailey.html">Perry Bailey</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/geckoandflyonwall.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Gecko and Fly on a Wall</td>
-            <td><a href="../creators/hvgoubergen.html">Herman van Goubergen</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/giantspidercrab.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Giant Spider Crab</td>
-            <td><a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/horse.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Horse</td>
-            <td><a href="../creators/avoyer.html">Anibal Voyer</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/manatee.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Manatee</td>
-            <td><a href="../creators/gwillow.html">Gabriel Willow</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/onwaterunderwater.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>On the Water, Under Water</td>
-            <td><a href="../creators/hvgoubergen.html">Herman van Goubergen</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/puppy.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Puppy</td>
-            <td><a href="../creators/jcnolan.html">J.C. Nolan</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/teddybear.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Teddy Bear</td>
-            <td><a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/unicornsimple.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Unicorn (Simple)</td>
-            <td><a href="../creators/pbailey.html">Perry Bailey</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/weasel.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Weasel</td>
-            <td><a href="../creators/gwillow.html">Gabriel Willow</a></td>
-          </tr>
         </tbody>
       </table>
+      <script>
+        const DATA = [
+          {
+            download:'<a href="../assets/diagrams/armadillothreeband.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Armadillo (Three-Banded)',
+            creator:'<a href="../creators/jwu.html">Joseph Wu</a>'
+          },{
+            download:'<a href="../assets/diagrams/bathappy.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Bat (Happy)',
+            creator:'<a href="../creators/mlafosse.html">Michael LaFosse</a>'
+          },{
+            download:'<a href="../assets/diagrams/birdac.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Bird',
+            creator:'<a href="../creators/acarpenter.html">Andy Carpenter</a>'
+          },{
+            download:'<a href="../assets/diagrams/bluecrab.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Blue Crab',
+            creator:'<a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a>'
+          },{
+            download:'<a href="../assets/diagrams/cathvg.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Cat',
+            creator:'<a href="../creators/hvgoubergen.html">Herman van Goubergen</a>'
+          },{
+            download:'<a href="../assets/diagrams/deerteabag.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Deer (From Teabag)',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/dragonkw.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Dragon',
+            creator:'<a href="../creators/kweidner.html">Klaus Weidner</a>'
+          },{
+            download:'<a href="../assets/diagrams/dragoninflight.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Dragon in Flight',
+            creator:'<a href="../creators/cesseltine.html">Charles Esseltine</a>'
+          },{
+            download:'<a href="../assets/diagrams/dragon3heads.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Dragon With 3 Heads',
+            creator:'<a href="../creators/avoyer.html">Anibal Voyer</a>'
+          },{
+            download:'<a href="../assets/diagrams/easterndragon.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Eastern Dragon',
+            creator:'<a href="../creators/jwu.html">Joseph Wu</a>'
+          },{
+            download:'<a href="../assets/diagrams/elephantmkirsch.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Elephant',
+            creator:'<a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a>'
+          },{
+            download:'<a href="../assets/diagrams/firelizard.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Fire Lizard',
+            creator:'<a href="../creators/pbailey.html">Perry Bailey</a>'
+          },{
+            download:'<a href="../assets/diagrams/geckoandflyonwall.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Gecko and Fly on a Wall',
+            creator:'<a href="../creators/hvgoubergen.html">Herman van Goubergen</a>'
+          },{
+            download:'<a href="../assets/diagrams/giantspidercrab.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Giant Spider Crab',
+            creator:'<a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a>'
+          },{
+            download:'<a href="../assets/diagrams/horse.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Horse',
+            creator:'<a href="../creators/avoyer.html">Anibal Voyer</a>'
+          },{
+            download:'<a href="../assets/diagrams/manatee.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Manatee',
+            creator:'<a href="../creators/gwillow.html">Gabriel Willow</a>'
+          },{
+            download:'<a href="../assets/diagrams/onwaterunderwater.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'On the Water, Under Water',
+            creator:'<a href="../creators/hvgoubergen.html">Herman van Goubergen</a>'
+          },{
+            download:'<a href="../assets/diagrams/puppy.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Puppy',
+            creator:'<a href="../creators/jcnolan.html">J.C. Nolan</a>'
+          },{
+            download:'<a href="../assets/diagrams/teddybear.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Teddy Bear',
+            creator:'<a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a>'
+          },{
+            download:'<a href="../assets/diagrams/unicornsimple.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Unicorn (Simple)',
+            creator:'<a href="../creators/pbailey.html">Perry Bailey</a>'
+          },{
+            download:'<a href="../assets/diagrams/weasel.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Weasel',
+            creator:'<a href="../creators/gwillow.html">Gabriel Willow</a>',
+          }
+        ];
+      </script>
+      <script src="../scripts/paginationCategory.js"></script>
+      <script src="../scripts/darkMode.js"></script>
       <p></p>
       <hr>
       <pre>

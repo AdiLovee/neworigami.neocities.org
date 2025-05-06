@@ -19,6 +19,22 @@
           </th>
           <th align="right">
             A website by Adinah Levi
+            <br>
+            Dark/Light Toggle: 
+            <button 
+              id="theme-toggle"
+              style="
+                background-color: transparent; 
+                border: none;
+                color: inherit; 
+                cursor: pointer; 
+                transition: background-color 0.2s;"
+              onmouseover="handleHover(this, true)"
+              onmouseout="handleHover(this, false)"
+              onclick="darkModeToggle()"
+            >
+              🌒/☀️
+            </button>
           </th>
         </tr>
       </tbody>
@@ -30,46 +46,48 @@
       <p>
         Alphabetical list of models by J.C. Nolan.
       </p>
-      <table border="1">
-        <tbody>
+      <div id="pagination"></div>
+      <hr>
+      <table border="1" id="tablePaginated">
           <tr>
             <th><u>↓</u></th>
             <th>Difficulty</th>
             <th>Name</th>
             <th>Category</th>
           </tr>
-          <tr>
-            <td><a href="../assets/diagrams/angelfish.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Angelfish Two-fold</td>
-            <td><a href="../category/fish.html">Fish</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/paperbraid.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Braided Paper</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/puppy.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Puppy</td>
-            <td><a href="../category/animals.html">Animals</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/roseandreas.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Rose (Andrea's)</td>
-            <td><a href="../category/plants.html">Plants</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/tutncleo.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Tut n' Cleo</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-          </tr>
-        </tbody>
       </table>
+      <script>
+        const DATA = [
+          {
+            download:'<a href="../assets/diagrams/angelfish.pdf">PDF</a',
+            difficulty:'★',
+            name:'Angelfish Two-fold',
+            category:'<a href="../category/fish.html">Fish</a'
+          },{
+            download:'<a href="../assets/diagrams/paperbraid.pdf">PDF</a',
+            difficulty:'★★',
+            name:'Braided Paper',
+            category:'<a href="../category/misc.html">Misc</a'
+          },{
+            download:'<a href="../assets/diagrams/puppy.pdf">PDF</a',
+            difficulty:'★',
+            name:'Puppy',
+            category:'<a href="../category/animals.html">Animals</a'
+          },{
+            download:'<a href="../assets/diagrams/roseandreas.pdf">PDF</a',
+            difficulty:'★★',
+            name:'Rose (Andrea\'s)',
+            category:'<a href="../category/plants.html">Plants</a'
+          },{
+            download:'<a href="../assets/diagrams/tutncleo.pdf">PDF</a',
+            difficulty:'★',
+            name:'Tut n\' Cleo',
+            category:'<a href="../category/misc.html">Misc</a'
+          }
+        ];
+      </script>
+      <script src="../scripts/paginationCreator.js"></script>
+      <script src="../scripts/darkMode.js"></script>
       <p></p>
       <hr>
       <pre>
@@ -89,7 +107,7 @@
                           `|   \,/'''`\,     /'   >  \     /'
                            | ,/'  `. .  `\ ,/'   / \  \   /'
                    ___,----Y-'      Y     7'   .'.' `\ \ /'
-               _-/''        `\.     .   ,/'    /.'    `\\ 
+               _-/''        `\.     .   ,/'    /.'    `\ 
            _,-''          ---  \    `  /'    ./.'   __-' "
         _/''     .--            `\    /'     /,'_--'
      ,/''  ..                     `"\_     ./ /='

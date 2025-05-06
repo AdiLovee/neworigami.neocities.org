@@ -13,357 +13,327 @@
         <tr>
           <th>
             <h2>Welcome to the new Origami.com</h2>
+            
           </th>
           <th>
             &nbsp; &nbsp; &nbsp; &nbsp;
           </th>
           <th align="right">
             A website by Adinah Levi
+            <br>
+            Dark/Light Toggle: 
+            <button 
+              id="theme-toggle"
+              style="
+                background-color: transparent; 
+                border: none;
+                color: inherit; 
+                cursor: pointer; 
+                transition: background-color 0.2s;"
+              onmouseover="handleHover(this, true)"
+              onmouseout="handleHover(this, false)"
+              onclick="darkModeToggle()"
+            >
+              🌒/☀️
+            </button>
           </th>
         </tr>
       </tbody>
     </table>
-    <ul><p>
+    <ul>
+      <p>
         ← Back to <a href="../index.html">Main Page</a>.
       </p>
       <hr>
       <p>
         Alphabetical list of hard models.
       </p>
-      <table border="1">
-        <tbody>
+      <div id="pagination"></div>
+      <hr>
+      <table border="1" id="tablePaginated">
           <tr>
             <th><u>↓</u></th>
             <th>Name</th>
             <th>Category</th>
             <th>Creator</th>
           </tr>
-          <tr>
-            <td><a href="../assets/diagrams/acrocanthosaurus.pdf">PDF</a></td>
-            <td>Acrocanthosaurus</td>
-            <td><a href="../category/dinosaurs.html">Dinosaurs</a></td>
-            <td><a href="../creators/jharris.html">Jerry Harris</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/alienxeno.pdf">PDF</a></td>
-            <td>Alien (Xenomorph)</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/fgilgado.html">Fernando Gilgado</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/ankylosaurus.pdf">PDF</a></td>
-            <td>Ankylosaurus</td>
-            <td><a href="../category/dinosaurs.html">Dinosaurs</a></td>
-            <td><a href="../creators/rkoh.html">Ronald Koh</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/armadillothreeband.pdf">PDF</a></td>
-            <td>Armadillo (Three-Banded)</td>
-            <td><a href="../category/animals.html">Animals</a></td>
-            <td><a href="../creators/jwu.html">Joseph Wu</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/balroget.pdf">PDF</a></td>
-            <td>Balrog</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/etan.html">Eileen Tan</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/beemkirsch.pdf">PDF</a></td>
-            <td>Bee</td>
-            <td><a href="../category/insects.html">Insects</a></td>
-            <td><a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/beetle.pdf">PDF</a></td>
-            <td>Beetle</td>
-            <td><a href="../category/insects.html">Insects</a></td>
-            <td><a href="../creators/mvanglada.html">Marc Vigo Anglada</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/bigheadmonster.pdf">PDF</a></td>
-            <td>Big Head Monster</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/mvanglada.html">Marc Vigo Anglada</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/biplane.pdf">PDF</a></td>
-            <td>Biplane</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/birdac.pdf">PDF</a></td>
-            <td>Bird</td>
-            <td><a href="../category/animals.html">Animals</a></td>
-            <td><a href="../creators/acarpenter.html">Andy Carpenter</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/blackbelt.pdf">PDF</a></td>
-            <td>Black Belt</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/rglynn.html">Robin Glynn</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/bluecrab.pdf">PDF</a></td>
-            <td>Blue Crab</td>
-            <td><a href="../category/animals.html">Animals</a></td>
-            <td><a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/butterflymk.pdf">PDF</a></td>
-            <td>Butterfly</td>
-            <td><a href="../category/insects.html">Insects</a></td>
-            <td><a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollarbutterflysh.pdf">PDF</a></td>
-            <td>Butterfly</td>
-            <td><a href="../category/bill.html">Bill Models</a></td>
-            <td><a href="../creators/shecht.html">Stephen Hecht</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/cankerworm.pdf">PDF</a></td>
-            <td>Cankerworm</td>
-            <td><a href="../category/insects.html">Insects</a></td>
-            <td><a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/carvwce.pdf">PDF</a></td>
-            <td>Car (VW)</td>
-            <td><a href="../category/vehicles.html">Vehicles</a></td>
-            <td><a href="../creators/cesseltine.html">Charles Esseltine</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/caterpillaronleaf.pdf">PDF</a></td>
-            <td>Caterpillar on Leaf</td>
-            <td><a href="../category/insects.html">Insects</a></td>
-            <td><a href="../creators/efridrikh.html">Eugeny Fridrikh</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/cathvg.pdf">PDF</a></td>
-            <td>Cat</td>
-            <td><a href="../category/animals.html">Animals</a></td>
-            <td><a href="../creators/hvgoubergen.html">Herman van Goubergen</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/cicadakmori.pdf">PDF</a></td>
-            <td>Cicada</td>
-            <td><a href="../category/insects.html">Insects</a></td>
-            <td><a href="../creators/kmorigami.html">KM Origami</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/cookiemonster.pdf">PDF</a></td>
-            <td>Cookie Monster</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/rglynn.html">Robin Glynn</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dahlia.pdf">PDF</a></td>
-            <td>Dahlia</td>
-            <td><a href="../category/plants.html">Plants</a></td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/doctoroctopus.pdf">PDF</a></td>
-            <td>Doc Ock</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/etan.html">Eileen Tan</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dragoninflight.pdf">PDF</a></td>
-            <td>Dragon in Flight</td>
-            <td><a href="../category/animals.html">Animals</a></td>
-            <td><a href="../creators/cesseltine.html">Charles Esseltine</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dragon3heads.pdf">PDF</a></td>
-            <td>Dragon With 3 Heads</td>
-            <td><a href="../category/animals.html">Animals</a></td>
-            <td><a href="../creators/avoyer.html">Anibal Voyer</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollardragonfly.pdf">PDF</a></td>
-            <td>Dragonfly</td>
-            <td><a href="../category/bill.html">Bill Models</a></td>
-            <td><a href="../creators/shecht.html">Steve Hecht</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollardragonfly2.pdf">PDF</a></td>
-            <td>Dragonfly version 2</td>
-            <td><a href="../category/bill.html">Bill Models</a></td>
-            <td><a href="../creators/shecht.html">Steve Hecht</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/eaglerk.pdf">PDF</a></td>
-            <td>Eagle</td>
-            <td><a href="../category/birds.html">Birds</a></td>
-            <td><a href="../creators/rkoh.html">Ronald Koh</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/easterndragon.pdf">PDF</a></td>
-            <td>Eastern Dragon</td>
-            <td><a href="../category/animals.html">Animals</a></td>
-            <td><a href="../creators/jwu.html">Joseph Wu</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/eiffeltower.pdf">PDF</a></td>
-            <td>Eiffel Tower</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/rglynn.html">Robin Glynn</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/standafa.pdf">PDF</a></td>
-            <td>Fancy Stand</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/afehl.html">Alec A. Fehl</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/standafb.pdf">PDF</a></td>
-            <td>Fancy Stand Variation</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/afehl.html">Alec A. Fehl</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollarflowersh.pdf">PDF</a></td>
-            <td>Flower</td>
-            <td><a href="../category/bill.html">Bill Models</a></td>
-            <td><a href="../creators/shecht.html">Stephen Hecht</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/fozzie.pdf">PDF</a></td>
-            <td>Fozzie Bear</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/rglynn.html">Robin Glynn</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/gaspump.pdf">PDF</a></td>
-            <td>Gas Pump</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/afehl.html">Alec A. Fehl</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/geckoandflyonwall.pdf">PDF</a></td>
-            <td>Gecko and Fly on a Wall</td>
-            <td><a href="../category/animals.html">Animals</a></td>
-            <td><a href="../creators/hvgoubergen.html">Herman van Goubergen</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/gearwheel.pdf">PDF</a></td>
-            <td>Gearwheel</td>
-            <td><a href="../category/tesselation.html">Tesselation</a></td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/giantspidercrab.pdf">PDF</a></td>
-            <td>Giant Spider Crab</td>
-            <td><a href="../category/animals.html">Animals</a></td>
-            <td><a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/goldfishrkoh.pdf">PDF</a></td>
-            <td>Goldfish</td>
-            <td><a href="../category/fish.html">Fish</a></td>
-            <td><a href="../creators/rkoh.html">Ronald Koh</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/grasshopper.pdf">PDF</a></td>
-            <td>Grasshopper</td>
-            <td><a href="../category/insects.html">Insects</a></td>
-            <td><a href="../creators/avoyer.html">Anibal Voyer</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/flyingv.pdf">PDF</a></td>
-            <td>Guitar - Flying V</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/afehl.html">Alec A. Fehl</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/amp.pdf">PDF</a></td>
-            <td>Guitar Amp</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/afehl.html">Alec A. Fehl</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollararrowheart.pdf">PDF</a></td>
-            <td>Heart and Arrow</td>
-            <td><a href="../category/bill.html">Bill Models</a></td>
-            <td><a href="../creators/shecht.html">Stephen Hecht</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollarheartring.pdf">PDF</a></td>
-            <td>Heart Ring</td>
-            <td><a href="../category/bill.html">Bill Models</a></td>
-            <td><a href="../creators/shecht.html">Stephen Hecht</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/mantis.pdf">PDF</a></td>
-            <td>Mantis</td>
-            <td><a href="../category/insects.html">Insects</a></td>
-            <td><a href="../creators/rjlang.html">Robert J. Lang</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/missionary.pdf">PDF</a></td>
-            <td>Missionary</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/onwaterunderwater.pdf">PDF</a></td>
-            <td>On the Water, Under Water</td>
-            <td><a href="../category/animals.html">Animals</a></td>
-            <td><a href="../creators/hvgoubergen.html">Herman van Goubergen</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/rosekawacrystal.pdf">PDF</a></td>
-            <td>Rose (Kawasaki, Crystalized)</td>
-            <td><a href="../category/plants.html">Plants</a></td>
-            <td>Design by <a href="../creators/kawasaki.html">Kawasaki</a><br>Diagram by <a href="../creators/bstephens.html">Bruce Stephens</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/rosekawatesselation.pdf">PDF</a></td>
-            <td>Rose (Kawasaki, Tesselation)</td>
-            <td><a href="../category/tesselation.html">Tesselation</a></td>
-            <td>Design by <a href="../creators/kawasaki.html">Kawasaki</a><br>Diagram by <a href="../creators/vvann.html">Valerie Vann</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/rosekawasaki.pdf">PDF</a></td>
-            <td>Rose (Kawasaki, Traditional)</td>
-            <td><a href="../category/plants.html">Plants</a></td>
-            <td>Design by <a href="../creators/kawasaki.html">Kawasaki</a><br>Diagram by <a href="../creators/wchan.html">Winston Chan</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/skeleton.pdf">PDF</a></td>
-            <td>Skeleton</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/teddybear.pdf">PDF</a></td>
-            <td>Teddy Bear</td>
-            <td><a href="../category/animals.html">Animals</a></td>
-            <td><a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/tictactoe.pdf">PDF</a></td>
-            <td>Tic-Tac-Toe Board</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/afehl.html">Alec A. Fehl</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/toycar.pdf">PDF</a></td>
-            <td>Toy Car</td>
-            <td><a href="../category/vehicles.html">Vehicles</a></td>
-            <td><a href="../creators/hvgoubergen.html">Herman van Goubergen</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/triceratops.pdf">PDF</a></td>
-            <td>Triceratops</td>
-            <td><a href="../category/dinosaurs.html">Dinosaurs</a></td>
-            <td><a href="../creators/jharris.html">Jerry Harris</a></td>
-          </tr>
-        </tbody>
       </table>
+      <script>
+        const DATA = [{
+            download:'<a href="../assets/diagrams/acrocanthosaurus.pdf">PDF</a>',
+            name:'Acrocanthosaurus',
+            category:'<a href="../category/dinosaurs.html">Dinosaurs</a>',
+            creator:'<a href="../creators/jharris.html">Jerry Harris</a>',
+          },{
+            download:'<a href="../assets/diagrams/alienxeno.pdf">PDF</a>',
+            name:'Alien (Xenomorph)',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/fgilgado.html">Fernando Gilgado</a>',
+          },{
+            download:'<a href="../assets/diagrams/ankylosaurus.pdf">PDF</a>',
+            name:'Ankylosaurus',
+            category:'<a href="../category/dinosaurs.html">Dinosaurs</a>',
+            creator:'<a href="../creators/rkoh.html">Ronald Koh</a>',
+          },{
+            download:'<a href="../assets/diagrams/armadillothreeband.pdf">PDF</a>',
+            name:'Armadillo (Three-Banded)',
+            category:'<a href="../category/animals.html">Animals</a>',
+            creator:'<a href="../creators/jwu.html">Joseph Wu</a>',
+          },{
+            download:'<a href="../assets/diagrams/balroget.pdf">PDF</a>',
+            name:'Balrog',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/etan.html">Eileen Tan</a>',
+          },{
+            download:'<a href="../assets/diagrams/beemkirsch.pdf">PDF</a>',
+            name:'Bee',
+            category:'<a href="../category/insects.html">Insects</a>',
+            creator:'<a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a>',
+          },{
+            download:'<a href="../assets/diagrams/beetle.pdf">PDF</a>',
+            name:'Beetle',
+            category:'<a href="../category/insects.html">Insects</a>',
+            creator:'<a href="../creators/mvanglada.html">Marc Vigo Anglada</a>',
+          },{
+            download:'<a href="../assets/diagrams/bigheadmonster.pdf">PDF</a>',
+            name:'Big Head Monster',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/mvanglada.html">Marc Vigo Anglada</a>',
+          },{
+            download:'<a href="../assets/diagrams/biplane.pdf">PDF</a>',
+            name:'Biplane',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a>',
+          },{
+            download:'<a href="../assets/diagrams/birdac.pdf">PDF</a>',
+            name:'Bird',
+            category:'<a href="../category/animals.html">Animals</a>',
+            creator:'<a href="../creators/acarpenter.html">Andy Carpenter</a>',
+          },{
+            download:'<a href="../assets/diagrams/blackbelt.pdf">PDF</a>',
+            name:'Black Belt',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/rglynn.html">Robin Glynn</a>',
+          },{
+            download:'<a href="../assets/diagrams/bluecrab.pdf">PDF</a>',
+            name:'Blue Crab',
+            category:'<a href="../category/animals.html">Animals</a>',
+            creator:'<a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a>',
+          },{
+            download:'<a href="../assets/diagrams/butterflymk.pdf">PDF</a>',
+            name:'Butterfly',
+            category:'<a href="../category/insects.html">Insects</a>',
+            creator:'<a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a>',
+          },{
+            download:'<a href="../assets/diagrams/dollarbutterflysh.pdf">PDF</a>',
+            name:'Butterfly',
+            category:'<a href="../category/bill.html">Bill Models</a>',
+            creator:'<a href="../creators/shecht.html">Stephen Hecht</a>',
+          },{
+            download:'<a href="../assets/diagrams/cankerworm.pdf">PDF</a>',
+            name:'Cankerworm',
+            category:'<a href="../category/insects.html">Insects</a>',
+            creator:'<a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a>',
+          },{
+            download:'<a href="../assets/diagrams/carvwce.pdf">PDF</a>',
+            name:'Car (VW)',
+            category:'<a href="../category/vehicles.html">Vehicles</a>',
+            creator:'<a href="../creators/cesseltine.html">Charles Esseltine</a>',
+          },{
+            download:'<a href="../assets/diagrams/caterpillaronleaf.pdf">PDF</a>',
+            name:'Caterpillar on Leaf',
+            category:'<a href="../category/insects.html">Insects</a>',
+            creator:'<a href="../creators/efridrikh.html">Eugeny Fridrikh</a>',
+          },{
+            download:'<a href="../assets/diagrams/cathvg.pdf">PDF</a>',
+            name:'Cat',
+            category:'<a href="../category/animals.html">Animals</a>',
+            creator:'<a href="../creators/hvgoubergen.html">Herman van Goubergen</a>',
+          },{
+            download:'<a href="../assets/diagrams/cicadakmori.pdf">PDF</a>',
+            name:'Cicada',
+            category:'<a href="../category/insects.html">Insects</a>',
+            creator:'<a href="../creators/kmorigami.html">KM Origami</a>',
+          },{
+            download:'<a href="../assets/diagrams/cookiemonster.pdf">PDF</a>',
+            name:'Cookie Monster',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/rglynn.html">Robin Glynn</a>',
+          },{
+            download:'<a href="../assets/diagrams/dahlia.pdf">PDF</a>',
+            name:'Dahlia',
+            category:'<a href="../category/plants.html">Plants</a>',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>',
+          },{
+            download:'<a href="../assets/diagrams/doctoroctopus.pdf">PDF</a>',
+            name:'Doc Ock',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/etan.html">Eileen Tan</a>',
+          },{
+            download:'<a href="../assets/diagrams/dragoninflight.pdf">PDF</a>',
+            name:'Dragon in Flight',
+            category:'<a href="../category/animals.html">Animals</a>',
+            creator:'<a href="../creators/cesseltine.html">Charles Esseltine</a>',
+          },{
+            download:'<a href="../assets/diagrams/dragon3heads.pdf">PDF</a>',
+            name:'Dragon With 3 Heads',
+            category:'<a href="../category/animals.html">Animals</a>',
+            creator:'<a href="../creators/avoyer.html">Anibal Voyer</a>',
+          },{
+            download:'<a href="../assets/diagrams/dollardragonfly.pdf">PDF</a>',
+            name:'Dragonfly',
+            category:'<a href="../category/bill.html">Bill Models</a>',
+            creator:'<a href="../creators/shecht.html">Steve Hecht</a>',
+          },{
+            download:'<a href="../assets/diagrams/dollardragonfly2.pdf">PDF</a>',
+            name:'Dragonfly version 2',
+            category:'<a href="../category/bill.html">Bill Models</a>',
+            creator:'<a href="../creators/shecht.html">Steve Hecht</a>',
+          },{
+            download:'<a href="../assets/diagrams/eaglerk.pdf">PDF</a>',
+            name:'Eagle',
+            category:'<a href="../category/birds.html">Birds</a>',
+            creator:'<a href="../creators/rkoh.html">Ronald Koh</a>',
+          },{
+            download:'<a href="../assets/diagrams/easterndragon.pdf">PDF</a>',
+            name:'Eastern Dragon',
+            category:'<a href="../category/animals.html">Animals</a>',
+            creator:'<a href="../creators/jwu.html">Joseph Wu</a>',
+          },{
+            download:'<a href="../assets/diagrams/eiffeltower.pdf">PDF</a>',
+            name:'Eiffel Tower',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/rglynn.html">Robin Glynn</a>',
+          },{
+            download:'<a href="../assets/diagrams/standafa.pdf">PDF</a>',
+            name:'Fancy Stand',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/afehl.html">Alec A. Fehl</a>',
+          },{
+            download:'<a href="../assets/diagrams/standafb.pdf">PDF</a>',
+            name:'Fancy Stand Variation',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/afehl.html">Alec A. Fehl</a>',
+          },{
+            download:'<a href="../assets/diagrams/dollarflowersh.pdf">PDF</a>',
+            name:'Flower',
+            category:'<a href="../category/bill.html">Bill Models</a>',
+            creator:'<a href="../creators/shecht.html">Stephen Hecht</a>',
+          },{
+            download:'<a href="../assets/diagrams/fozzie.pdf">PDF</a>',
+            name:'Fozzie Bear',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/rglynn.html">Robin Glynn</a>',
+          },{
+            download:'<a href="../assets/diagrams/gaspump.pdf">PDF</a>',
+            name:'Gas Pump',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/afehl.html">Alec A. Fehl</a>',
+          },{
+            download:'<a href="../assets/diagrams/geckoandflyonwall.pdf">PDF</a>',
+            name:'Gecko and Fly on a Wall',
+            category:'<a href="../category/animals.html">Animals</a>',
+            creator:'<a href="../creators/hvgoubergen.html">Herman van Goubergen</a>',
+          },{
+            download:'<a href="../assets/diagrams/gearwheel.pdf">PDF</a>',
+            name:'Gearwheel',
+            category:'<a href="../category/tesselation.html">Tesselation</a>',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>',
+          },{
+            download:'<a href="../assets/diagrams/giantspidercrab.pdf">PDF</a>',
+            name:'Giant Spider Crab',
+            category:'<a href="../category/animals.html">Animals</a>',
+            creator:'<a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a>',
+          },{
+            download:'<a href="../assets/diagrams/goldfishrkoh.pdf">PDF</a>',
+            name:'Goldfish',
+            category:'<a href="../category/fish.html">Fish</a>',
+            creator:'<a href="../creators/rkoh.html">Ronald Koh</a>',
+          },{
+            download:'<a href="../assets/diagrams/grasshopper.pdf">PDF</a>',
+            name:'Grasshopper',
+            category:'<a href="../category/insects.html">Insects</a>',
+            creator:'<a href="../creators/avoyer.html">Anibal Voyer</a>',
+          },{
+            download:'<a href="../assets/diagrams/flyingv.pdf">PDF</a>',
+            name:'Guitar - Flying V',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/afehl.html">Alec A. Fehl</a>',
+          },{
+            download:'<a href="../assets/diagrams/amp.pdf">PDF</a>',
+            name:'Guitar Amp',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/afehl.html">Alec A. Fehl</a>',
+          },{
+            download:'<a href="../assets/diagrams/dollararrowheart.pdf">PDF</a>',
+            name:'Heart and Arrow',
+            category:'<a href="../category/bill.html">Bill Models</a>',
+            creator:'<a href="../creators/shecht.html">Stephen Hecht</a>',
+          },{
+            download:'<a href="../assets/diagrams/dollarheartring.pdf">PDF</a>',
+            name:'Heart Ring',
+            category:'<a href="../category/bill.html">Bill Models</a>',
+            creator:'<a href="../creators/shecht.html">Stephen Hecht</a>',
+          },{
+            download:'<a href="../assets/diagrams/mantis.pdf">PDF</a>',
+            name:'Mantis',
+            category:'<a href="../category/insects.html">Insects</a>',
+            creator:'<a href="../creators/rjlang.html">Robert J. Lang</a>',
+          },{
+            download:'<a href="../assets/diagrams/missionary.pdf">PDF</a>',
+            name:'Missionary',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a>',
+          },{
+            download:'<a href="../assets/diagrams/onwaterunderwater.pdf">PDF</a>',
+            name:'On the Water, Under Water',
+            category:'<a href="../category/animals.html">Animals</a>',
+            creator:'<a href="../creators/hvgoubergen.html">Herman van Goubergen</a>',
+          },{
+            download:'<a href="../assets/diagrams/rosekawacrystal.pdf">PDF</a>',
+            name:'Rose (Kawasaki, Crystalized)',
+            category:'<a href="../category/plants.html">Plants</a>',
+            creator:'Design by <a href="../creators/kawasaki.html">Kawasaki</a><br>Diagram by <a href="../creators/bstephens.html">Bruce Stephens</a>',
+          },{
+            download:'<a href="../assets/diagrams/rosekawatesselation.pdf">PDF</a>',
+            name:'Rose (Kawasaki, Tesselation)',
+            category:'<a href="../category/tesselation.html">Tesselation</a>',
+            creator:'Design by <a href="../creators/kawasaki.html">Kawasaki</a><br>Diagram by <a href="../creators/vvann.html">Valerie Vann</a>',
+          },{
+            download:'<a href="../assets/diagrams/rosekawasaki.pdf">PDF</a>',
+            name:'Rose (Kawasaki, Traditional)',
+            category:'<a href="../category/plants.html">Plants</a>',
+            creator:'Design by <a href="../creators/kawasaki.html">Kawasaki</a><br>Diagram by <a href="../creators/wchan.html">Winston Chan</a>',
+          },{
+            download:'<a href="../assets/diagrams/skeleton.pdf">PDF</a>',
+            name:'Skeleton',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a>',
+          },{
+            download:'<a href="../assets/diagrams/teddybear.pdf">PDF</a>',
+            name:'Teddy Bear',
+            category:'<a href="../category/animals.html">Animals</a>',
+            creator:'<a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a>',
+          },{
+            download:'<a href="../assets/diagrams/tictactoe.pdf">PDF</a>',
+            name:'Tic-Tac-Toe Board',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/afehl.html">Alec A. Fehl</a>',
+          },{
+            download:'<a href="../assets/diagrams/toycar.pdf">PDF</a>',
+            name:'Toy Car',
+            category:'<a href="../category/vehicles.html">Vehicles</a>',
+            creator:'<a href="../creators/hvgoubergen.html">Herman van Goubergen</a>',
+          },{
+            download:'<a href="../assets/diagrams/triceratops.pdf">PDF</a>',
+            name:'Triceratops',
+            category:'<a href="../category/dinosaurs.html">Dinosaurs</a>',
+            creator:'<a href="../creators/jharris.html">Jerry Harris</a>',
+          }
+        ];
+      </script>
+      <script src="../scripts/darkMode.js"></script>
+      <script src="../scripts/paginationDifficulty.js"></script>
       <p></p>
       <hr>
       <pre>

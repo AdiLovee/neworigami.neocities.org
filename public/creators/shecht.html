@@ -19,6 +19,22 @@
           </th>
           <th align="right">
             A website by Adinah Levi
+            <br>
+            Dark/Light Toggle: 
+            <button 
+              id="theme-toggle"
+              style="
+                background-color: transparent; 
+                border: none;
+                color: inherit; 
+                cursor: pointer; 
+                transition: background-color 0.2s;"
+              onmouseover="handleHover(this, true)"
+              onmouseout="handleHover(this, false)"
+              onclick="darkModeToggle()"
+            >
+              🌒/☀️
+            </button>
           </th>
         </tr>
       </tbody>
@@ -30,52 +46,53 @@
       <p>
         Alphabetical list of models by Stephen Hecht.
       </p>
-      <table border="1">
-        <tbody>
+      <div id="pagination"></div>
+      <hr>
+      <table border="1" id="tablePaginated">
           <tr>
             <th><u>↓</u></th>
             <th>Difficulty</th>
             <th>Name</th>
             <th>Category</th>
           </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollarbutterflysh.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Butterfly</td>
-            <td><a href="../category/bill.html">Bill Models</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollardragonfly.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Dragonfly</td>
-            <td><a href="../category/bill.html">Bill Models</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollardragonfly2.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Dragonfly version 2</td>
-            <td><a href="../category/bill.html">Bill Models</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollarflowersh.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Flower</td>
-            <td><a href="../category/bill.html">Bill Models</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollararrowheart.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Heart and Arrow</td>
-            <td><a href="../category/bill.html">Bill Models</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollarheartring.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Heart Ring</td>
-            <td><a href="../category/bill.html">Bill Models</a></td>
-          </tr>
-        </tbody>
       </table>
+      <script>
+        const DATA = [
+          {
+            download:'<a href="../assets/diagrams/dollarbutterflysh.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Butterfly',
+            category:'<a href="../category/bill.html">Bill Models</a>'
+          },{
+            download:'<a href="../assets/diagrams/dollardragonfly.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Dragonfly',
+            category:'<a href="../category/bill.html">Bill Models</a>'
+          },{
+            download:'<a href="../assets/diagrams/dollardragonfly2.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Dragonfly version 2',
+            category:'<a href="../category/bill.html">Bill Models</a>'
+          },{
+            download:'<a href="../assets/diagrams/dollarflowersh.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Flower',
+            category:'<a href="../category/bill.html">Bill Models</a>'
+          },{
+            download:'<a href="../assets/diagrams/dollararrowheart.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Heart and Arrow',
+            category:'<a href="../category/bill.html">Bill Models</a>'
+          },{
+            download:'<a href="../assets/diagrams/dollarheartring.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Heart Ring',
+            category:'<a href="../category/bill.html">Bill Models</a>'
+          }
+        ];
+      </script>
+      <script src="../scripts/paginationCreator.js"></script>
+      <script src="../scripts/darkMode.js"></script>
       <p></p>
       <hr>
       <pre>

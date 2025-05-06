@@ -19,6 +19,22 @@
           </th>
           <th align="right">
             A website by Adinah Levi
+            <br>
+            Dark/Light Toggle: 
+            <button 
+              id="theme-toggle"
+              style="
+                background-color: transparent; 
+                border: none;
+                color: inherit; 
+                cursor: pointer; 
+                transition: background-color 0.2s;"
+              onmouseover="handleHover(this, true)"
+              onmouseout="handleHover(this, false)"
+              onclick="darkModeToggle()"
+            >
+              🌒/☀️
+            </button>
           </th>
         </tr>
       </tbody>
@@ -30,7 +46,9 @@
       <p>
         Alphabetical list of tesselation models.
       </p>
-      <table border="1">
+      <div id="pagination"></div>
+      <hr>
+      <table border="1" id="tablePaginated">
         <tbody>
           <tr>
             <th><u>↓</u></th>
@@ -38,26 +56,30 @@
             <th>Name</th>
             <th>Creator</th>
           </tr>
-          <tr>
-            <td><a href="../assets/diagrams/chessboardmk.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Chessboard</td>
-            <td><a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/fishtesselation.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Fish</td>
-            <td>Design by <a href="../creators/movermars.html">Mark Overmars</a><br>Diagram by <a href="../creators/nrobinson.html">Nick Robinson</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/rosekawatesselation.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Rose (Kawasaki, Tesselation)</td>
-            <td>Design by <a href="../creators/kawasaki.html">Kawasaki</a><br>Diagram by <a href="../creators/vvann.html">Valerie Vann</a></td>
-          </tr>
         </tbody>
       </table>
+      <script>
+        const DATA = [
+          {
+            download:'<a href="../assets/diagrams/chessboardmk.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Chessboard',
+            creator:'<a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a>'
+          },{
+            download:'<a href="../assets/diagrams/fishtesselation.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Fish',
+            creator:'Design by <a href="../creators/movermars.html">Mark Overmars</a><br>Diagram by <a href="../creators/nrobinson.html">Nick Robinson</a>'
+          },{
+            download:'<a href="../assets/diagrams/rosekawatesselation.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Rose (Kawasaki, Tesselation)',
+            creator:'Design by <a href="../creators/kawasaki.html">Kawasaki</a><br>Diagram by <a href="../creators/vvann.html">Valerie Vann</a>'
+          }
+        ];
+      </script>
+      <script src="../scripts/paginationCategory.js"></script>
+      <script src="../scripts/darkMode.js"></script>
       <p></p>
       <hr>
       <pre>

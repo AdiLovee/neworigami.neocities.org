@@ -19,6 +19,22 @@
           </th>
           <th align="right">
             A website by Adinah Levi
+            <br>
+            Dark/Light Toggle: 
+            <button 
+              id="theme-toggle"
+              style="
+                background-color: transparent; 
+                border: none;
+                color: inherit; 
+                cursor: pointer; 
+                transition: background-color 0.2s;"
+              onmouseover="handleHover(this, true)"
+              onmouseout="handleHover(this, false)"
+              onclick="darkModeToggle()"
+            >
+              🌒/☀️
+            </button>
           </th>
         </tr>
       </tbody>
@@ -30,7 +46,9 @@
       <p>
         Alphabetical list of miscellaneous models.
       </p>
-      <table border="1">
+      <div id="pagination"></div>
+      <hr>
+      <table border="1" id="tablePaginated">
         <tbody>
           <tr>
             <th><u>↓</u></th>
@@ -38,374 +56,320 @@
             <th>Name</th>
             <th>Creator</th>
           </tr>
-          <tr>
-            <td><a href="../assets/diagrams/angel.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Angel</td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/alienxeno.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Alien (Xenomorph)</td>
-            <td><a href="../creators/fgilgado.html">Fernando Gilgado</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/ballerina.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Ballerina</td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/balloonbasket.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Balloon with Basket</td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/balroget.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Balrog</td>
-            <td><a href="../creators/etan.html">Eileen Tan</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/blackbelt.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Black Belt</td>
-            <td><a href="../creators/rglynn.html">Robin Glynn</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/blintzico.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Blintz Icosidodecahedron</td>
-            <td><a href="../creators/tklam.html">Tung Ken Lam</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/kbestbookmark1.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Bookmark</td>
-            <td><a href="../creators/kbest.html">Kim Best</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/kbestbookmark2.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Bookmark</td>
-            <td><a href="../creators/kbest.html">Kim Best</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/bowldevicenza.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Bowl de Vicenza</td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/boxsimple.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Box (Simple)</td>
-            <td><a href="../creators/joksanen.html">Jorma Oksanen</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/paperbraid.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Braided Paper</td>
-            <td><a href="../creators/jcnolan.html">J.C. Nolan</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/chefhat.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Chef Hat</td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/clockcase.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Clock Case</td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/coat.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Coat</td>
-            <td><a href="../creators/mvanglada.html">Marc Vigo Anglada</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/compassrose.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Compass Rose</td>
-            <td><a href="../creators/joksanen.html">Jorma Oksanen</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/cookiemonster.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Cookie Monster</td>
-            <td><a href="../creators/rglynn.html">Robin Glynn</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/cupmvg.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Cup (Three Variations)</td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/decorationstar.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Decoration (Star)</td>
-            <td><a href="../creators/jmeeusen.html">Jose Meeusen</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/stand.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Display Stand</td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/doctoroctopus.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Doc Ock</td>
-            <td><a href="../creators/etan.html">Eileen Tan</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dripcatcher.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Drip Catcher</td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/et.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>E.T.</td>
-            <td>Design by <a href="../creators/jmeakawa.html">Jun Meakawa</a><br>Diagram by <a href="../creators/osn.html">Origami Sociëteit Nederland</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/eiffeltower.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Eiffel Tower</td>
-            <td><a href="../creators/rglynn.html">Robin Glynn</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/standafa.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Fancy Stand</td>
-            <td><a href="../creators/afehl.html">Alec A. Fehl</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/standafb.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Fancy Stand Variation</td>
-            <td><a href="../creators/afehl.html">Alec A. Fehl</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/fozzie.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Fozzie Bear</td>
-            <td><a href="../creators/rglynn.html">Robin Glynn</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/gaspump.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Gas Pump</td>
-            <td><a href="../creators/afehl.html">Alec A. Fehl</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/garlandkvg.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Garland</td>
-            <td><a href="../creators/kvgelder.html">Kero van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/garlandmvg1.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Garland</td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/garlandmvg2.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Garland</td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/flyingv.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Guitar - Flying V</td>
-            <td><a href="../creators/afehl.html">Alec A. Fehl</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/amp.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Guitar Amp</td>
-            <td><a href="../creators/afehl.html">Alec A. Fehl</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/heartalida.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Heart (For Alida)</td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/heartshining.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Heart (Shining)</td>
-            <td>Design by <a href="../creators/wbrown.html">Wayne Brown</a><br>Diagram by <a href="../creators/nrobinson.html">Nick Robinson</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/heartmvg.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Heart</td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/bookmarkheartkb.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Heart Bookmark 1</td>
-            <td><a href="../creators/kbest.html">Kim Best</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/heartcard.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Heart Card</td>
-            <td><a href="../creators/schen.html">Sy Chen</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/hexagonstar.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Hexagon Star</td>
-            <td>GobblaFolds</td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/missionary.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Missionary</td>
-            <td><a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/mountainnr1.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Mountain</td>
-            <td><a href="../creators/nrobinson.html">Nick Robinson</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/mountainnr2.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Mountain</td>
-            <td><a href="../creators/nrobinson.html">Nick Robinson</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/openhouse.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Open House</td>
-            <td><a href="../creators/schen.html">Sy Chen</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/pencilpot.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Pencil Pot</td>
-            <td><a href="../creators/mvanglada.html">Marc Vigo Anglada</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/pyramid1.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Pyramid</td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/pyramid2.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Pyramid</td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/pyramid3.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Pyramid</td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/pyramidcontainer.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Pyramid Container</td> 
-            <td><a href="../creators/schen.html">Sy Chen</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/radiotelescope.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Radio Telescope</td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/readingpaper.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Reading the Paper</td>
-            <td><a href="../creators/hvgoubergen.html">Herman van Goubergen</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/skeleton.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Skeleton</td>
-            <td><a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/slidingtelescope.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Sliding Telescope</td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/spinningtop.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Spinning Top</td>
-            <td><a href="../creators/bcole.html">Brian Cole</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/tictactoe.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Tic-Tac-Toe Board</td>
-            <td><a href="../creators/afehl.html">Alec A. Fehl</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/totororg.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Totoro</td>
-            <td><a href="../creators/rglynn.html">Robin Glynn</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/trumpet.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Trumpet</td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/tutncleo.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Tut n' Cleo</td>
-            <td><a href="../creators/jcnolan.html">J.C. Nolan</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/wheelchairchair.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Wheelchair and Human (Wheelchair)</td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/wheelchairhuman.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Wheelchair and Human (Human)</td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/windmill.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Windmill</td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/yodafumiaki.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Yoda</td>
-            <td>Design by <a href="../creators/fkawahata.html">Fumiaki Kawahata</a><br>Diagram by <a href="../creators/mmichaelis.html">Mari Michaelis</a></td>
-          </tr>
         </tbody>
       </table>
+      <script>
+        const DATA = [
+          {
+            download:'<a href="../assets/diagrams/angel.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Angel',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/alienxeno.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Alien (Xenomorph)',
+            creator:'<a href="../creators/fgilgado.html">Fernando Gilgado</a>'
+          },{
+            download:'<a href="../assets/diagrams/ballerina.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Ballerina',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/balloonbasket.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Balloon with Basket',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/balroget.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Balrog',
+            creator:'<a href="../creators/etan.html">Eileen Tan</a>'
+          },{
+            download:'<a href="../assets/diagrams/blackbelt.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Black Belt',
+            creator:'<a href="../creators/rglynn.html">Robin Glynn</a>'
+          },{
+            download:'<a href="../assets/diagrams/blintzico.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Blintz Icosidodecahedron',
+            creator:'<a href="../creators/tklam.html">Tung Ken Lam</a>'
+          },{
+            download:'<a href="../assets/diagrams/kbestbookmark1.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Bookmark',
+            creator:'<a href="../creators/kbest.html">Kim Best</a>'
+          },{
+            download:'<a href="../assets/diagrams/kbestbookmark2.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Bookmark',
+            creator:'<a href="../creators/kbest.html">Kim Best</a>'
+          },{
+            download:'<a href="../assets/diagrams/bowldevicenza.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Bowl de Vicenza',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/boxsimple.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Box (Simple)',
+            creator:'<a href="../creators/joksanen.html">Jorma Oksanen</a>'
+          },{
+            download:'<a href="../assets/diagrams/paperbraid.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Braided Paper',
+            creator:'<a href="../creators/jcnolan.html">J.C. Nolan</a>'
+          },{
+            download:'<a href="../assets/diagrams/chefhat.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Chef Hat',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/clockcase.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Clock Case',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/coat.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Coat',
+            creator:'<a href="../creators/mvanglada.html">Marc Vigo Anglada</a>'
+          },{
+            download:'<a href="../assets/diagrams/compassrose.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Compass Rose',
+            creator:'<a href="../creators/joksanen.html">Jorma Oksanen</a>'
+          },{
+            download:'<a href="../assets/diagrams/cookiemonster.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Cookie Monster',
+            creator:'<a href="../creators/rglynn.html">Robin Glynn</a>'
+          },{
+            download:'<a href="../assets/diagrams/cupmvg.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Cup (Three Variations)',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/decorationstar.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Decoration (Star)',
+            creator:'<a href="../creators/jmeeusen.html">Jose Meeusen</a>'
+          },{
+            download:'<a href="../assets/diagrams/stand.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Display Stand',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/doctoroctopus.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Doc Ock',
+            creator:'<a href="../creators/etan.html">Eileen Tan</a>'
+          },{
+            download:'<a href="../assets/diagrams/dripcatcher.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Drip Catcher',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/et.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'E.T.',
+            creator:'Design by <a href="../creators/jmeakawa.html">Jun Meakawa</a><br>Diagram by <a href="../creators/osn.html">Origami Sociëteit Nederland</a>'
+          },{
+            download:'<a href="../assets/diagrams/eiffeltower.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Eiffel Tower',
+            creator:'<a href="../creators/rglynn.html">Robin Glynn</a>'
+          },{
+            download:'<a href="../assets/diagrams/standafa.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Fancy Stand',
+            creator:'<a href="../creators/afehl.html">Alec A. Fehl</a>'
+          },{
+            download:'<a href="../assets/diagrams/standafb.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Fancy Stand Variation',
+            creator:'<a href="../creators/afehl.html">Alec A. Fehl</a>'
+          },{
+            download:'<a href="../assets/diagrams/fozzie.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Fozzie Bear',
+            creator:'<a href="../creators/rglynn.html">Robin Glynn</a>'
+          },{
+            download:'<a href="../assets/diagrams/gaspump.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Gas Pump',
+            creator:'<a href="../creators/afehl.html">Alec A. Fehl</a>'
+          },{
+            download:'<a href="../assets/diagrams/garlandkvg.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Garland',
+            creator:'<a href="../creators/kvgelder.html">Kero van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/garlandmvg1.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Garland',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/garlandmvg2.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Garland',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/flyingv.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Guitar - Flying V',
+            creator:'<a href="../creators/afehl.html">Alec A. Fehl</a>'
+          },{
+            download:'<a href="../assets/diagrams/amp.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Guitar Amp',
+            creator:'<a href="../creators/afehl.html">Alec A. Fehl</a>'
+          },{
+            download:'<a href="../assets/diagrams/heartalida.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Heart (For Alida)',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/heartshining.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Heart (Shining)',
+            creator:'Design by <a href="../creators/wbrown.html">Wayne Brown</a><br>Diagram by <a href="../creators/nrobinson.html">Nick Robinson</a>'
+          },{
+            download:'<a href="../assets/diagrams/heartmvg.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Heart',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/bookmarkheartkb.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Heart Bookmark 1',
+            creator:'<a href="../creators/kbest.html">Kim Best</a>'
+          },{
+            download:'<a href="../assets/diagrams/heartcard.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Heart Card',
+            creator:'<a href="../creators/schen.html">Sy Chen</a>'
+          },{
+            download:'<a href="../assets/diagrams/hexagonstar.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Hexagon Star',
+            creator:'GobblaFolds'
+          },{
+            download:'<a href="../assets/diagrams/missionary.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Missionary',
+            creator:'<a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a>'
+          },{
+            download:'<a href="../assets/diagrams/mountainnr1.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Mountain',
+            creator:'<a href="../creators/nrobinson.html">Nick Robinson</a>'
+          },{
+            download:'<a href="../assets/diagrams/mountainnr2.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Mountain',
+            creator:'<a href="../creators/nrobinson.html">Nick Robinson</a>'
+          },{
+            download:'<a href="../assets/diagrams/openhouse.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Open House',
+            creator:'<a href="../creators/schen.html">Sy Chen</a>'
+          },{
+            download:'<a href="../assets/diagrams/pencilpot.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Pencil Pot',
+            creator:'<a href="../creators/mvanglada.html">Marc Vigo Anglada</a>'
+          },{
+            download:'<a href="../assets/diagrams/pyramid1.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Pyramid',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/pyramid2.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Pyramid',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/pyramid3.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Pyramid',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/pyramidcontainer.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Pyramid Container',
+            creator:'<a href="../creators/schen.html">Sy Chen</a>'
+          },{
+            download:'<a href="../assets/diagrams/radiotelescope.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Radio Telescope',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/readingpaper.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Reading the Paper',
+            creator:'<a href="../creators/hvgoubergen.html">Herman van Goubergen</a>'
+          },{
+            download:'<a href="../assets/diagrams/skeleton.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Skeleton',
+            creator:'<a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a>'
+          },{
+            download:'<a href="../assets/diagrams/slidingtelescope.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Sliding Telescope',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/spinningtop.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Spinning Top',
+            creator:'<a href="../creators/bcole.html">Brian Cole</a>'
+          },{
+            download:'<a href="../assets/diagrams/tictactoe.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Tic-Tac-Toe Board',
+            creator:'<a href="../creators/afehl.html">Alec A. Fehl</a>'
+          },{
+            download:'<a href="../assets/diagrams/totororg.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Totoro',
+            creator:'<a href="../creators/rglynn.html">Robin Glynn</a>'
+          },{
+            download:'<a href="../assets/diagrams/trumpet.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Trumpet',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/tutncleo.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Tut n\' Cleo',
+            creator:'<a href="../creators/jcnolan.html">J.C. Nolan</a>'
+          },{
+            download:'<a href="../assets/diagrams/wheelchairchair.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Wheelchair and Human (Wheelchair)',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/wheelchairhuman.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Wheelchair and Human (Human)',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/windmill.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Windmill',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/yodafumiaki.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Yoda',
+            creator:'Design by <a href="../creators/fkawahata.html">Fumiaki Kawahata</a><br>Diagram by <a href="../creators/mmichaelis.html">Mari Michaelis</a>'
+          }
+        ];
+      </script>
+      <script src="../scripts/paginationCategory.js"></script>
+      <script src="../scripts/darkMode.js"></script>
       <p></p>
       <hr>
       <pre>

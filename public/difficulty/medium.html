@@ -19,6 +19,22 @@
           </th>
           <th align="right">
             A website by Adinah Levi
+            <br>
+            Dark/Light Toggle: 
+            <button 
+              id="theme-toggle"
+              style="
+                background-color: transparent; 
+                border: none;
+                color: inherit; 
+                cursor: pointer; 
+                transition: background-color 0.2s;"
+              onmouseover="handleHover(this, true)"
+              onmouseout="handleHover(this, false)"
+              onclick="darkModeToggle()"
+            >
+              🌒/☀️
+            </button>
           </th>
         </tr>
       </tbody>
@@ -30,358 +46,307 @@
       <p>
         Alphabetical list of medium models.
       </p>
-      <table border="1">
-        <tbody>
+      <div id="pagination"></div>
+      <hr>
+      <table border="1" id="tablePaginated">
           <tr>
             <th><u>↓</u></th>
             <th>Name</th>
             <th>Category</th>
             <th>Creator</th>
           </tr>
-          <tr>
-            <td><a href="../assets/diagrams/angel.pdf">PDF</a></td>
-            <td>Angel</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/arasaurolopusbaby.pdf">PDF</a></td>
-            <td>Arasaurolopus Baby</td>
-            <td><a href="../category/dinosaurs.html">Dinosaurs</a></td>
-            <td><a href="../creators/fgilgado.html">Fernando Gilgado</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/bwing.pdf">PDF</a></td>
-            <td>B-Wing Starfighter</td>
-            <td><a href="../category/vehicles.html">Vehicles</a></td>
-            <td><a href="../creators/jbraasch.html">James B. Raasch III</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/ballerina.pdf">PDF</a></td>
-            <td>Ballerina</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollarbasket.pdf">PDF</a></td>
-            <td>Basket</td>
-            <td><a href="../category/bill.html">Bill Models</a></td>
-            <td><a href="../creators/aanselmo.html">Andrew Anselmo</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/bathappy.pdf">PDF</a></td>
-            <td>Bat (Happy)</td>
-            <td><a href="../category/animals.html">Animals</a></td>
-            <td><a href="../creators/mlafosse.html">Michael LaFosse</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/birdn.pdf">PDF</a></td>
-            <td>Bird<sup>n</sup></td>
-            <td><a href="../category/birds.html">Birds</a></td>
-            <td><a href="../creators/nrobinson.html">Nick Robinson</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/bowldevicenza.pdf">PDF</a></td>
-            <td>Bowl de Vicenza</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/paperbraid.pdf">PDF</a></td>
-            <td>Braided Paper</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/jcnolan.html">J.C. Nolan</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollarbull.pdf">PDF</a></td>
-            <td>Bull</td>
-            <td><a href="../category/bill.html">Bill Models</a></td>
-            <td><a href="../creators/aanselmo.html">Andrew Anselmo</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/butterflyagray.pdf">PDF</a></td>
-            <td>Butterfly (For Alice Gray)</td>
-            <td><a href="../category/insects.html">Insects</a></td>
-            <td><a href="../creators/mlafosse.html">Michael LaFosse</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/catamaran.pdf">PDF</a></td>
-            <td>Catamaran</td>
-            <td><a href="../category/vehicles.html">Vehicles</a></td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/caterpillar.pdf">PDF</a></td>
-            <td>Caterpillar</td>
-            <td><a href="../category/insects.html">Insects</a></td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/chainmvg3.pdf">PDF</a></td>
-            <td>Chain</td>
-            <td><a href="../category/tesselation.html">Tesselation</a></td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/chefhat.pdf">PDF</a></td>
-            <td>Chef Hat</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/chessboard.pdf">PDF</a></td>
-            <td>Chessboard</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/kbest.html">Kim Best</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/coat.pdf">PDF</a></td>
-            <td>Coat</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/mvanglada.html">Marc Vigo Anglada</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/decorationstar.pdf">PDF</a></td>
-            <td>Decoration (Star)</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/jmeeusen.html">Jose Meeusen</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/deerteabag.pdf">PDF</a></td>
-            <td>Deer (From Teabag)</td>
-            <td><a href="../category/animals.html">Animals</a></td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/diplodocusmvg.pdf">PDF</a></td>
-            <td>Diplodocus</td>
-            <td><a href="../category/dinosaurs.html">Dinosaurs</a></td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/stand.pdf">PDF</a></td>
-            <td>Display Stand</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollarsign.pdf">PDF</a></td>
-            <td>Dollar Sign</td>
-            <td><a href="../category/bill.html">Bill Models</a></td>
-            <td><a href="../creators/aanselmo.html">Andrew Anselmo</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/eaglejwu.pdf">PDF</a></td>
-            <td>Eagle</td>
-            <td><a href="../category/birds.html">Birds</a></td>
-            <td><a href="../creators/jwu.html">Joseph Wu</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/f102.pdf">PDF</a></td>
-            <td>F-102</td>
-            <td><a href="../category/vehicles.html">Vehicles</a></td>
-            <td><a href="../creators/mlafosse.html">Michael LaFosse</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/fishtesselation.pdf">PDF</a></td>
-            <td>Fish</td>
-            <td><a href="../category/tesselation.html">Tesselation</a></td>
-            <td>Design by <a href="../creators/movermars.html">Mark Overmars</a><br>Diagram by <a href="../creators/nrobinson.html">Nick Robinson</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/heartalida.pdf">PDF</a></td>
-            <td>Heart (For Alida)</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/heartmvg.pdf">PDF</a></td>
-            <td>Heart</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/heron.pdf">PDF</a></td>
-            <td>Heron</td>
-            <td><a href="../category/birds.html">Birds</a></td>
-            <td><a href="../creators/gwillow.html">Gabriel Willow</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/ibis.pdf">PDF</a></td>
-            <td>Ibis (White)</td>
-            <td><a href="../category/birds.html">Birds</a></td>
-            <td><a href="../creators/gwillow.html">Gabriel Willow</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollarinflation.pdf">PDF</a></td>
-            <td>Inflation</td>
-            <td><a href="../category/bill.html">Bill Models</a></td>
-            <td><a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/manatee.pdf">PDF</a></td>
-            <td>Manatee</td>
-            <td><a href="../category/animals.html">Animals</a></td>
-            <td><a href="../creators/gwillow.html">Gabriel Willow</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/moonlander.pdf">PDF</a></td>
-            <td>Moon Lander</td>
-            <td><a href="../category/vehicles.html">Vehicles</a></td>
-            <td><a href="../creators/kbest.html">Kim Best</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/mushroom.pdf">PDF</a></td>
-            <td>Mushroom</td>
-            <td><a href="../category/plants.html">Plants</a></td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/dollarpeacock.pdf">PDF</a></td>
-            <td>Peacock</td>
-            <td><a href="../category/bill.html">Bill Models</a></td>
-            <td><a href="../creators/rjlang.html">Robert J. Lang</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/pencilpot.pdf">PDF</a></td>
-            <td>Pencil Pot</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/mvanglada.html">Marc Vigo Anglada</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/pterodactyl.pdf">PDF</a></td>
-            <td>Pterodactyl</td>
-            <td><a href="../category/dinosaurs.html">Dinosaurs</a></td>
-            <td><a href="../creators/mvanglada.html">Marc Vigo Anglada</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/pumpkinface.pdf">PDF</a></td>
-            <td>Pumpkin Face</td>
-            <td><a href="../category/plants.html">Plants</a></td>
-            <td><a href="../creators/schen.html">Sy Chen</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/pyramid1.pdf">PDF</a></td>
-            <td>Pyramid</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/pyramid2.pdf">PDF</a></td>
-            <td>Pyramid</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/pyramid3.pdf">PDF</a></td>
-            <td>Pyramid</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/radiotelescope.pdf">PDF</a></td>
-            <td>Radio Telescope</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/readingpaper.pdf">PDF</a></td>
-            <td>Reading the Paper</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/hvgoubergen.html">Herman van Goubergen</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/rooster.pdf">PDF</a></td>
-            <td>Rooster</td>
-            <td><a href="../category/birds.html">Birds</a></td>
-            <td><a href="../creators/ebinzinger.html">Evi Binzinger</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/roseandreas.pdf">PDF</a></td>
-            <td>Rose (Andrea's)</td>
-            <td><a href="../category/plants.html">Plants</a></td>
-            <td><a href="../creators/jcnolan.html">J.C. Nolan</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/rosekawabase.pdf">PDF</a></td>
-            <td>Rose (Kawasaki, Base)</td>
-            <td><a href="../category/plants.html">Plants</a></td>
-            <td><a href="../creators/jwu.html">Joseph Wu</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/rosebrooch.pdf">PDF</a></td>
-            <td>Rose Brooch</td>
-            <td><a href="../category/plants.html">Plants</a></td>
-            <td>Design by <a href="../creators/ttakahama.html">Toshie Takahama</a><br>Diagram by <a href="../creators/schen.html">Sy Chen</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/starkusudama.pdf">PDF</a></td>
-            <td>Star Kusudama</td>
-            <td><a href="../category/tesselation.html">Tesselation</a></td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/enterprise.pdf">PDF</a></td>
-            <td>Starship Enterprise</td>
-            <td><a href="../category/vehicles.html">Vehicles</a></td>
-            <td><a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/tiefighter.pdf">PDF</a></td>
-            <td>TIE Fighter</td>
-            <td><a href="../category/vehicles.html">Vehicles</a></td>
-            <td><a href="../creators/pschulz.html">Philip Schulz</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/totororg.pdf">PDF</a></td>
-            <td>Totoro</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/rglynn.html">Robin Glynn</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/waterlily.pdf">PDF</a></td>
-            <td>Water Lily and Pad (Lily)</td>
-            <td><a href="../category/plants.html">Plants</a></td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/lilypad.pdf">PDF</a></td>
-            <td>Water Lily and Pad (Pad)</td>
-            <td><a href="../category/plants.html">Plants</a></td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/weasel.pdf">PDF</a></td>
-            <td>Weasel</td>
-            <td><a href="../category/animals.html">Animals</a></td>
-            <td><a href="../creators/gwillow.html">Gabriel Willow</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/wheelchairchair.pdf">PDF</a></td>
-            <td>Wheelchair and Human (Wheelchair)</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/wheelchairhuman.pdf">PDF</a></td>
-            <td>Wheelchair and Human (Human)</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/windmill.pdf">PDF</a></td>
-            <td>Windmill</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/yodafumiaki.pdf">PDF</a></td>
-            <td>Yoda</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-            <td>Design by <a href="../creators/fkawahata.html">Fumiaki Kawahata</a><br>Diagram by <a href="../creators/mmichaelis.html">Mari Michaelis</a></td>
-          </tr>
-        </tbody>
       </table>
+      <script>
+        const DATA = [
+          {
+            download:'<a href="../assets/diagrams/angel.pdf">PDF</a>',
+            name:'Angel',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/arasaurolopusbaby.pdf">PDF</a>',
+            name:'Arasaurolopus Baby',
+            category:'<a href="../category/dinosaurs.html">Dinosaurs</a>',
+            creator:'<a href="../creators/fgilgado.html">Fernando Gilgado</a>'
+          },{
+            download:'<a href="../assets/diagrams/bwing.pdf">PDF</a>',
+            name:'B-Wing Starfighter',
+            category:'<a href="../category/vehicles.html">Vehicles</a>',
+            creator:'<a href="../creators/jbraasch.html">James B. Raasch III</a>'
+          },{
+            download:'<a href="../assets/diagrams/ballerina.pdf">PDF</a>',
+            name:'Ballerina',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/dollarbasket.pdf">PDF</a>',
+            name:'Basket',
+            category:'<a href="../category/bill.html">Bill Models</a>',
+            creator:'<a href="../creators/aanselmo.html">Andrew Anselmo</a>'
+          },{
+            download:'<a href="../assets/diagrams/bathappy.pdf">PDF</a>',
+            name:'Bat (Happy)',
+            category:'<a href="../category/animals.html">Animals</a>',
+            creator:'<a href="../creators/mlafosse.html">Michael LaFosse</a>'
+          },{
+            download:'<a href="../assets/diagrams/birdn.pdf">PDF</a>',
+            name:'Bird<sup>n</sup>',
+            category:'<a href="../category/birds.html">Birds</a>',
+            creator:'<a href="../creators/nrobinson.html">Nick Robinson</a>'
+          },{
+            download:'<a href="../assets/diagrams/bowldevicenza.pdf">PDF</a>',
+            name:'Bowl de Vicenza',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/paperbraid.pdf">PDF</a>',
+            name:'Braided Paper',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/jcnolan.html">J.C. Nolan</a>'
+          },{
+            download:'<a href="../assets/diagrams/dollarbull.pdf">PDF</a>',
+            name:'Bull',
+            category:'<a href="../category/bill.html">Bill Models</a>',
+            creator:'<a href="../creators/aanselmo.html">Andrew Anselmo</a>'
+          },{
+            download:'<a href="../assets/diagrams/butterflyagray.pdf">PDF</a>',
+            name:'Butterfly (For Alice Gray)',
+            category:'<a href="../category/insects.html">Insects</a>',
+            creator:'<a href="../creators/mlafosse.html">Michael LaFosse</a>'
+          },{
+            download:'<a href="../assets/diagrams/catamaran.pdf">PDF</a>',
+            name:'Catamaran',
+            category:'<a href="../category/vehicles.html">Vehicles</a>',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/caterpillar.pdf">PDF</a>',
+            name:'Caterpillar',
+            category:'<a href="../category/insects.html">Insects</a>',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/chainmvg3.pdf">PDF</a>',
+            name:'Chain',
+            category:'<a href="../category/tesselation.html">Tesselation</a>',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/chefhat.pdf">PDF</a>',
+            name:'Chef Hat',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/chessboard.pdf">PDF</a>',
+            name:'Chessboard',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/kbest.html">Kim Best</a>'
+          },{
+            download:'<a href="../assets/diagrams/coat.pdf">PDF</a>',
+            name:'Coat',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/mvanglada.html">Marc Vigo Anglada</a>'
+          },{
+            download:'<a href="../assets/diagrams/decorationstar.pdf">PDF</a>',
+            name:'Decoration (Star)',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/jmeeusen.html">Jose Meeusen</a>'
+          },{
+            download:'<a href="../assets/diagrams/deerteabag.pdf">PDF</a>',
+            name:'Deer (From Teabag)',
+            category:'<a href="../category/animals.html">Animals</a>',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/diplodocusmvg.pdf">PDF</a>',
+            name:'Diplodocus',
+            category:'<a href="../category/dinosaurs.html">Dinosaurs</a>',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/stand.pdf">PDF</a>',
+            name:'Display Stand',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/dollarsign.pdf">PDF</a>',
+            name:'Dollar Sign',
+            category:'<a href="../category/bill.html">Bill Models</a>',
+            creator:'<a href="../creators/aanselmo.html">Andrew Anselmo</a>'
+          },{
+            download:'<a href="../assets/diagrams/eaglejwu.pdf">PDF</a>',
+            name:'Eagle',
+            category:'<a href="../category/birds.html">Birds</a>',
+            creator:'<a href="../creators/jwu.html">Joseph Wu</a>'
+          },{
+            download:'<a href="../assets/diagrams/f102.pdf">PDF</a>',
+            name:'F-102',
+            category:'<a href="../category/vehicles.html">Vehicles</a>',
+            creator:'<a href="../creators/mlafosse.html">Michael LaFosse</a>'
+          },{
+            download:'<a href="../assets/diagrams/fishtesselation.pdf">PDF</a>',
+            name:'Fish',
+            category:'<a href="../category/tesselation.html">Tesselation</a>',
+            creator:'Design by <a href="../creators/movermars.html">Mark Overmars</a><br>Diagram by <a href="../creators/nrobinson.html">Nick Robinson</a>'
+          },{
+            download:'<a href="../assets/diagrams/heartalida.pdf">PDF</a>',
+            name:'Heart (For Alida)',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/heartmvg.pdf">PDF</a>',
+            name:'Heart',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/heron.pdf">PDF</a>',
+            name:'Heron',
+            category:'<a href="../category/birds.html">Birds</a>',
+            creator:'<a href="../creators/gwillow.html">Gabriel Willow</a>'
+          },{
+            download:'<a href="../assets/diagrams/ibis.pdf">PDF</a>',
+            name:'Ibis (White)',
+            category:'<a href="../category/birds.html">Birds</a>',
+            creator:'<a href="../creators/gwillow.html">Gabriel Willow</a>'
+          },{
+            download:'<a href="../assets/diagrams/dollarinflation.pdf">PDF</a>',
+            name:'Inflation',
+            category:'<a href="../category/bill.html">Bill Models</a>',
+            creator:'<a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a>'
+          },{
+            download:'<a href="../assets/diagrams/manatee.pdf">PDF</a>',
+            name:'Manatee',
+            category:'<a href="../category/animals.html">Animals</a>',
+            creator:'<a href="../creators/gwillow.html">Gabriel Willow</a>'
+          },{
+            download:'<a href="../assets/diagrams/moonlander.pdf">PDF</a>',
+            name:'Moon Lander',
+            category:'<a href="../category/vehicles.html">Vehicles</a>',
+            creator:'<a href="../creators/kbest.html">Kim Best</a>'
+          }, {
+            download:'<a href="../assets/diagrams/mushroom.pdf">PDF</a>',
+            name:'Mushroom',
+            category:'<a href="../category/plants.html">Plants</a>',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/dollarpeacock.pdf">PDF</a>',
+            name:'Peacock',
+            category:'<a href="../category/bill.html">Bill Models</a>',
+            creator:'<a href="../creators/rjlang.html">Robert J. Lang</a>'
+          },{
+            download:'<a href="../assets/diagrams/pencilpot.pdf">PDF</a>',
+            name:'Pencil Pot',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/mvanglada.html">Marc Vigo Anglada</a>'
+          },{
+            download:'<a href="../assets/diagrams/pterodactyl.pdf">PDF</a>',
+            name:'Pterodactyl',
+            category:'<a href="../category/dinosaurs.html">Dinosaurs</a>',
+            creator:'<a href="../creators/mvanglada.html">Marc Vigo Anglada</a>'
+          },{
+            download:'<a href="../assets/diagrams/pumpkinface.pdf">PDF</a>',
+            name:'Pumpkin Face',
+            category:'<a href="../category/plants.html">Plants</a>',
+            creator:'<a href="../creators/schen.html">Sy Chen</a>'
+          }, {
+            download:'<a href="../assets/diagrams/pyramid1.pdf">PDF</a>',
+            name:'Pyramid',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/pyramid2.pdf">PDF</a>',
+            name:'Pyramid',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/pyramid3.pdf">PDF</a>',
+            name:'Pyramid',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/radiotelescope.pdf">PDF</a>',
+            name:'Radio Telescope',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/readingpaper.pdf">PDF</a>',
+            name:'Reading the Paper',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/hvgoubergen.html">Herman van Goubergen</a>'
+          },{
+            download:'<a href="../assets/diagrams/rooster.pdf">PDF</a>',
+            name:'Rooster',
+            category:'<a href="../category/birds.html">Birds</a>',
+            creator:'<a href="../creators/ebinzinger.html">Evi Binzinger</a>'
+          },{
+            download:'<a href="../assets/diagrams/roseandreas.pdf">PDF</a>',
+            name:"Rose (Andrea's)",
+            category:'<a href="../category/plants.html">Plants</a>',
+            creator:'<a href="../creators/jcnolan.html">J.C. Nolan</a>'
+          },{
+            download:'<a href="../assets/diagrams/rosekawabase.pdf">PDF</a>',
+            name:'Rose (Kawasaki, Base)',
+            category:'<a href="../category/plants.html">Plants</a>',
+            creator:'<a href="../creators/jwu.html">Joseph Wu</a>'
+          }, {
+            download:'<a href="../assets/diagrams/rosebrooch.pdf">PDF</a>',
+            name:'Rose Brooch',
+            category:'<a href="../category/plants.html">Plants</a>',
+            creator:'Design by <a href="../creators/ttakahama.html">Toshie Takahama</a><br>Diagram by <a href="../creators/schen.html">Sy Chen</a>'
+          },{
+            download:'<a href="../assets/diagrams/starkusudama.pdf">PDF</a>',
+            name:'Star Kusudama',
+            category:'<a href="../category/tesselation.html">Tesselation</a>',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/enterprise.pdf">PDF</a>',
+            name:'Starship Enterprise',
+            category:'<a href="../category/vehicles.html">Vehicles</a>',
+            creator:'<a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a>'
+          },{
+            download:'<a href="../assets/diagrams/tiefighter.pdf">PDF</a>',
+            name:'TIE Fighter',
+            category:'<a href="../category/vehicles.html">Vehicles</a>',
+            creator:'<a href="../creators/pschulz.html">Philip Schulz</a>'
+          },{
+            download:'<a href="../assets/diagrams/totororg.pdf">PDF</a>',
+            name:'Totoro',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/rglynn.html">Robin Glynn</a>'
+          },{
+            download:'<a href="../assets/diagrams/waterlily.pdf">PDF</a>',
+            name:'Water Lily and Pad (Lily)',
+            category:'<a href="../category/plants.html">Plants</a>',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/lilypad.pdf">PDF</a>',
+            name:'Water Lily and Pad (Pad)',
+            category:'<a href="../category/plants.html">Plants</a>',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/weasel.pdf">PDF</a>',
+            name:'Weasel',
+            category:'<a href="../category/animals.html">Animals</a>',
+            creator:'<a href="../creators/gwillow.html">Gabriel Willow</a>'
+          },{
+            download:'<a href="../assets/diagrams/wheelchairchair.pdf">PDF</a>',
+            name:'Wheelchair and Human (Wheelchair)',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/wheelchairhuman.pdf">PDF</a>',
+            name:'Wheelchair and Human (Human)',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/windmill.pdf">PDF</a>',
+            name:'Windmill',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/yodafumiaki.pdf">PDF</a>',
+            name:'Yoda',
+            category:'<a href="../category/misc.html">Misc</a>',
+            creator:'Design by <a href="../creators/fkawahata.html">Fumiaki Kawahata</a><br>Diagram by <a href="../creators/mmichaelis.html">Mari Michaelis</a>'
+        }];
+      </script>
+      <script src="../scripts/darkMode.js"></script>
+      <script src="../scripts/paginationDifficulty.js"></script>
       <p></p>
       <hr>
       <pre>
@@ -401,7 +366,7 @@
                           `|   \,/'''`\,     /'   >  \     /'
                            | ,/'  `. .  `\ ,/'   / \  \   /'
                    ___,----Y-'      Y     7'   .'.' `\ \ /'
-               _-/''        `\.     .   ,/'    /.'    `\\ 
+               _-/''        `\.     .   ,/'    /.'    `\ 
            _,-''          ---  \    `  /'    ./.'   __-' "
         _/''     .--            `\    /'     /,'_--'
      ,/''  ..                     `"\_     ./ /='

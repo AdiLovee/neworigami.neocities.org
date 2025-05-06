@@ -19,6 +19,22 @@
           </th>
           <th align="right">
             A website by Adinah Levi
+            <br>
+            Dark/Light Toggle: 
+            <button 
+              id="theme-toggle"
+              style="
+                background-color: transparent; 
+                border: none;
+                color: inherit; 
+                cursor: pointer; 
+                transition: background-color 0.2s;"
+              onmouseover="handleHover(this, true)"
+              onmouseout="handleHover(this, false)"
+              onclick="darkModeToggle()"
+            >
+              🌒/☀️
+            </button>
           </th>
         </tr>
       </tbody>
@@ -30,22 +46,28 @@
       <p>
         Alphabetical list of models by Evi Binzinger.
       </p>
-      <table border="1">
-        <tbody>
+      <div id="pagination"></div>
+      <hr>
+      <table border="1" id="tablePaginated">
           <tr>
             <th><u>↓</u></th>
             <th>Difficulty</th>
             <th>Name</th>
             <th>Category</th>
           </tr>
-          <tr>
-            <td><a href="../assets/diagrams/rooster.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Rooster</td>
-            <td><a href="../category/birds.html">Birds</a></td>
-          </tr>
-        </tbody>
       </table>
+      <script>
+        const DATA = [
+          {
+            download:'<a href="../assets/diagrams/rooster.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Rooster',
+            category:'<a href="../category/birds.html">Birds</a>'
+          }
+        ];
+      </script>
+      <script src="../scripts/paginationCreator.js"></script>
+      <script src="../scripts/darkMode.js"></script>
       <p></p>
       <hr>
       <pre>

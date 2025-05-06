@@ -19,6 +19,22 @@
           </th>
           <th align="right">
             A website by Adinah Levi
+            <br>
+            Dark/Light Toggle: 
+            <button 
+              id="theme-toggle"
+              style="
+                background-color: transparent; 
+                border: none;
+                color: inherit; 
+                cursor: pointer; 
+                transition: background-color 0.2s;"
+              onmouseover="handleHover(this, true)"
+              onmouseout="handleHover(this, false)"
+              onclick="darkModeToggle()"
+            >
+              🌒/☀️
+            </button>
           </th>
         </tr>
       </tbody>
@@ -30,34 +46,38 @@
       <p>
         Alphabetical list of models by Michael LaFosse.
       </p>
-      <table border="1">
-        <tbody>
+      <div id="pagination"></div>
+      <hr>
+      <table border="1" id="tablePaginated">
           <tr>
             <th><u>↓</u></th>
             <th>Difficulty</th>
             <th>Name</th>
             <th>Category</th>
           </tr>
-          <tr>
-            <td><a href="../assets/diagrams/bathappy.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Bat (Happy)</td>
-            <td><a href="../category/animals.html">Animals</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/butterflyagray.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Butterfly (For Alice Gray)</td>
-            <td><a href="../category/insects.html">Insects</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/f102.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>F-102</td>
-            <td><a href="../category/vehicles.html">Vehicles</a></td>
-          </tr>
-        </tbody>
       </table>
+      <script>
+        const DATA = [
+          {
+            download:'<a href="../assets/diagrams/bathappy.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Bat (Happy)',
+            category:'<a href="../category/animals.html">Animals</a>'
+          },{
+            download:'<a href="../assets/diagrams/butterflyagray.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Butterfly (For Alice Gray)',
+            category:'<a href="../category/insects.html">Insects</a>'
+          },{
+            download:'<a href="../assets/diagrams/f102.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'F-102',
+            category:'<a href="../category/vehicles.html">Vehicles</a>'
+          }
+        ];
+      </script>
+      <script src="../scripts/paginationCreator.js"></script>
+      <script src="../scripts/darkMode.js"></script>
       <p></p>
       <hr>
       <pre>
@@ -77,7 +97,7 @@
                           `|   \,/'''`\,     /'   >  \     /'
                            | ,/'  `. .  `\ ,/'   / \  \   /'
                    ___,----Y-'      Y     7'   .'.' `\ \ /'
-               _-/''        `\.     .   ,/'    /.'    `\\ 
+               _-/''        `\.     .   ,/'    /.'    `\ 
            _,-''          ---  \    `  /'    ./.'   __-' "
         _/''     .--            `\    /'     /,'_--'
      ,/''  ..                     `"\_     ./ /='

@@ -19,6 +19,22 @@
           </th>
           <th align="right">
             A website by Adinah Levi
+            <br>
+            Dark/Light Toggle: 
+            <button 
+              id="theme-toggle"
+              style="
+                background-color: transparent; 
+                border: none;
+                color: inherit; 
+                cursor: pointer; 
+                transition: background-color 0.2s;"
+              onmouseover="handleHover(this, true)"
+              onmouseout="handleHover(this, false)"
+              onclick="darkModeToggle()"
+            >
+              🌒/☀️
+            </button>
           </th>
         </tr>
       </tbody>
@@ -30,52 +46,53 @@
       <p>
         Alphabetical list of models by Alec A. Fehl.
       </p>
-      <table border="1">
-        <tbody>
+      <div id="pagination"></div>
+      <hr>
+      <table border="1" id="tablePaginated">
           <tr>
             <th><u>↓</u></th>
             <th>Difficulty</th>
             <th>Name</th>
             <th>Category</th>
           </tr>
-          <tr>
-            <td><a href="../assets/diagrams/standafa.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Fancy Stand</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/standafb.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Fancy Stand Variation</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/gaspump.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Gas Pump</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/flyingv.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Guitar - Flying V</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/amp.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Guitar Amp</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/tictactoe.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Tic-Tac-Toe Board</td>
-            <td><a href="../category/misc.html">Misc</a></td>
-          </tr>
-        </tbody>
       </table>
+      <script>
+      const DATA =[
+        {
+          download:'<a href="../assets/diagrams/standafa.pdf">PDF</a>',
+          difficulty:'★★★',
+          name:'Fancy Stand',
+          category:'<a href="../category/misc.html">Misc</a>'
+        },{
+          download:'<a href="../assets/diagrams/standafb.pdf">PDF</a>',
+          difficulty:'★★★',
+          name:'Fancy Stand Variation',
+          category:'<a href="../category/misc.html">Misc</a>'
+        },{
+          download:'<a href="../assets/diagrams/gaspump.pdf">PDF</a>',
+          difficulty:'★★★',
+          name:'Gas Pump',
+          category:'<a href="../category/misc.html">Misc</a>'
+        },{
+          download:'<a href="../assets/diagrams/flyingv.pdf">PDF</a>',
+          difficulty:'★★★',
+          name:'Guitar - Flying V',
+          category:'<a href="../category/misc.html">Misc</a>'
+        },{
+          download:'<a href="../assets/diagrams/amp.pdf">PDF</a>',
+          difficulty:'★★★',
+          name:'Guitar Amp',
+          category:'<a href="../category/misc.html">Misc</a>'
+        },{
+          download:'<a href="../assets/diagrams/tictactoe.pdf">PDF</a>',
+          difficulty:'★★★',
+          name:'Tic-Tac-Toe Board',
+          category:'<a href="../category/misc.html">Misc</a>'
+        }
+      ];
+      </script>
+      <script src="../scripts/paginationCreator.js"></script>
+      <script src="../scripts/darkMode.js"></script>
       <p></p>
       <hr>
       <pre>

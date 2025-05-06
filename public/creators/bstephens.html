@@ -19,6 +19,22 @@
           </th>
           <th align="right">
             A website by Adinah Levi
+            <br>
+            Dark/Light Toggle: 
+            <button 
+              id="theme-toggle"
+              style="
+                background-color: transparent; 
+                border: none;
+                color: inherit; 
+                cursor: pointer; 
+                transition: background-color 0.2s;"
+              onmouseover="handleHover(this, true)"
+              onmouseout="handleHover(this, false)"
+              onclick="darkModeToggle()"
+            >
+              🌒/☀️
+            </button>
           </th>
         </tr>
       </tbody>
@@ -30,8 +46,9 @@
       <p>
         Alphabetical list of models by Bruce Stephens.
       </p>
-      <table border="1">
-        <tbody>
+      <div id="pagination"></div>
+      <hr>
+      <table border="1" id="tablePaginated">
           <tr>
             <th><u>↓</u></th>
             <th>Difficulty</th>
@@ -39,15 +56,20 @@
             <th>Category</th>
             <th>Notes</th>
           </tr>
-          <tr>
-            <td><a href="../assets/diagrams/rosekawacrystal.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Rose (Kawasaki, Crystalized)</td>
-            <td><a href="../category/plants.html">Plants</a></td>
-            <td>Design by <a href="./kawasaki.html">Kawasaki</a></td>
-          </tr>
-        </tbody>
       </table>
+      <script>
+        const DATA = [
+          {
+            download:'<a href="../assets/diagrams/rosekawacrystal.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Rose (Kawasaki, Crystalized)',
+            category:'<a href="../category/plants.html">Plants</a>',
+            notes:'Design by <a href="./kawasaki.html">Kawasaki</a>'
+          }
+        ];
+      </script>
+      <script src="../scripts/paginationCreatorNote.js"></script>
+      <script src="../scripts/darkMode.js"></script>
       <p></p>
       <hr>
       <pre>

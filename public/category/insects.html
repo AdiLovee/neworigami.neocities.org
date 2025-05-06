@@ -19,6 +19,22 @@
           </th>
           <th align="right">
             A website by Adinah Levi
+            <br>
+            Dark/Light Toggle: 
+            <button 
+              id="theme-toggle"
+              style="
+                background-color: transparent; 
+                border: none;
+                color: inherit; 
+                cursor: pointer; 
+                transition: background-color 0.2s;"
+              onmouseover="handleHover(this, true)"
+              onmouseout="handleHover(this, false)"
+              onclick="darkModeToggle()"
+            >
+              🌒/☀️
+            </button>
           </th>
         </tr>
       </tbody>
@@ -30,7 +46,9 @@
       <p>
         Alphabetical list of insect models.
       </p>
-      <table border="1">
+      <div id="pagination"></div>
+      <hr>
+      <table border="1" id="tablePaginated">
         <tbody>
           <tr>
             <th><u>↓</u></th>
@@ -38,74 +56,70 @@
             <th>Name</th>
             <th>Creator</th>
           </tr>
-          <tr>
-            <td><a href="../assets/diagrams/beemkirsch.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Bee</td>
-            <td><a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/beetle.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Beetle</td>
-            <td><a href="../creators/mvanglada.html">Marc Vigo Anglada</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/flappingbutterfly.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Butterfly (Flapping)</td>
-            <td><a href="../creators/pbailey.html">Perry Bailey</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/butterflyagray.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Butterfly (For Alice Gray)</td>
-            <td><a href="../creators/mlafosse.html">Michael LaFosse</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/cankerworm.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Cankerworm</td>
-            <td><a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/caterpillar.pdf">PDF</a></td>
-            <th>★★</th>
-            <td>Caterpillar</td>
-            <td><a href="../creators/mvgelder.html">Maarten van Gelder</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/caterpillaronleaf.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Caterpillar on Leaf</td>
-            <td><a href="../creators/efridrikh.html">Eugeny Fridrikh</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/cicadakmori.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Cicada</td>
-            <td><a href="../creators/kmorigami.html">KM Origami</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/grasshopper.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Grasshopper</td>
-            <td><a href="../creators/avoyer.html">Anibal Voyer</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/ladybugsimple.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Ladybug (Simple)</td>
-            <td><a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/mantis.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Mantis</td>
-            <td><a href="../creators/rjlang.html">Robert J. Lang</a></td>
-          </tr>
         </tbody>
       </table>
+      <script>
+        const DATA = [
+          {
+            download:'<a href="../assets/diagrams/beemkirsch.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Bee',
+            creator:'<a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a>'
+          },{
+            download:'<a href="../assets/diagrams/beetle.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Beetle',
+            creator:'<a href="../creators/mvanglada.html">Marc Vigo Anglada</a>'
+          },{
+            download:'<a href="../assets/diagrams/flappingbutterfly.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Butterfly (Flapping)',
+            creator:'<a href="../creators/pbailey.html">Perry Bailey</a>'
+          },{
+            download:'<a href="../assets/diagrams/butterflyagray.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Butterfly (For Alice Gray)',
+            creator:'<a href="../creators/mlafosse.html">Michael LaFosse</a>'
+          },{
+            download:'<a href="../assets/diagrams/cankerworm.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Cankerworm',
+            creator:'<a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a>'
+          },{
+            download:'<a href="../assets/diagrams/caterpillar.pdf">PDF</a>',
+            difficulty:'★★',
+            name:'Caterpillar',
+            creator:'<a href="../creators/mvgelder.html">Maarten van Gelder</a>'
+          },{
+            download:'<a href="../assets/diagrams/caterpillaronleaf.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Caterpillar on Leaf',
+            creator:'<a href="../creators/efridrikh.html">Eugeny Fridrikh</a>'
+          },{
+            download:'<a href="../assets/diagrams/cicadakmori.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Cicada',
+            creator:'<a href="../creators/kmorigami.html">KM Origami</a>'
+          },{
+            download:'<a href="../assets/diagrams/grasshopper.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Grasshopper',
+            creator:'<a href="../creators/avoyer.html">Anibal Voyer</a>'
+          },{
+            download:'<a href="../assets/diagrams/ladybugsimple.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Ladybug (Simple)',
+            creator:'<a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a>'
+          },{
+            download:'<a href="../assets/diagrams/mantis.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Mantis',
+            creator:'<a href="../creators/rjlang.html">Robert J. Lang</a>'
+          }
+        ];
+      </script>
+      <script src="../scripts/paginationCategory.js"></script>
+      <script src="../scripts/darkMode.js"></script>
       <p></p>
       <hr>
       <pre>

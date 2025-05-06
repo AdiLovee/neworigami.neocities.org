@@ -19,6 +19,22 @@
           </th>
           <th align="right">
             A website by Adinah Levi
+            <br>
+            Dark/Light Toggle: 
+            <button 
+              id="theme-toggle"
+              style="
+                background-color: transparent; 
+                border: none;
+                color: inherit; 
+                cursor: pointer; 
+                transition: background-color 0.2s;"
+              onmouseover="handleHover(this, true)"
+              onmouseout="handleHover(this, false)"
+              onclick="darkModeToggle()"
+            >
+              🌒/☀️
+            </button>
           </th>
         </tr>
       </tbody>
@@ -30,7 +46,9 @@
       <p>
         Alphabetical list of fish models.
       </p>
-      <table border="1">
+      <div id="pagination"></div>
+      <hr>
+      <table border="1" id="tablePaginated">
         <tbody>
           <tr>
             <th><u>↓</u></th>
@@ -38,26 +56,32 @@
             <th>Name</th>
             <th>Creator</th>
           </tr>
-          <tr>
-            <td><a href="../assets/diagrams/angelfish.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Angelfish Two-fold</td>
-            <td><a href="../creators/jcnolan.html">J.C. Nolan</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/fishmkirsch.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Fish</td>
-            <td><a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a></td>
-          </tr>
-          <tr>
-            <td><a href="../assets/diagrams/goldfishrkoh.pdf">PDF</a></td>
-            <th>★★★</th>
-            <td>Goldfish</td>
-            <td><a href="../creators/rkoh.html">Ronald Koh</a></td>
-          </tr>
         </tbody>
       </table>
+      <script>
+        const DATA = [
+          {
+            download:'<a href="../assets/diagrams/angelfish.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Angelfish Two-fold',
+            creator:'<a href="../creators/jcnolan.html">J.C. Nolan</a>'
+          },
+          {
+            download:'<a href="../assets/diagrams/fishmkirsch.pdf">PDF</a>',
+            difficulty:'★',
+            name:'Fish',
+            creator:'<a href="../creators/mkirschenbaum.html">Marc Kirschenbaum</a>'
+          },
+          {
+            download:'<a href="../assets/diagrams/goldfishrkoh.pdf">PDF</a>',
+            difficulty:'★★★',
+            name:'Goldfish',
+            creator:'<a href="../creators/rkoh.html">Ronald Koh</a>'
+          }
+        ];
+      </script>
+      <script src="../scripts/paginationCategory.js"></script>
+      <script src="../scripts/darkMode.js"></script>
       <p></p>
       <hr>
       <pre>

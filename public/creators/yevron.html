@@ -19,33 +19,56 @@
           </th>
           <th align="right">
             A website by Adinah Levi
+            <br>
+            Dark/Light Toggle: 
+            <button 
+              id="theme-toggle"
+              style="
+                background-color: transparent; 
+                border: none;
+                color: inherit; 
+                cursor: pointer; 
+                transition: background-color 0.2s;"
+              onmouseover="handleHover(this, true)"
+              onmouseout="handleHover(this, false)"
+              onclick="darkModeToggle()"
+            >
+              🌒/☀️
+            </button>
           </th>
         </tr>
       </tbody>
     </table>
-    <ul><p>
+    <ul>
+      <p>
         ← Back to <a href="../index.html">Main Page</a>.
       </p>
       <hr>
       <p>
         Alphabetical list of models by Yuval Evron.
       </p>
-      <table border="1">
-        <tbody>
+      <div id="pagination"></div>
+      <hr>
+      <table border="1" id="tablePaginated">
           <tr>
             <th><u>↓</u></th>
             <th>Difficulty</th>
             <th>Name</th>
             <th>Category</th>
           </tr>
-          <tr>
-            <td><a href="../assets/diagrams/triangularmodule.pdf">PDF</a></td>
-            <th>★</th>
-            <td>Triangular Module Unit</td>
-            <td><a href="../category/modular.html">Modular</a></td>
-          </tr>
-        </tbody>
       </table>
+      <script>
+        const DATA = [
+          {
+            download:'<a href="../assets/diagrams/triangularmodule.pdf">PDF</a',
+            difficulty:'★',
+            name:'Triangular Module Unit',
+            category:'<a href="../category/modular.html">Modular</a'
+          }
+        ];
+      </script>
+      <script src="../scripts/darkMode.js"></script>
+      <script src="../scripts/paginationCreator.js"></script>
       <p></p>
       <hr>
       <pre>

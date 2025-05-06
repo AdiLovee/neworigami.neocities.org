@@ -3,8 +3,8 @@
    "how to change link color." */
 
 body {
-  background-color: BLACK;
-  color: WHITE;
+  background-color: #fdf4dc;
+  color: black;
   font-family: 'Consolas';
 }
 
@@ -18,4 +18,14 @@ a:active {
 
 a:visited {
   color: #0066ff;
+}
+
+img {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.dark-mode {
+  background-color: #1a1d23;
+  color: #f8f4e9;
 }
