@@ -1,4 +1,5 @@
 /* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+<<<<<<< HEAD
    HTML content. To learn how to do something, just try searching Google for questions like
    "how to change link color." */
 
@@ -6,17 +7,39 @@ body {
   background-color: #fdf4dc;
   color: black;
   font-family: 'Consolas';
+=======
+  HTML content. To learn how to do something, just try searching Google for questions like
+  "how to change link color." */
+:root {
+  --background-color: #1a1d23;
+  --off-white: #f8f4e9;
+>>>>>>> 83371823c0d7b77332ec856e1eab0b918479b3d1
 }
 
-a:link {
-  color: #0099ff;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--off-white);
+  font-family: 'Consolas';
+  height: 100vh;
+}
+
+a {
+  color: #7fb8ff;
+  text-decoration: none;
 }
 
 a:active {
-  color: #0000ff;
+  color: #1c76fd;
 }
 
 a:visited {
+<<<<<<< HEAD
   color: #0066ff;
 }
 
@@ -28,4 +51,51 @@ img {
 .dark-mode {
   background-color: #1a1d23;
   color: #f8f4e9;
+=======
+  color: #5491ee;
+}
+
+.site-container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px 40px;
+}
+
+header {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: inherit;
+  margin-bottom: 16px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#quick-summary h4 {
+  margin-bottom: 8px;
+}
+
+.update-info {
+  display: flex;
+  gap: 12px;
+  margin-top: 2px;
+  margin-bottom: 8px;
+}
+
+#last-updated::after {
+  content: "|";
+  margin-left: 12px;
+}
+
+hr {
+  margin: 12px 0;
+}
+
+h2 {
+  margin-bottom: 8px;
+>>>>>>> 83371823c0d7b77332ec856e1eab0b918479b3d1
 }
