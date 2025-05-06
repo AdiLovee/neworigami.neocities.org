@@ -8,16 +8,26 @@ body {
   font-family: 'Consolas';
 }
 
-a:link {
+a{
   color: #0099ff;
-}
-
-a:active {
-  color: #0000ff;
+  text-decoration: none;
 }
 
 a:visited {
   color: #0066ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0000ff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+a:active {
+  color: #000099;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 img {
