@@ -38,11 +38,7 @@
       <div id="tableContainer">
         <div id="pagination"></div>
         <hr />
-        <div id="controls">
-          <button id="sortName">Sort by Name</button>
-          <button id="sortCategory">Sort by Category</button>
-          <button id="sortDifficulty">Sort by Difficulty</button>
-
+        <div id="filters">
           <label for="filterDifficulty">Difficulty:</label>
           <select id="filterDifficulty">
             <option value="all">All</option>
@@ -55,7 +51,7 @@
           <select id="filterCategory">
             <option value="all">All</option>
             <option value="animals">Animals</option>
-            <option value="bill">Bill</option>
+            <option value="bill-models">Bill Models</option>
             <option value="birds">Birds</option>
             <option value="dinosaurs">Dinosaurs</option>
             <option value="fish">Fish</option>
@@ -68,10 +64,18 @@
             <option value="vehicles">Vehicles</option>
           </select>
 
+          ë
+
+
           <label for="filterCreator">Creator:</label>
           <select id="filterCreator">
             <option value="all">All</option>
           </select>
+        </div>
+        <div id="sortButtons">
+          <button id="sortName">Sort by Name</button>
+          <button id="sortCategory">Sort by Category</button>
+          <button id="sortDifficulty">Sort by Difficulty</button>
         </div>
 
         <table border="1" id="tablePaginated">

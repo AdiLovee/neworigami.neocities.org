@@ -23,11 +23,12 @@ async function initializeTable() {
 
     filteredData = sortByName([...fullData]); // default sort
     displayTable(currentPage);
+    
+    populateFilterOptions(data);
   } catch (err) {
     console.error("Failed to initialize table:", err);
     displayError("tableContainer", "Failed to load data.");
   }
-  populateFilterOptions(data);
 }
 
 // Sorting buttons
