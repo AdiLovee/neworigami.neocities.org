@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="./scripts/theme-init.js" defer></script>
+
+    <title>NewOrigami • Artist</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="page-container">
+      <header>
+        <h1>Welcome to the new Origami.com</h1>
+        <div id="dev-name">
+          <p>A website by Adinah Levi</p>
+          <button id="theme-toggle">🌒/☀️</button>
+        </div>
+      </header>
+
+      <main>
+        <p>← Back to <a href="./index.html">Main Page</a></p>
+
+        <hr />
+
+        <p id="page-title">Loading...</p>
+        <div id="controls">
+          <button id="sortName">Sort by Name</button>
+          <button id="sortCategory">Sort by Category</button>
+          <button id="sortDifficulty">Sort by Difficulty</button>
+        
+          <!-- Filtering Dropdown -->
+          <label for="filterDifficulty">Filter by Difficulty:</label>
+          <select id="filterDifficulty">
+            <option value="all">All</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+        <table id="diagram-table">
+          <thead>
+            <tr>
+              <th>↓</th>
+              <th>Difficulty</th>
+              <th>Name</th>
+              <th>Category</th>
+              <th>Creator</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+
+        <hr />
+      </main>
+
+      <pre>
+                          |b
+                           ||
+                           ||,
+                           |'\
+                            |`|
+                            | `|
+                            '| |.
+                             | `L
+                             |  |,
+                             `|  |.                              _,/7
+                              |  `|                       __,---'' /
+                              |   `|              __,---'"   ..- ./
+                              ||   |      _.--=/'',--=-,,  -    ,/
+                              `|   \,/'''`\,     /'   >  \     /'
+                               | ,/'  `. .  `\ ,/'   / \  \   /'
+                       ___,----Y-'      Y     7'   .'.' `\ \ /'
+                   _-/''        `\.     .   ,/'    /.'    `\\ 
+               _,-''          ---  \    `  /'    ./.'   __-' "
+            _/''     .--            `\    /'     /,'_--'
+         ,/''  ..                     `"\_     ./ /='
+     .,/'                             .--"\    / / 
+    &lt;------------------,_____      ,/~'  \ | ./ .'
+                            `"""""""      `|_/\ /
+                                            '  '
+      </pre>
+
+      <footer>
+        <p>
+          <a target="_blank" href="https://icons8.com/icon/10371/origami">Origami Swan</a>
+          favicon by <a target="_blank" href="https://icons8.com">Icons8</a>
+        </p>
+
+        <p>
+          Origami Crane ASCII art from
+          <a href="https://www.asciiart.eu/art-and-design/origamis">asciiart.eu</a>
+        </p>
+
+        <p>All rights for diagrams reserved by respective original creators.</p>
+      </footer>
+    </div>
+
+    <script type="module" src="./scripts/all-diagrams.js"></script>
+    <script type="module" src="./scripts/themeToggle.js"></script>
+
+  </body>
+</html>

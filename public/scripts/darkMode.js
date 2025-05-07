@@ -23,3 +23,22 @@ function darkModeToggle() {
     localStorage.setItem("darkMode", "disabled");
   }
 }
+
+const BUTTON = document.getElementById("darkMode");
+BUTTON.innerHTML = `
+  Dark/Light Toggle: 
+  <button 
+    id="theme-toggle"
+    style="
+      background-color: transparent; 
+      border: none;
+      color: inherit; 
+      cursor: pointer; 
+      transition: background-color 0.2s;"
+    onmouseover="handleHover(this, true)"
+    onmouseout="handleHover(this, false)"
+    onclick="darkModeToggle()"
+  >
+    🌒/☀️
+  </button>
+`;

@@ -1,31 +1,49 @@
-/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
-   HTML content. To learn how to do something, just try searching Google for questions like
-   "how to change link color." */
+:root {
+  --light-background-color: #fdf4dc;
+  --dark-background-color: #1a1d23;
+  --off-white:    #f8f4e9;
+  --near-black:   #0f0f0f;
+  --link:         #0099ff;
+  --link-visited: #0066ff;
+  --link-hover:   #0033ff;
+  --link-active:  #0000ff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  background-color: #fdf4dc;
-  color: black;
+  background-color: var(--light-background-color);
+  color: var(--near-black);
   font-family: 'Consolas';
+  height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 a{
-  color: #0099ff;
+  color: var(--link);
   text-decoration: none;
 }
 
 a:visited {
-  color: #0066ff;
+  color: var(--link-visited);
   text-decoration: none;
 }
 
 a:hover {
-  color: #0000ff;
+  color: var(--link-hover);
   text-decoration: underline;
   font-weight: bold;
 }
 
 a:active {
-  color: #000099;
+  color: var(--link-active);
   text-decoration: underline;
   font-weight: bold;
 }
@@ -36,6 +54,6 @@ img {
 }
 
 .dark-mode {
-  background-color: #1a1d23;
-  color: #f8f4e9;
+  background-color: var(--dark-background-color);
+  color: var(--off-white);
 }
