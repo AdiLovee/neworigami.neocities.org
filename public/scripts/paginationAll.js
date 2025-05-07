@@ -78,12 +78,19 @@ function displayTable(page) {
     diffCell.style.textAlign = "center";
     row.insertCell(2).innerHTML = item.name;
     row.insertCell(3).innerHTML = Array.isArray(item.categories)
-    ? item.categories.join(', ')
-    : item.category || '';
+      ? item.categories.map(formatCategory).join(', ')
+      : formatCategory(item.category || '');
     row.insertCell(4).innerHTML = item.creator;
   });
 
   updatePagination(page);
+}
+
+function formatCategory(category) {
+  return category
+    .split('-')  // Split by hyphen
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())  // Capitalize first letter of each word
+    .join(' ');  // Join the words back with space
 }
 
 function populateFilterOptions(data) {
