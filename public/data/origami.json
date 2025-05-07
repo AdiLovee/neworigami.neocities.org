@@ -73,6 +73,12 @@
       "youtube": null
     },
     {
+      "id": "etan",
+      "name": "Eileen Tan",
+      "site": null,
+      "youtube": null
+    },
+    {
       "id": "fgilgado",
       "name": "Fernando Gilgado",
       "site": null,
@@ -946,7 +952,10 @@
     },
     {
       "title": "E.T.",
-      "creatorId": ["jmeakawa", "osn"],
+      "creatorId": [
+        "jmeakawa", 
+        "osn"
+      ],
       "filename": "et.pdf",
       "difficulty": "★★★",
       "categories": [
@@ -1549,7 +1558,10 @@
     },
     {
       "title": "Rose (Kawasaki, Crystalized)",
-      "creatorId": ["bstephens", "kawasaki"],
+      "creatorId": [
+        "bstephens", 
+        "kawasaki"
+      ],
       "filename": "rosekawacrystal.pdf",
       "difficulty": "★★★",
       "categories": [
@@ -1567,7 +1579,10 @@
     },
     {
       "title": "Rose (Kawasaki, Traditional)",
-      "creatorId": ["wchan", "kawasaki"],
+      "creatorId": [
+        "wchan", 
+        "kawasaki"
+      ],
       "filename": "rosekawasaki.pdf",
       "difficulty": "★★★",
       "categories": [
@@ -1828,7 +1843,10 @@
     },
     {
       "title": "Yoda",
-      "creatorId": ["fkawahata", "mmichaelis"],
+      "creatorId": [
+        "fkawahata", 
+        "mmichaelis"
+      ],
       "filename": "yodafumiaki.pdf",
       "difficulty": "★★",
       "categories": [

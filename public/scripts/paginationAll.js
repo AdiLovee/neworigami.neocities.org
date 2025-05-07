@@ -15,7 +15,9 @@ async function initializeTable() {
         difficulty: diagram.difficulty === '★★★' ? 'hard' :
                     diagram.difficulty === '★★' ? 'medium' :
                     'easy',
-        categories: diagram.categories,
+        categories: diagram.categories.map(cat =>
+          cat.replace(/-/g, ' ').replace(/\b\w/g, letter => letter.toUpperCase())
+        ),
         creator: creator ? creator.name : 'Unknown',
         download: `./assets/diagrams/${diagram.filename}`
       };
@@ -98,13 +100,29 @@ function populateFilterOptions(data) {
   const categorySet = new Set();
   const creatorSet = new Set();
 
+  // Collect categories, formatting them
   data.diagrams.forEach(diagram => {
-    diagram.categories.forEach(cat => categorySet.add(cat));
+    diagram.categories.forEach(cat => {
+      // Format category: replace hyphens with spaces and capitalize
+      const formattedCategory = cat.replace(/-/g, ' ').replace(/\b\w/g, letter => letter.toUpperCase());
+      categorySet.add(formattedCategory);
+    });
+
+    // Collect creators
     const creator = data.creators.find(c => c.id === diagram.creatorId);
     if (creator) creatorSet.add(creator.name);
   });
 
+  // Populate category filter
   const categorySelect = document.getElementById("filterCategory");
+  categorySelect.innerHTML = ''; // Clear existing options
+
+  const defaultOption = document.createElement("option");
+  defaultOption.value = "all";
+  defaultOption.textContent = "All Categories";
+  categorySelect.appendChild(defaultOption);
+
+  // Add formatted categories to the dropdown
   for (const cat of [...categorySet].sort()) {
     const opt = document.createElement("option");
     opt.value = cat;
@@ -112,7 +130,15 @@ function populateFilterOptions(data) {
     categorySelect.appendChild(opt);
   }
 
+  // Populate creator filter
   const creatorSelect = document.getElementById("filterCreator");
+  creatorSelect.innerHTML = ''; // Clear existing options
+
+  const defaultCreatorOption = document.createElement("option");
+  defaultCreatorOption.value = "all";
+  defaultCreatorOption.textContent = "All Creators";
+  creatorSelect.appendChild(defaultCreatorOption);
+
   for (const creator of [...creatorSet].sort()) {
     const opt = document.createElement("option");
     opt.value = creator;
@@ -120,6 +146,7 @@ function populateFilterOptions(data) {
     creatorSelect.appendChild(opt);
   }
 }
+
 
 function filterAll() {
   const difficulty = document.getElementById("filterDifficulty").value;
