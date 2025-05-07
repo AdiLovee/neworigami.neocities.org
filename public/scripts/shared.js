@@ -2,7 +2,7 @@ export const DIAGRAM_BASE_PATH = './assets/diagrams/';
 export const CATEGORY_BASE_PATH = './category.html?c=';
 export const CREATOR_BASE_PATH = './creator.html?id=';
 export const DIFFICULTY_BASE_PATH = './difficulty.html?d=';
-export const DATA_URL = './data/origami.json?v=1.0.1'; // Hardcoded version for cache busting
+export const DATA_URL = './data/origami.json?v=2025.05.07.0528'; // Hardcoded version for cache busting
 
 export const DIFFICULTY_MAP = {
   easy: '★',

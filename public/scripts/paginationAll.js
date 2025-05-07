@@ -1,4 +1,4 @@
-import { fetchData, DIFFICULTY_MAP, sortByName, displayError } from './shared.js?v=1.0.1';
+import { fetchData, DIFFICULTY_MAP, sortByName, displayError } from './shared.js?v=2025.05.07.0528';
 
 const ROWS_PER_PAGE = 15;
 let currentPage = 1;
@@ -28,12 +28,12 @@ async function initializeTable() {
         ),
         // Store creators as an array.
         creators: creators,
-        download: `./assets/diagrams/${diagram.filename}`,
-        image: `./assets/thumbnails/${diagram.thumbnail}`,
-        imagename: `${diagram.thumbnail}`
+        download: `./assets/diagrams/${diagram.filename}.pdf`,
+        image: `./assets/thumbnails/${diagram.filename}.gif`,
+        imagename: `${diagram.filename}.gif`
       };
     });
-
+    document.getElementById("diagramCount").textContent = data.diagrams.length;
     filteredData = sortByName([...fullData]); // default sort
     displayTable(currentPage);
     populateFilterOptions(data);
@@ -101,7 +101,7 @@ function displayTable(page) {
         It wont break if changed to 'download', but it should just be clear to the user what the button does.
       */
       row.insertCell(0).innerHTML =
-      // Once we add images, uncomment and move this above the View Pdf button
+      // Once we add images, uncomment and move this above the View PDF button
       //`<a href="${item.download}" target="_blank"><img src="${item.image}">${item.imagename}</img></a><br>
       `
       <a href="${item.download}" target="_blank">View PDF</a>`; 
