@@ -8,24 +8,34 @@ let filteredData = [];
 async function initializeTable() {
   try {
     const data = await fetchData();         // full JSON object
+
+    // Map each diagram, resolving multiple creators from the array of creatorId values.
     fullData = data.diagrams.map(diagram => {
-      const creator = data.creators.find(c => c.id === diagram.creatorId);
+      // For each creator id (now in an array), look up the corresponding creator's name.
+      const creators = diagram.creatorId.map(id => {
+        const found = data.creators.find(c => c.id === id);
+        return found ? found.name : 'Unknown';
+      });
+      
       return {
         name: diagram.title,
         difficulty: diagram.difficulty === '★★★' ? 'hard' :
                     diagram.difficulty === '★★' ? 'medium' :
                     'easy',
+        // Format each category: replace hyphens with spaces and capitalize words.
         categories: diagram.categories.map(cat =>
           cat.replace(/-/g, ' ').replace(/\b\w/g, letter => letter.toUpperCase())
         ),
-        creator: creator ? creator.name : 'Unknown',
-        download: `./assets/diagrams/${diagram.filename}`
+        // Store creators as an array.
+        creators: creators,
+        download: `./assets/diagrams/${diagram.filename}`,
+        image: `./assets/thumbnails/${diagram.thumbnail}`,
+        imagename: `${diagram.thumbnail}`
       };
     });
 
     filteredData = sortByName([...fullData]); // default sort
     displayTable(currentPage);
-    
     populateFilterOptions(data);
   } catch (err) {
     console.error("Failed to initialize table:", err);
@@ -40,7 +50,9 @@ document.getElementById("sortName").addEventListener("click", () => {
 });
 
 document.getElementById("sortCategory").addEventListener("click", () => {
-  filteredData = [...filteredData].sort((a, b) => a.category.localeCompare(b.category));
+  filteredData = [...filteredData].sort((a, b) =>
+    a.categories.join(', ').localeCompare(b.categories.join(', '))
+  );
   changePage(1);
 });
 
@@ -52,7 +64,7 @@ document.getElementById("sortDifficulty").addEventListener("click", () => {
   changePage(1);
 });
 
-// Filter dropdown
+// Filter dropdowns
 document.getElementById("filterDifficulty").addEventListener("change", filterAll);
 document.getElementById("filterCategory").addEventListener("change", filterAll);
 document.getElementById("filterCreator").addEventListener("change", filterAll);
@@ -72,57 +84,70 @@ function displayTable(page) {
       <th>Creator</th>
     </tr>
   `;
-
-  slicedData.forEach(item => {
+  if (slicedData.length === 0) {
     const row = table.insertRow();
-    row.insertCell(0).innerHTML = `<a href="${item.download}" target="_blank">Download</a>`;
-    const diffCell = row.insertCell(1);
-    diffCell.innerHTML = DIFFICULTY_MAP[item.difficulty] || item.difficulty;
-    diffCell.style.textAlign = "center";
-    row.insertCell(2).innerHTML = item.name;
-    row.insertCell(3).innerHTML = Array.isArray(item.categories)
-      ? item.categories.map(formatCategory).join(', ')
-      : formatCategory(item.category || '');
-    row.insertCell(4).innerHTML = item.creator;
-  });
+    const cell = row.insertCell(0);
+    cell.colSpan = 5;
+    cell.textContent = "No results found.";
+    cell.style.textAlign = "center";
+    cell.style.fontStyle = "italic";
+  } else {
+    slicedData.forEach(item => {
+      const row = table.insertRow();
+      /*
+        This shouldn't be displayed as "download" unless the href has the download attribute.
+        Clicking this link only opens the file, it doesn't save it, so it's technically not a download.
+        The actual download button is in the browser's native PDF viewer.
+        It wont break if changed to 'download', but it should just be clear to the user what the button does.
+      */
+      row.insertCell(0).innerHTML =
+      // Once we add images, uncomment and move this above the View Pdf button
+      //`<a href="${item.download}" target="_blank"><img src="${item.image}">${item.imagename}</img></a><br>
+      `
+      <a href="${item.download}" target="_blank">View PDF</a>`; 
+      
+      const diffCell = row.insertCell(1);
+      diffCell.innerHTML = DIFFICULTY_MAP[item.difficulty] || item.difficulty;
+      diffCell.style.textAlign = "center";
+      
+      row.insertCell(2).innerHTML = item.name;
+      row.insertCell(3).innerHTML = Array.isArray(item.categories)
+        ? item.categories.join(', ')
+        : item.categories;
+      // Display creators as a comma-separated list.
+      row.insertCell(4).innerHTML = item.creators.join(', ');
+    });
 
-  updatePagination(page);
-}
-
-function formatCategory(category) {
-  return category
-    .split('-')  // Split by hyphen
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())  // Capitalize first letter of each word
-    .join(' ');  // Join the words back with space
+    updatePagination(page);
+  }
 }
 
 function populateFilterOptions(data) {
   const categorySet = new Set();
   const creatorSet = new Set();
 
-  // Collect categories, formatting them
   data.diagrams.forEach(diagram => {
+    // Format and collect each category.
     diagram.categories.forEach(cat => {
-      // Format category: replace hyphens with spaces and capitalize
       const formattedCategory = cat.replace(/-/g, ' ').replace(/\b\w/g, letter => letter.toUpperCase());
       categorySet.add(formattedCategory);
     });
-
-    // Collect creators
-    const creator = data.creators.find(c => c.id === diagram.creatorId);
-    if (creator) creatorSet.add(creator.name);
+    
+    // For the new multiple creator structure, iterate over each creator id.
+    diagram.creatorId.forEach(id => {
+      const creator = data.creators.find(c => c.id === id);
+      if (creator) creatorSet.add(creator.name);
+    });
   });
 
-  // Populate category filter
+  // Populate category filter dropdown.
   const categorySelect = document.getElementById("filterCategory");
-  categorySelect.innerHTML = ''; // Clear existing options
-
+  categorySelect.innerHTML = ''; // Clear existing options.
   const defaultOption = document.createElement("option");
   defaultOption.value = "all";
   defaultOption.textContent = "All Categories";
   categorySelect.appendChild(defaultOption);
 
-  // Add formatted categories to the dropdown
   for (const cat of [...categorySet].sort()) {
     const opt = document.createElement("option");
     opt.value = cat;
@@ -130,10 +155,9 @@ function populateFilterOptions(data) {
     categorySelect.appendChild(opt);
   }
 
-  // Populate creator filter
+  // Populate creator filter dropdown.
   const creatorSelect = document.getElementById("filterCreator");
-  creatorSelect.innerHTML = ''; // Clear existing options
-
+  creatorSelect.innerHTML = ''; // Clear existing options.
   const defaultCreatorOption = document.createElement("option");
   defaultCreatorOption.value = "all";
   defaultCreatorOption.textContent = "All Creators";
@@ -147,7 +171,6 @@ function populateFilterOptions(data) {
   }
 }
 
-
 function filterAll() {
   const difficulty = document.getElementById("filterDifficulty").value;
   const category = document.getElementById("filterCategory").value;
@@ -156,7 +179,8 @@ function filterAll() {
   filteredData = fullData.filter(item => {
     const matchesDifficulty = (difficulty === "all" || item.difficulty === difficulty);
     const matchesCategory = (category === "all" || item.categories.includes(category));
-    const matchesCreator = (creator === "all" || item.creator === creator);
+    // Check if the selected creator is among the array of creators.
+    const matchesCreator = (creator === "all" || item.creators.includes(creator));
     return matchesDifficulty && matchesCategory && matchesCreator;
   });
 
@@ -166,6 +190,11 @@ function filterAll() {
 function updatePagination(currentPage) {
   const pageCount = Math.ceil(filteredData.length / ROWS_PER_PAGE);
   const paginationContainer = document.getElementById("pagination");
+  paginationContainer.innerHTML = ""; // Clear previous buttons
+
+  // Hide pagination if no results
+  if (pageCount === 0) return;
+
   paginationContainer.innerHTML = "Page: ";
 
   function createButton(label, onClick, disabled = false, isCurrent = false) {

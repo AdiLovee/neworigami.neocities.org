@@ -8,13 +8,16 @@
   --link-hover:   #0033ff;
   --link-active:  #0000ff;
 }
-
+/*
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+    COMMENTED OUT TO MAINTAIN PAGE STRUCTURE UNTIL WE REFACTOR
 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+*/
 body {
   background-color: var(--light-background-color);
   color: var(--near-black);
@@ -52,6 +55,7 @@ img {
   max-width: 80px;
   max-height: 80px;
 }
+
 
 .dark-mode {
   background-color: var(--dark-background-color);
