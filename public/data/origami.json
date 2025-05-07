@@ -440,7 +440,7 @@
     {
       "title": "Basket",
       "creatorId": ["aanselmo"],
-      "filename": "dollarbasket.pdf",
+      "filename": "dollarbasket",
       "difficulty": "★",
       "categories": [
         "bill-models",
@@ -498,7 +498,7 @@
       "filename": "birdac",
       "difficulty": "★★★",
       "categories": [
-        "animals"
+        "birds"
       ]
     },
     {
@@ -603,7 +603,7 @@
     {
       "title": "Bull",
       "creatorId": ["aanselmo"],
-      "filename": "dollarbull.pdf",
+      "filename": "dollarbull",
       "difficulty": "★",
       "categories": [
         "bill-models",
@@ -613,7 +613,7 @@
     {
       "title": "Butterfly",
       "creatorId": ["aanselmo"],
-      "filename": "dollarbutterflyaa.pdf",
+      "filename": "dollarbutterflyaa",
       "difficulty": "",
       "categories": [
         "bill-models",
@@ -623,7 +623,7 @@
     {
       "title": "Butterfly",
       "creatorId": ["jgilardi"],
-      "filename": "dollarbutterflyjg.pdf",
+      "filename": "dollarbutterflyjg",
       "difficulty": "",
       "categories": [
         "bill-models",
@@ -642,7 +642,7 @@
     {
       "title": "Butterfly",
       "creatorId": ["shecht"],
-      "filename": "dollarbutterflysh.pdf",
+      "filename": "dollarbutterflysh",
       "difficulty": "★★",
       "categories": [
         "bill-models",
@@ -886,7 +886,7 @@
     {
       "title": "Dollar Sign",
       "creatorId": ["aanselmo"],
-      "filename": "dollarsign.pdf",
+      "filename": "dollarsign",
       "difficulty": "★",
       "categories": [
         "bill-models",
@@ -923,7 +923,7 @@
     {
       "title": "Dragonfly",
       "creatorId": ["shecht"],
-      "filename": "dollardragonfly.pdf",
+      "filename": "dollardragonfly",
       "difficulty": "★★",
       "categories": [
         "bill-models",
@@ -933,7 +933,7 @@
     {
       "title": "Dragonfly version 2",
       "creatorId": ["shecht"],
-      "filename": "dollardragonfly2.pdf",
+      "filename": "dollardragonfly2",
       "difficulty": "★★",
       "categories": [
         "bill-models",
@@ -1081,7 +1081,7 @@
     {
       "title": "Flower",
       "creatorId": ["shecht"],
-      "filename": "dollarflowersh.pdf",
+      "filename": "dollarflowersh",
       "difficulty": "★★",
       "categories": [
         "bill-models",
@@ -1226,7 +1226,7 @@
     {
       "title": "Heart and Arrow",
       "creatorId": ["shecht"],
-      "filename": "dollararrowheart.pdf",
+      "filename": "dollararrowheart",
       "difficulty": "★★",
       "categories": [
         "bill-models",
@@ -1254,7 +1254,7 @@
     {
       "title": "Heart Ring",
       "creatorId": ["shecht"],
-      "filename": "dollarheartring.pdf",
+      "filename": "dollarheartring",
       "difficulty": "★★",
       "categories": [
         "bill-models",
@@ -1300,7 +1300,7 @@
     {
       "title": "Inflation",
       "creatorId": ["mkirschenbaum"],
-      "filename": "dollarinflation.pdf",
+      "filename": "dollarinflation",
       "difficulty": "★",
       "categories": [
         "bill-models",
@@ -1364,7 +1364,7 @@
     {
       "title": "Money Star",
       "creatorId": ["tchung"],
-      "filename": "dollarstar.pdf",
+      "filename": "dollarstar",
       "difficulty": "",
       "categories": [
         "bill-models",
@@ -1428,7 +1428,7 @@
     {
       "title": "Peacock",
       "creatorId": ["rjlang"],
-      "filename": "dollarpeacock.pdf",
+      "filename": "dollarpeacock",
       "difficulty": "★",
       "categories": [
         "bill-models",
