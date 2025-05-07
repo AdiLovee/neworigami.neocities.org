@@ -112,10 +112,9 @@ function displayTable(page) {
       
       row.insertCell(2).innerHTML = item.name;
       row.insertCell(3).innerHTML = Array.isArray(item.categories)
-        ? item.categories.join(', ')
+        ? item.categories.join('<br>')
         : item.categories;
-      // Display creators as a comma-separated list.
-      row.insertCell(4).innerHTML = item.creators.join(', ');
+      row.insertCell(4).innerHTML = item.creators.join('<br>');
     });
 
     updatePagination(page);

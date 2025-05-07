@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recent Updates</title>
-    <link href="./style.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="icon" href="./favicon.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewOrigami - Recent Updates</title>
+    <link rel="icon" href="./favicon.png" />
+    <link rel="stylesheet" href="./style.css?v=2025.05.07.0528" />
+
+    <script src="./scripts/footer.js?v=2025.05.07.0528" defer></script>
+    <script src="./scripts/darkMode.js?v=2025.05.07.0528" defer></script>
   </head>
   <body>
     <table border="0">
@@ -20,21 +23,7 @@
           <th align="right">
             A website by Adinah Levi
             <br>
-            Dark/Light Toggle: 
-            <button 
-              id="theme-toggle"
-              style="
-                background-color: transparent; 
-                border: none;
-                color: inherit; 
-                cursor: pointer; 
-                transition: background-color 0.2s;"
-              onmouseover="handleHover(this, true)"
-              onmouseout="handleHover(this, false)"
-              onclick="darkModeToggle()"
-            >
-              🌒/☀️
-            </button>
+            <div id="darkMode"></div>
           </th>
         </tr>
       </tbody>
@@ -85,8 +74,9 @@
             <li>Table will now show "No Results Found" when... well you know.</li>
             <li>Minor typos here and there.</li>
           </ul>
-          <p>All changes will be made, for now, exclusively on the <a href="./name.html">Alphabetical by Name</a> page, here, and the <a href="./index.html">Home</a> page.
-            <br>In the future this will be the only page displaying diagrams. To view updates, refresh the page.
+          <p>All changes will be made, for now, exclusively to the <a href="./name.html">All Diagrams</a> page, here, and the <a href="./index.html">Index</a> page.
+            <br>In the future other pages will be added to handle presenting data specifically for certain queries,
+            <br>but for now this will be the only page displaying diagrams. To view updates, refresh the page.
             <br>Okay yes I know I just said I fixed that issue, but that fix requires a refresh to load the fix.
           </p>
         </ul>
@@ -411,8 +401,6 @@
           </ul>
       </ul>
       <div id="footer"></div>
-      <script src="./scripts/footer.js"></script>
-      <script src="./scripts/darkMode.js"></script>
     </ul>
   </body>
 </html>
