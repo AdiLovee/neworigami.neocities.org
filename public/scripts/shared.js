@@ -2,7 +2,8 @@ export const DIAGRAM_BASE_PATH = './assets/diagrams/';
 export const CATEGORY_BASE_PATH = './category.html?c=';
 export const CREATOR_BASE_PATH = './creator.html?id=';
 export const DIFFICULTY_BASE_PATH = './difficulty.html?d=';
-export const DATA_URL = './data/origami.json';
+export const DATA_URL = './data/origami.json?v=1.0.1'; // Hardcoded version for cache busting
+
 export const DIFFICULTY_MAP = {
   easy: '★',
   medium: '★★',
@@ -11,7 +12,7 @@ export const DIFFICULTY_MAP = {
 
 export async function fetchData() {
   try {
-    const response = await fetch(`./data/origami.json?v=${APP_VERSION}`);
+    const response = await fetch(DATA_URL);
     if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
     return await response.json();
   } catch (e) {
@@ -23,7 +24,7 @@ export async function fetchData() {
 export function displayError(elementId, msg, showRetry = true) {
   const el = document.getElementById(elementId);
   if (el) {
-    el.innerHTML =`
+    el.innerHTML = `
       <span class="error">${msg}</span>
       ${showRetry ? '<a href="javascript:location.reload()">Try again</a>' : ''}
     `;
@@ -35,7 +36,7 @@ export function sortByName(arr) {
 }
 
 export function sortByCategory(arr) {
-  return arr.sort((a, b) =>a.localeCompare(b));
+  return arr.sort((a, b) => a.localeCompare(b));
 }
 
 export function sortByTitle(arr) {

@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NewOrigami - Diagrams (Name)</title>
-    <link rel="icon" href="./favicon.png">
+    <link rel="icon" href="./favicon.png" />
+    <link rel="stylesheet" href="./style.css?v=1.0.1" />
+
+    <script type="module" src="./scripts/shared.js?v=1.0.1" defer></script>
+    <script type="module" src="./scripts/paginationAll.js?v=1.0.1" defer></script>
+    <script src="./scripts/footer.js?v=1.0.1" defer></script>
+    <script src="./scripts/darkMode.js?v=1.0.1" defer></script>
   </head>
   <body>
     <table border="0">
@@ -13,33 +19,30 @@
           <th>
             <h2>Welcome to the new Origami.com</h2>
           </th>
-          <th>
-            &nbsp; &nbsp; &nbsp; &nbsp;
-          </th>
+          <th>&nbsp; &nbsp; &nbsp; &nbsp;</th>
           <th align="right">
             A website by Adinah Levi
-            <br>
+            <br />
             <div id="darkMode"></div>
           </th>
         </tr>
       </tbody>
     </table>
-    <ul><p>
+
+    <ul>
+      <p>
         ← Back to <a href="./index.html">Main Page</a>.
       </p>
-      <hr>
-      <p>
-        Alphabetical list of diagrams.
-      </p>
+      <hr />
+      <p>Alphabetical list of diagrams.</p>
       <div id="tableContainer">
         <div id="pagination"></div>
-        <hr>
+        <hr />
         <div id="controls">
           <button id="sortName">Sort by Name</button>
           <button id="sortCategory">Sort by Category</button>
           <button id="sortDifficulty">Sort by Difficulty</button>
-        
-          <!-- Filtering Dropdown -->
+
           <label for="filterDifficulty">Difficulty:</label>
           <select id="filterDifficulty">
             <option value="all">All</option>
@@ -70,6 +73,7 @@
             <option value="all">All</option>
           </select>
         </div>
+
         <table border="1" id="tablePaginated">
           <tr>
             <th><u>↓</u></th>
@@ -81,28 +85,6 @@
         </table>
       </div>
       <div id="footer"></div>
-      <script> 
-        const APP_VERSION = '1.0.0';
-        const versioned = (src) => `${src}?v=${APP_VERSION}`;
-
-        const script = document.createElement('script');
-        script.type = 'module';
-        script.src = versioned('./scripts/paginationAll.js');
-        document.head.appendChild(script);
-        
-        const scriptFooter = document.createElement('script');
-        scriptFooter.src = versioned('./scripts/footer.js');
-        document.body.appendChild(scriptFooter);
-
-        const scriptDarkMode = document.createElement('script');
-        scriptDarkMode.src = versioned('./scripts/darkMode.js');
-        document.body.appendChild(scriptDarkMode);
-
-        const link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.href = versioned('./style.css');
-        document.head.appendChild(link);
-      </script>
     </ul>
   </body>
 </html>

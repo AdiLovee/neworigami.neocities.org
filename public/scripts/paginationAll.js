@@ -1,4 +1,4 @@
-import { fetchData, DIFFICULTY_MAP, sortByName, displayError } from './shared.js';
+import { fetchData, DIFFICULTY_MAP, sortByName, displayError } from './shared.js?v=1.0.1';
 
 const ROWS_PER_PAGE = 15;
 let currentPage = 1;
