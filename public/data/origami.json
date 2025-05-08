@@ -3,7 +3,7 @@
     {
       "id": "afehl",
       "name": "Alec A. Fehl",
-      "site": null,
+      "site": "https://origami.alecfehl.com/",
       "youtube": null
     },
     {
@@ -51,7 +51,7 @@
     {
       "id": "dpetty",
       "name": "David Petty",
-      "site": null,
+      "site": "https://britishorigami.org/academic/davidpetty/",
       "youtube": null
     },
     {
@@ -75,7 +75,7 @@
     {
       "id": "etan",
       "name": "Eileen Tan",
-      "site": null,
+      "site": " https://web.archive.org/web/20070930211957/http://spinflipper.com/origami/",
       "youtube": null
     },
     {
@@ -111,7 +111,7 @@
     {
       "id": "jcnolan",
       "name": "J.C. Nolan",
-      "site": null,
+      "site": "http://www.creatingorigami.com/",
       "youtube": null
     },
     {
@@ -153,19 +153,19 @@
     {
       "id": "jwu",
       "name": "Joseph Wu",
+      "site": "https://web.archive.org/web/20000816005702/http://www.origami.as/",
+      "youtube": null
+    },
+    {
+      "id": "jmaekawa",
+      "name": "Jun Maekawa",
       "site": null,
       "youtube": null
     },
     {
-      "id": "jmeakawa",
-      "name": "Jun Meakawa",
-      "site": null,
-      "youtube": null
-    },
-    {
-      "id": "kawasaki",
-      "name": "Kawasaki",
-      "site": null,
+      "id": "tkawasaki",
+      "name": "Toshikazu Kawasaki",
+      "site": "https://www.instagram.com/kawasakiorigami/",
       "youtube": null
     },
     {
@@ -207,13 +207,13 @@
     {
       "id": "mkirschenbaum",
       "name": "Marc Kirschenbaum",
-      "site": null,
+      "site": "https://sakuraorigami.com/",
       "youtube": null
     },
     {
       "id": "mvanglada",
       "name": "Marc Vigo Anglada",
-      "site": null,
+      "site": "https://www.cs.upc.edu/~marc/hobbies.html",
       "youtube": null
     },
     {
@@ -237,13 +237,13 @@
     {
       "id": "mlafosse",
       "name": "Michael LaFosse",
-      "site": null,
+      "site": "https://www.origamido.com/",
       "youtube": null
     },
     {
       "id": "nrobinson",
       "name": "Nick Robinson",
-      "site": null,
+      "site": "https://nickorigami.com/",
       "youtube": null
     },
     {
@@ -279,7 +279,7 @@
     {
       "id": "rkoh",
       "name": "Ronald Koh",
-      "site": null,
+      "site": "http://web.archive.org/web/20070524095829/http://design.origami.free.fr/bestof/koh/index.htm",
       "youtube": null
     },
     {
@@ -291,7 +291,7 @@
     {
       "id": "schen",
       "name": "Sy Chen",
-      "site": null,
+      "site": "http://freedomi.brinkster.net/Sy/index.aspx",
       "youtube": null
     },
     {
@@ -961,7 +961,7 @@
     {
       "title": "E.T.",
       "creatorId": [
-        "jmeakawa", 
+        "jmaekawa", 
         "osn"
       ],
       "filename": "et",
@@ -1574,7 +1574,7 @@
       "title": "Rose (Kawasaki, Crystalized)",
       "creatorId": [
         "bstephens", 
-        "kawasaki"
+        "tkawasaki"
       ],
       "filename": "rosekawacrystal",
       "difficulty": "★★★",
@@ -1584,7 +1584,7 @@
     },
     {
       "title": "Rose (Kawasaki, Tesselation)",
-      "creatorId": ["kawasaki"],
+      "creatorId": ["tkawasaki"],
       "filename": "rosekawatesselation",
       "difficulty": "★★★",
       "categories": [
@@ -1595,9 +1595,9 @@
       "title": "Rose (Kawasaki, Traditional)",
       "creatorId": [
         "wchan", 
-        "kawasaki"
+        "tkawasaki"
       ],
-      "filename": "rosekawasaki",
+      "filename": "rosetkawasaki",
       "difficulty": "★★★",
       "categories": [
         "plants"
