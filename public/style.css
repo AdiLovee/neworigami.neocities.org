@@ -61,3 +61,22 @@ img {
   background-color: var(--dark-background-color);
   color: var(--off-white);
 }
+
+.update-content {
+  display: none;
+  margin-top: 0.5em;
+}
+
+.update-content.show {
+  display: block;
+}
+
+.update-header {
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.toggle-icon {
+  float: right;
+}
