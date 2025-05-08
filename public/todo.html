@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planned Updates</title>
-    <link href="./style.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="icon" href="./favicon.png">
+    <link rel="stylesheet" href="./style.css?v=2025.05.07.1839" />
+    <script src="./scripts/theme-init.js?v=2025.05.07.2054"></script>
+    <script src="./scripts/footer.js?v=2025.05.07.0528" defer></script>
+    <script src="./scripts/darkMode.js?v=2025.05.07.0528" defer></script>
   </head>
   <body>
     <table border="0">
@@ -20,21 +22,7 @@
           <th align="right">
             A website by Adinah Levi
             <br>
-            Dark/Light Toggle: 
-            <button 
-              id="theme-toggle"
-              style="
-                background-color: transparent; 
-                border: none;
-                color: inherit; 
-                cursor: pointer; 
-                transition: background-color 0.2s;"
-              onmouseover="handleHover(this, true)"
-              onmouseout="handleHover(this, false)"
-              onclick="darkModeToggle()"
-            >
-              🌒/☀️
-            </button>
+            <div id="darkMode"></div>
           </th>
         </tr>
       </tbody>
