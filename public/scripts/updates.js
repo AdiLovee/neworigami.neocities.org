@@ -3,10 +3,9 @@ async function loadMarkdownFile(path) {
   return await response.text();
 }
 
-function formatUpdateContent(text) {
-  return text
-    .replace(/\n/g, '<br>')
-    .replace(/(https?:\/\/[^\s]+)/g, '<a href="$1" target="_blank">$1</a>');
+function formatUpdateContent(markdown) {
+  // Convert markdown to HTML
+  return marked.parse(markdown);
 }
 
 async function loadRecentUpdates() {
