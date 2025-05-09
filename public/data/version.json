@@ -1,3 +1,13 @@
 {
-  "htmlVersion": "1.0.3"
+  "htmlVersion": "2025.05.08.2037",  
+  "themeInit.js": "2025.05.08.2037",
+  "style.css": "2025.05.08.2037",
+  "footer.js": "2025.05.08.2037",
+  "darkMode.js": "2025.05.08.2037",
+
+  "updates.js": "2025.05.08.2037",
+  "paginationAll.js": "2025.05.08.2037",
+
+  "shared.js": "2025.05.08.2037",
+  "diagramDict.json": "2025.05.08.2037"
 }

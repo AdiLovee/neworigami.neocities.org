@@ -1,4 +1,4 @@
-import { fetchData, DIFFICULTY_MAP, sortByName, displayError } from './shared.js?v=2025.05.07.1830';
+import { fetchData, DIFFICULTY_MAP, sortByName, displayError } from './shared.js';
 
 const ROWS_PER_PAGE = 15;
 let currentPage = 1;
@@ -237,3 +237,5 @@ function changePage(page) {
 }
 
 document.addEventListener("DOMContentLoaded", initializeTable);
+
+console.log("paginationAll.js loaded");
