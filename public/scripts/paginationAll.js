@@ -102,8 +102,7 @@ function displayTable(page) {
       */
       row.insertCell(0).innerHTML =
       // Once we add images, uncomment and move this above the View PDF button
-      //`<a href="${item.download}" target="_blank"><img src="${item.image}">${item.imagename}</img></a><br>
-      `
+      `<a href="${item.download}" target="_blank"><img src="${item.image}" alt="${item.imagename}"></a><br>
       <a href="${item.download}" target="_blank">View PDF</a>`; 
       
       const diffCell = row.insertCell(1);
@@ -182,19 +181,24 @@ function filterAll() {
     const matchesCreator = (creator === "all" || item.creators.includes(creator));
     return matchesDifficulty && matchesCategory && matchesCreator;
   });
+  
+  // Automatically sort by name after filtering
+  filteredData = sortByName(filteredData);
 
   changePage(1);
 }
 
 function updatePagination(currentPage) {
   const pageCount = Math.ceil(filteredData.length / ROWS_PER_PAGE);
-  const paginationContainer = document.getElementById("pagination");
-  paginationContainer.innerHTML = ""; // Clear previous buttons
+  const paginationContainerUpper = document.getElementById("paginationUpper");
+  const paginationContainerLower = document.getElementById("paginationLower");
+  paginationContainerUpper.innerHTML = ""; // Clear previous buttons
+  paginationContainerLower.innerHTML = ""; // Clear previous buttons
 
-  // Hide pagination if no results
   if (pageCount === 0) return;
 
-  paginationContainer.innerHTML = "Page: ";
+  paginationContainerUpper.innerHTML = "Page: ";
+  paginationContainerLower.innerHTML = "Page: ";
 
   function createButton(label, onClick, disabled = false, isCurrent = false) {
     const btn = document.createElement("button");
@@ -216,18 +220,62 @@ function updatePagination(currentPage) {
     return btn;
   }
 
-  paginationContainer.appendChild(
+  paginationContainerUpper.appendChild(
+    createButton("|←", () => changePage(1), currentPage === 1)
+  );
+  paginationContainerLower.appendChild(
+    createButton("|←", () => changePage(1), currentPage === 1)
+  );
+  paginationContainerUpper.appendChild(
+    createButton("←", () => changePage(currentPage - 1), currentPage === 1)
+  );
+  paginationContainerLower.appendChild(
     createButton("←", () => changePage(currentPage - 1), currentPage === 1)
   );
 
-  for (let i = 1; i <= pageCount; i++) {
-    paginationContainer.appendChild(
+  const maxVisiblePages = 9;
+  const halfWindow = Math.floor(maxVisiblePages / 2);
+  let startPage = Math.max(1, currentPage - halfWindow);
+  let endPage = Math.min(pageCount, currentPage + halfWindow);
+
+  if (endPage - startPage + 1 < maxVisiblePages) {
+    if (startPage === 1) {
+      endPage = Math.min(pageCount, startPage + maxVisiblePages - 1);
+    } else if (endPage === pageCount) {
+      startPage = Math.max(1, endPage - maxVisiblePages + 1);
+    }
+  }
+
+  if (startPage > 1) {
+    paginationContainerUpper.appendChild(document.createTextNode("... "));
+    paginationContainerLower.appendChild(document.createTextNode("... "));
+  }
+
+  for (let i = startPage; i <= endPage; i++) {
+    paginationContainerUpper.appendChild(
+      createButton(i, () => changePage(i), false, i === currentPage)
+    );
+    paginationContainerLower.appendChild(
       createButton(i, () => changePage(i), false, i === currentPage)
     );
   }
 
-  paginationContainer.appendChild(
+  if (endPage < pageCount) {
+    paginationContainerUpper.appendChild(document.createTextNode(" ..."));
+    paginationContainerLower.appendChild(document.createTextNode(" ..."));
+  }
+
+  paginationContainerUpper.appendChild(
     createButton("→", () => changePage(currentPage + 1), currentPage === pageCount)
+  );
+  paginationContainerLower.appendChild(
+    createButton("→", () => changePage(currentPage + 1), currentPage === pageCount)
+  );
+  paginationContainerUpper.appendChild(
+    createButton("→|", () => changePage(pageCount), currentPage === pageCount)
+  );
+  paginationContainerLower.appendChild(
+    createButton("→|", () => changePage(pageCount), currentPage === pageCount)
   );
 }
 

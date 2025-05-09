@@ -1105,9 +1105,9 @@
       "difficulty": "★★",
       "categories": ["plants"]
     },{
-      "title": "Puppy",
+      "title": "Puppy (Pureland)",
       "creatorId": ["jcnolan"],
-      "filename": "puppy",
+      "filename": "puppyjcn",
       "difficulty": "★",
       "categories": ["animals"]
     },{
@@ -1374,7 +1374,7 @@
     },{
       "title": "Martini",
       "creatorId": ["shecht"],
-      "filename": "martini",
+      "filename": "dollarmartini",
       "difficulty": "★★★",
       "categories": [
         "bill-models",

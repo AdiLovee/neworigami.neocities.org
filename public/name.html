@@ -39,12 +39,14 @@
       <p>
         ← Back to <a href="./index.html">Main Page</a>.
       </p>
-      <hr />
+      <hr>
       <p>Alphabetical list of diagrams.</p>
       <p>Currently Hosting: <span id="diagramCount">...</span> Diagrams</p>
       <div id="tableContainer">
-        <div id="pagination"></div>
-        <hr />
+        <div id="paginationUpper"></div>
+        
+        <hr>
+
         <div id="filters">
           <label for="filterDifficulty">Difficulty:</label>
           <select id="filterDifficulty">
@@ -53,20 +55,16 @@
             <option value="medium">Medium</option>
             <option value="hard">Hard</option>
           </select>
-
           <label for="filterCategory">Category:</label>
           <select id="filterCategory">
             <option value="all">All</option>
           </select>
-
-          <!-- this is important for me do not remove ë -->
-
-
           <label for="filterCreator">Creator:</label>
           <select id="filterCreator">
             <option value="all">All</option>
           </select>
         </div>
+
         <div id="sortButtons">
           <button id="sortName">Sort by Name</button>
           <button id="sortCategory">Sort by Category</button>
@@ -82,7 +80,10 @@
             <th>Creator</th>
           </tr>
         </table>
+        
+        <div id="paginationLower"></div>
       </div>
+      <p>← Back to <a href="./index.html">Main Page</a>.</p>
       <div id="footer"></div>
     </ul>
   </body>
