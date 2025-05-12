@@ -6,7 +6,11 @@
     <title>NewOrigami - Recent Updates</title>
     <link rel="icon" href="./favicon.png" />
     <!-- Run before anything else -->
-    <script src="./scripts/versionCheck.js"></script>
+    <script>
+      const script = document.createElement("script");
+      script.src = "./scripts/versionCheck.js?v=" + Date.now();
+      document.head.appendChild(script);
+    </script>
     
     <!-- Template scripts -->
     <link rel="stylesheet" href="./style.css" />

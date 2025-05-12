@@ -1,13 +1,16 @@
 {
-  "htmlVersion": "2025.05.09.0627",  
-  "./scripts/themeInit.js": "2025.05.08.2037",
-  "./scripts/style.css": "2025.05.08.2037",
-  "./scripts/footer.js": "2025.05.08.2037",
-  "./scripts/darkMode.js": "2025.05.08.2037",
+  "htmlVersion": "2025.05.12.0206",
+  "./scripts/themeInit.js": "2025.05.12.0206",
+  "./scripts/style.css": "2025.05.12.0206",
+  "./scripts/footer.js": "2025.05.12.0206",
+  "./scripts/darkMode.js": "2025.05.12.0206",
+  "./scripts/versionCheck.js": "2025.05.12.0206",
 
-  "./scripts/updates.js": "2025.05.09.0416",
+  "./scripts/updates.js": "2025.05.12.0206",
   
-  "./scripts/shared.js": "2025.05.08.2037",
-  "./scripts/paginationAll.js": "2025.05.09.0416",
-  "./data/diagramDict.json": "2025.05.08.2331"
+  "./scripts/shared.js": "2025.05.12.0206",
+  "./scripts/paginationDiagrams.js": "2025.05.12.0206",
+  "./scripts/paginationCreators.js": "2025.05.12.0206",
+  "./data/diagramDict.json": "2025.05.12.0206",
+  "*.gif": "1.0"
 }

@@ -6,7 +6,11 @@
     <title>NewOrigami - Origami Archive</title>
     <link rel="icon" href="./favicon.png" />
     <!-- Run before anything else -->
-    <script src="./scripts/versionCheck.js"></script>
+    <script>
+      const script = document.createElement("script");
+      script.src = "./scripts/versionCheck.js?v=" + Date.now();
+      document.head.appendChild(script);
+    </script>
     
     <!-- Template scripts -->
     <link rel="stylesheet" href="./style.css" />
@@ -15,6 +19,7 @@
     <script src="./scripts/darkMode.js" defer></script>
     
     <!-- Scripts needed for page contents go here -->
+    <script type="module" src="./scripts/paginationCreators.js" defer></script>
   </head>
   <body>
     <table border="0">
@@ -51,23 +56,6 @@
       <ul><h2>Sandbox</h2></ul>
       <li>Click <a href="./experimental/sandbox.html">here</a> to visit the sandbox and view any updates currently under testing.</li>
       <hr>
-      <ul><h2>All Diagrams</h2></ul>
-      <li><a href="./name.html">All diagrams sorted by Name</a></li>
-      <!--<li><a href="./difficulty.html">All diagrams sorted by Difficulty</a></li>-->
-      <br>
-      <hr>
-      <ul><h2>Pre-Filtered Pages</h2></ul>
-      <ul><h3>(Down For Maintenance)</h3></ul>
-      <ul><h4>(Please Refer To Full List)</h4></ul>
-      <hr>
-      <!--
-        <ul><h2>Diagrams by Difficulty</h2></ul>
-          <li><a href="./difficulty/easy.html">Easy Models</a></li>
-          <li><a href="./difficulty/medium.html">Medium Models</a></li>
-          <li><a href="./difficulty/hard.html">Hard Models</a></li>
-        <br>
-        <hr>
-      -->
       <!--
         <ul><h2>Learner's Lair</h2></ul>
           <li><a href="./intro/symbols.html">Symbols</a></li>
@@ -75,265 +63,48 @@
           <li><a href="./intro/beginner.html">Beginner Models</a></li>
         <hr>
       -->
-      <!--
-        <ul><h2>Diagrams by Category</h2></ul>
-          <li><a href="./category/misc.html">Misc</a></li>
-          <li><a href="./category/animals.html">Animals</a></li>
-          <li><a href="./category/bill.html">Bill Models</a></li>
-          <li><a href="./category/birds.html">Birds</a></li>
-          <li><a href="./category/dinosaurs.html">Dinosaurs</a></li>
-          <li><a href="./category/fish.html">Fish</a></li>
-          <li><a href="./category/insects.html">Insects</a></li>
-          <li><a href="./category/plants.html">Plants</a></li>
-          <li><a href="./category/pokemon.html">Pokémon</a></li>
-          <li><a href="./category/tesselation.html">Tesselations</a></li>
-          <li><a href="./category/modular.html">Modular Units</a></li>
-          <li><a href="./category/vehicles.html">Vehicles</a></li>
-        <br>
-        <hr>
-      -->
+      <ul><h2>Archives</h2></ul>
+      <li><a href="./diagrams.html">All diagrams sorted by Name</a></li>
+      <br>
+      <ul><h3>Diagrams by Difficulty</h3></ul>
+        <li><a href="./diagrams.html?difficulty=easy">Easy Models</a></li>
+        <li><a href="./diagrams.html?difficulty=medium">Medium Models</a></li>
+        <li><a href="./diagrams.html?difficulty=hard">Hard Models</a></li>
+      <br>
+      <ul><h3>Diagrams by Category</h3></ul>
+        <li><a href="./diagrams.html?category=Animals">Animals</a></li>
+        <li><a href="./diagrams.html?category=Anime">Anime</a></li>
+        <li><a href="./diagrams.html?category=Bill+Models">Bill Models</a></li>
+        <li><a href="./diagrams.html?category=Birds">Birds</a></li>
+        <li><a href="./diagrams.html?category=Dinosaurs">Dinosaurs</a></li>
+        <li><a href="./diagrams.html?category=Fish">Fish</a></li>
+        <li><a href="./diagrams.html?category=Insects">Insects</a></li>
+        <li><a href="./diagrams.html?category=Misc">Misc</a></li>
+        <li><a href="./diagrams.html?category=Modular">Modular Units</a></li>
+        <li><a href="./diagrams.html?category=Muppets">Muppets</a></li>
+        <li><a href="./diagrams.html?category=Plants">Plants</a></li>
+        <li><a href="./diagrams.html?category=Star+Wars">Star Wars</a></li>
+        <li><a href="./diagrams.html?category=Tesselation">Tesselations</a></li>
+        <li><a href="./diagrams.html?category=Vehicles">Vehicles</a></li>
+      <br>
+      <hr>
       <ul><h2>Creator Site Links</h2>
-      <p>~~Work in Progress!!~~</p>
       </ul>
       <div id="pagination"></div>
       <hr>
-      <table border="0" id="tablePaginated">
-        <tbody>
-          <tr>
-            <th>Name</th>
-            <th></th>
-            <th>Site</th>
-            <th>YouTube</th>
-          </tr>
-        </tbody>
-      </table>
+      <div id="tableContainer">
+        <table border="0" id="tablePaginated">
+          <tbody>
+            <tr>
+              <th>Name</th>
+              <th></th>
+              <th>Site</th>
+              <th>YouTube</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <div id="footer"></div>
-      <script>
-        const DATA = [
-          {
-            name:'Alec A. Fehl',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Andrew Anselmo',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Andy Carpenter',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Anibal Voyer',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Brian Cole',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Brian Ewins',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Bruce Stephens',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Charles Esseltine',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'David Petty',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Edwin Corrie',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Eileen Tan',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Eugeny Fridrikh',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Evi Binzinger',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Fernando Gilgado',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Fumiaki Kawahata',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Gabriel Willow',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Herman van Goubergen',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'J.C. Nolan',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'James B. Raasch III',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Jerry Harris',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Jo Nakashima',
-            site:'[<a href="https://jonakashima.com.br">Site</a>]',
-            youtube:'[<a href="https://www.youtube.com/jonakashima/videos">YouTube</a>]'
-          },{
-            name:'Joe Gilardi',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Jorma Oksanen',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Jose Meeusen',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Joseph Wu',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Jun Meakawa',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Kawasaki',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Kero van Gelder',
-            site:'[<a href="https://web.archive.org/web/20080304032218/http://origami.kvi.nl/">Site</a>]',
-            youtube:'[YouTube]'
-          },{
-            name:'Kim Best',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Klaus Weidner',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'KM Origami',
-            site:'[<a href="http://kmorigami.blog12.fc2.com/">Site</a>]',
-            youtube:'[YouTube]'
-          },{
-            name:'Kunihiko Kasahara',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Maarten van Gelder',
-            site:'[<a href="https://web.archive.org/web/20080304032218/http://origami.kvi.nl/">Site</a>]',
-            youtube:'[YouTube]'
-          },{
-            name:'Marc Kirschenbaum',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Marc Vigo Anglada',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Mari Michaelis',
-            site:'[<a href="http://spitenet.com/origami/index.html">Site</a>]',
-            youtube:'[<a href="https://www.youtube.com/@Marigami">YouTube</a>]'
-          },{
-            name:'Mark Overmars',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Mark Y. McKinnon',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Michael LaFosse',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Nick Robinson',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Origami Sociëteit Nederland',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Perry Bailey',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Philip Schulz',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Robert J. Lang',
-            site:'[<a href="https://langorigami.com/">Site</a>]',
-            youtube:'[YouTube]'
-          },{
-            name:'Robin Glynn',
-            site:'[<a href="http://origamioriginals.com/Index.html">Site</a>]',
-            youtube:'[<a href="https://www.youtube.com/channel/UCT8uEsrmvQGvMvERWPKKYdw">YouTube</a>]'
-          },{
-            name:'Ronald Koh',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Stephen Hecht',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Sy Chen',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Toshie Takahama',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Trang (Tracy) Chung',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Tung Ken Lam',
-            site:'[<a href="https://www.foldworks.net">Site</a>]',
-            youtube:'[YouTube]'
-          },{
-            name:'Valerie Vann',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Wayne Brown',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Winston Chan',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          },{
-            name:'Yuval Evron',
-            site:'[Site]',
-            youtube:'[YouTube]'
-          }
-        ];
-      </script>
-      <script src="./scripts/paginationLinks.js"></script>
     </ul>
   </body>
 </html>

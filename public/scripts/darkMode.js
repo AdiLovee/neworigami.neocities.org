@@ -1,11 +1,11 @@
 function handleHover(button, isHover) {
-  const darkMode = localStorage.getItem('darkMode');
+  const darkMode = localStorage.getItem("darkMode");
   if (isHover) {
-    button.style.backgroundColor = darkMode === 'enabled'
-      ? 'rgba(255,255,255,0.05)'
-      : 'rgba(0,0,0,0.1)';
+    button.style.backgroundColor = darkMode === "enabled"
+      ? "rgba(255,255,255,0.05)"
+      : "rgba(0,0,0,0.1)";
   } else {
-    button.style.backgroundColor = 'transparent';
+    button.style.backgroundColor = "transparent";
   }
 }
 

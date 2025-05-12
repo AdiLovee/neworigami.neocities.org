@@ -1,13 +1,13 @@
-export const DIAGRAM_BASE_PATH = './assets/diagrams/';
-export const CATEGORY_BASE_PATH = './category.html?c=';
-export const CREATOR_BASE_PATH = './creator.html?id=';
-export const DIFFICULTY_BASE_PATH = './difficulty.html?d=';
-export const DATA_URL = './data/diagramDict.json';
+export const DIAGRAM_BASE_PATH = "./assets/diagrams/";
+export const CATEGORY_BASE_PATH = "./category.html?c=";
+export const CREATOR_BASE_PATH = "./creator.html?id=";
+export const DIFFICULTY_BASE_PATH = "./difficulty.html?d=";
+export const DATA_URL = "./data/diagramDict.json";
 
 export const DIFFICULTY_MAP = {
-  easy: '★',
-  medium: '★★',
-  hard: '★★★'
+  easy: "★",
+  medium: "★★",
+  hard: "★★★"
 };
 
 export async function fetchData() {
@@ -16,7 +16,7 @@ export async function fetchData() {
     if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
     return await response.json();
   } catch (e) {
-    console.error('Data fetch error:', e);
+    console.error("Data fetch error:", e);
     throw e;
   }
 }
@@ -26,7 +26,7 @@ export function displayError(elementId, msg, showRetry = true) {
   if (el) {
     el.innerHTML = `
       <span class="error">${msg}</span>
-      ${showRetry ? '<a href="javascript:location.reload()">Try again</a>' : ''}
+      ${showRetry ? "<a href=\"javascript:location.reload()\">Try again</a>" : ""}
     `;
   }
 }

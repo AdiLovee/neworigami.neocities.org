@@ -350,7 +350,10 @@
       "creatorId": ["jbraasch"],
       "filename": "bwing",
       "difficulty": "★★",
-      "categories": ["vehicles"]
+      "categories": [
+        "vehicles",
+        "star-wars"
+      ]
     },{
       "title": "Ballerina",
       "creatorId": ["mvgelder"],
@@ -407,7 +410,7 @@
       "creatorId": ["mkirschenbaum"],
       "filename": "biplane",
       "difficulty": "★★★",
-      "categories": ["misc"]
+      "categories": ["vehicles"]
     },{
       "title": "Bird",
       "creatorId": ["acarpenter"],
@@ -473,7 +476,10 @@
       "creatorId": ["joksanen"],
       "filename": "boxsimple",
       "difficulty": "★",
-      "categories": ["misc"]
+      "categories": [
+        "modular",
+        "misc"
+      ]
     },{
       "title": "Braided Paper",
       "creatorId": ["jcnolan"],
@@ -635,7 +641,7 @@
       "creatorId": ["rglynn"],
       "filename": "cookiemonster",
       "difficulty": "★★★",
-      "categories": ["misc"]
+      "categories": ["muppets"]
     },{
       "title": "Cup (Three Variations)",
       "creatorId": ["mvgelder"],
@@ -830,7 +836,7 @@
       "creatorId": ["rglynn"],
       "filename": "fozzie",
       "difficulty": "★★★",
-      "categories": ["misc"]
+      "categories": ["muppets"]
     },{
       "title": "Gas Pump",
       "creatorId": ["afehl"],
@@ -1085,7 +1091,7 @@
       "creatorId": ["rjlang"],
       "filename": "pikachu",
       "difficulty": "★",
-      "categories": ["pokemon"]
+      "categories": ["anime"]
     },{
       "title": "Pine Tree",
       "creatorId": ["mvgelder"],
@@ -1265,13 +1271,16 @@
       "creatorId": ["pschulz"],
       "filename": "tiefighter",
       "difficulty": "★★",
-      "categories": ["vehicles"]
+      "categories": [
+        "vehicles",
+        "star-wars"
+      ]
     },{
       "title": "Totoro",
       "creatorId": ["rglynn"],
       "filename": "totororg",
       "difficulty": "★★",
-      "categories": ["misc"]
+      "categories": ["anime"]
     },{
       "title": "Toy Car",
       "creatorId": ["hvgoubergen"],
@@ -1358,7 +1367,10 @@
       ],
       "filename": "yodafumiaki",
       "difficulty": "★★",
-      "categories": ["misc"]
+      "categories": [
+        "misc",
+        "star-wars"
+      ]
     },{
       "title": "Insect",
       "creatorId": ["hpereira"],
@@ -1391,7 +1403,7 @@
       "creatorId": ["rglynn"],
       "filename": "misspiggy",
       "difficulty": "★★★",
-      "categories": ["misc"]
+      "categories": ["muppets"]
     },{
       "title": "Monkey",
       "creatorId": ["rglynn"],
@@ -1409,7 +1421,7 @@
       "creatorId": ["rglynn"],
       "filename": "oscargrouch",
       "difficulty": "★★★",
-      "categories": ["misc"]
+      "categories": ["muppets"]
     },{
       "title": "Patterned Tiles",
       "creatorId": ["pbudai"],
@@ -1546,14 +1558,16 @@
   ],
   "categories": [
     "animals",
-    "bill",
+    "anime",
+    "bill-models",
     "birds",
     "dinosaurs",
     "fish",
     "insects",
     "misc",
+    "muppets",
     "plants",
-    "pokemon",
+    "starwars",
     "tesselations",
     "modular",
     "vehicles"

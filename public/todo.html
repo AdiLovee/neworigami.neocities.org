@@ -6,7 +6,11 @@
     <title>NewOrigami - Planned Updates</title>
     <link rel="icon" href="./favicon.png" />
     <!-- Run before anything else -->
-    <script src="./scripts/versionCheck.js"></script>
+    <script>
+      const script = document.createElement("script");
+      script.src = "./scripts/versionCheck.js?v=" + Date.now();
+      document.head.appendChild(script);
+    </script>
     
     <!-- Template scripts -->
     <link rel="stylesheet" href="./style.css" />
@@ -42,9 +46,10 @@
       <hr>
       <ul>
         <h2>Currently Working On:</h2>
-        <ul>
-          <li>Origami.com - Complex Models</li>
-        </ul>
+        <ol>
+          <li>Transparent Image Backgrounds</li>
+          <li>Origami.com - Intermediate Models</li>
+        </ol>
         <h2>Backlog:</h2>
         <ul>
           <h3>Pull From:</h3>
