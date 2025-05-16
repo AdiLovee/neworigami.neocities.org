@@ -1,4 +1,2249 @@
 {
+  "diagrams": [
+    {
+      "title": "Acrocanthosaurus",
+      "creatorId": ["jharris"],
+      "filename": "acrocanthosaurus",
+      "difficulty": "★★★",
+      "categories": ["dinosaurs"]
+    },{
+      "title": "Alien (Xenomorph)",
+      "creatorId": ["fgilgado"],
+      "filename": "alienxeno",
+      "difficulty": "★★★",
+      "categories": ["figures"]
+    },{
+      "title": "Angel",
+      "creatorId": ["mvgelder"],
+      "filename": "angel",
+      "difficulty": "★★",
+      "categories": ["figures"]
+    },{
+      "title": "Angelfish (Two-Fold)",
+      "creatorId": ["jcnolan"],
+      "filename": "angelfish",
+      "difficulty": "★",
+      "categories": ["fish"]
+    },{
+      "title": "Ankylosaurus",
+      "creatorId": ["rkoh"],
+      "filename": "ankylosaurus",
+      "difficulty": "★★★",
+      "categories": ["dinosaurs"]
+    },{
+      "title": "Arasaurolopus Baby",
+      "creatorId": ["fgilgado"],
+      "filename": "arasaurolopusbaby",
+      "difficulty": "★★",
+      "categories": ["dinosaurs"]
+    },{
+      "title": "Armadillo (Three-Banded)",
+      "creatorId": ["jwu"],
+      "filename": "armadillothreeband",
+      "difficulty": "★★★",
+      "categories": ["animals"]
+    },{
+      "title": "B-Wing Starfighter",
+      "creatorId": ["jbraasch"],
+      "filename": "bwing",
+      "difficulty": "★★",
+      "categories": [
+        "vehicles",
+        "star-wars"
+      ]
+    },{
+      "title": "Ballerina",
+      "creatorId": ["mvgelder"],
+      "filename": "ballerina",
+      "difficulty": "★★",
+      "categories": ["figures"]
+    },{
+      "title": "Balloon with Basket",
+      "creatorId": ["mvgelder"],
+      "filename": "balloonbasket",
+      "difficulty": "★",
+      "categories": ["misc"]
+    },{
+      "title": "Balrog",
+      "creatorId": ["etan"],
+      "filename": "balroget",
+      "difficulty": "★★★",
+      "categories": ["figures"]
+    },{
+      "title": "Basket",
+      "creatorId": ["aanselmo"],
+      "filename": "dollarbasket",
+      "difficulty": "★",
+      "categories": [
+        "bill-models",
+        "misc"
+      ]
+    },{
+      "title": "Bat (Happy)",
+      "creatorId": ["mlafosse"],
+      "filename": "bathappy",
+      "difficulty": "★★",
+      "categories": ["animals"]
+    },{
+      "title": "Bee",
+      "creatorId": ["mkirschenbaum"],
+      "filename": "beemkirsch",
+      "difficulty": "★★★",
+      "categories": ["insects"]
+    },{
+      "title": "Beetle",
+      "creatorId": ["mvanglada"],
+      "filename": "beetle",
+      "difficulty": "★★★",
+      "categories": ["insects"]
+    },{
+      "title": "Big Head Monster",
+      "creatorId": ["mvanglada"],
+      "filename": "bigheadmonster",
+      "difficulty": "★★★",
+      "categories": ["figures"]
+    },{
+      "title": "Biplane",
+      "creatorId": ["mkirschenbaum"],
+      "filename": "biplane",
+      "difficulty": "★★★",
+      "categories": ["vehicles"]
+    },{
+      "title": "Bird",
+      "creatorId": ["acarpenter"],
+      "filename": "birdac",
+      "difficulty": "★★★",
+      "categories": ["birds"]
+    },{
+      "title": "Bird\u207F",
+      "creatorId": ["nrobinson"],
+      "filename": "birdn",
+      "difficulty": "★★",
+      "categories": ["birds"]
+    },{
+      "title": "Black Belt",
+      "creatorId": ["rglynn"],
+      "filename": "blackbelt",
+      "difficulty": "★★★",
+      "categories": ["figures"]
+    },{
+      "title": "Blintz Icosidodecahedron",
+      "creatorId": ["tklam"],
+      "filename": "blintzico",
+      "difficulty": "★★",
+      "categories": ["modular"]
+    },{
+      "title": "Blue Crab",
+      "creatorId": ["mkirschenbaum"],
+      "filename": "bluecrab",
+      "difficulty": "★★★",
+      "categories": ["animals"]
+    },{
+      "title": "Boat",
+      "creatorId": ["schen"],
+      "filename": "chenboat1",
+      "difficulty": "★",
+      "categories": ["vehicles"]
+    },{
+      "title": "Boat",
+      "creatorId": ["schen"],
+      "filename": "chenboat2",
+      "difficulty": "★",
+      "categories": ["vehicles"]
+    },{
+      "title": "Bookmark",
+      "creatorId": ["kbest"],
+      "filename": "kbestbookmark1",
+      "difficulty": "★",
+      "categories": ["misc"]
+    },{
+      "title": "Bookmark",
+      "creatorId": ["kbest"],
+      "filename": "kbestbookmark2",
+      "difficulty": "★",
+      "categories": ["misc"]
+    },{
+      "title": "Bowl de Vicenza",
+      "creatorId": ["mvgelder"],
+      "filename": "bowldevicenza",
+      "difficulty": "★★",
+      "categories": ["furniture"]
+    },{
+      "title": "Box (Simple)",
+      "creatorId": ["joksanen"],
+      "filename": "boxsimple",
+      "difficulty": "★",
+      "categories": [
+        "modular",
+        "furniture"
+      ]
+    },{
+      "title": "Braided Paper",
+      "creatorId": ["jcnolan"],
+      "filename": "paperbraid",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Bull",
+      "creatorId": ["aanselmo"],
+      "filename": "dollarbull",
+      "difficulty": "★",
+      "categories": [
+        "bill-models",
+        "animals"
+      ]
+    },{
+      "title": "Butterfly",
+      "creatorId": ["aanselmo"],
+      "filename": "dollarbutterflyaa",
+      "difficulty": "",
+      "categories": [
+        "bill-models",
+        "insects"
+      ]
+    },{
+      "title": "Butterfly",
+      "creatorId": ["jgilardi"],
+      "filename": "dollarbutterflyjg",
+      "difficulty": "",
+      "categories": [
+        "bill-models",
+        "insects"
+      ]
+    },{
+      "title": "Butterfly",
+      "creatorId": ["mkirschenbaum"],
+      "filename": "butterflymk",
+      "difficulty": "★★★",
+      "categories": ["insects"]
+    },{
+      "title": "Butterfly",
+      "creatorId": ["shecht"],
+      "filename": "dollarbutterflysh",
+      "difficulty": "★★",
+      "categories": [
+        "bill-models",
+        "insects"
+      ]
+    },{
+      "title": "Butterfly (Flapping)",
+      "creatorId": ["pbailey"],
+      "filename": "flappingbutterfly",
+      "difficulty": "★",
+      "categories": [
+        "action-models",
+        "insects"
+      ]
+    },{
+      "title": "Butterfly (For Alice Gray)",
+      "creatorId": ["mlafosse"],
+      "filename": "butterflyagray",
+      "difficulty": "★★",
+      "categories": ["insects"]
+    },{
+      "title": "Cankerworm",
+      "creatorId": ["mkirschenbaum"],
+      "filename": "cankerworm",
+      "difficulty": "★★★",
+      "categories": ["insects"]
+    },{
+      "title": "Car (VW)",
+      "creatorId": ["cesseltine"],
+      "filename": "carvwce",
+      "difficulty": "★★★",
+      "categories": ["vehicles"]
+    },{
+      "title": "Cat",
+      "creatorId": ["hvgoubergen"],
+      "filename": "cathvg",
+      "difficulty": "★★★",
+      "categories": ["animals"]
+    },{
+      "title": "Catamaran",
+      "creatorId": ["mvgelder"],
+      "filename": "catamaran",
+      "difficulty": "★★",
+      "categories": ["vehicles"]
+    },{
+      "title": "Caterpillar",
+      "creatorId": ["mvgelder"],
+      "filename": "caterpillar",
+      "difficulty": "★★",
+      "categories": ["insects"]
+    },{
+      "title": "Caterpillar on Leaf",
+      "creatorId": ["efridrikh"],
+      "filename": "caterpillaronleaf",
+      "difficulty": "★★★",
+      "categories": ["insects"]
+    },{
+      "title": "Chain",
+      "creatorId": ["mvgelder"],
+      "filename": "chainmvg1",
+      "difficulty": "★",
+      "categories": ["modular"]
+    },{
+      "title": "Chain",
+      "creatorId": ["mvgelder"],
+      "filename": "chainmvg2",
+      "difficulty": "★",
+      "categories": ["modular"]
+    },{
+      "title": "Chain",
+      "creatorId": ["mvgelder"],
+      "filename": "chainmvg3",
+      "difficulty": "★★",
+      "categories": ["modular"]
+    },{
+      "title": "Chef Hat",
+      "creatorId": ["mvgelder"],
+      "filename": "chefhat",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Chessboard",
+      "creatorId": ["kbest"],
+      "filename": "chessboard",
+      "difficulty": "★★",
+      "categories": ["modular"]
+    },{
+      "title": "Chessboard",
+      "creatorId": ["mkirschenbaum"],
+      "filename": "chessboardmk",
+      "difficulty": "★★★",
+      "categories": ["tesselation"]
+    },{
+      "title": "Cicada",
+      "creatorId": ["kmorigami"],
+      "filename": "cicadakmori",
+      "difficulty": "★★★",
+      "categories": ["insects"]
+    },{
+      "title": "Clock Case",
+      "creatorId": ["mvgelder"],
+      "filename": "clockcase",
+      "difficulty": "★",
+      "categories": ["misc"]
+    },{
+      "title": "Coat",
+      "creatorId": ["mvanglada"],
+      "filename": "coat",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Compass Rose",
+      "creatorId": ["joksanen"],
+      "filename": "compassrose",
+      "difficulty": "★",
+      "categories": ["misc"]
+    },{
+      "title": "Cookie Monster",
+      "creatorId": ["rglynn"],
+      "filename": "cookiemonster",
+      "difficulty": "★★★",
+      "categories": ["muppets"]
+    },{
+      "title": "Cup (Three Variations)",
+      "creatorId": ["mvgelder"],
+      "filename": "cupmvg",
+      "difficulty": "★",
+      "categories": ["furniture"]
+    },{
+      "title": "Dahlia",
+      "creatorId": ["mvgelder"],
+      "filename": "dahlia",
+      "difficulty": "★★★",
+      "categories": ["plants"]
+    },{
+      "title": "Decoration (Star)",
+      "creatorId": ["jmeeusen"],
+      "filename": "decorationstar",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Deer (From Teabag)",
+      "creatorId": ["mvgelder"],
+      "filename": "deerteabag",
+      "difficulty": "★★",
+      "categories": ["animals"]
+    },{
+      "title": "Diplodocus",
+      "creatorId": ["mvgelder"],
+      "filename": "diplodocusmvg",
+      "difficulty": "★★",
+      "categories": ["dinosaurs"]
+    },{
+      "title": "Display Stand",
+      "creatorId": ["mvgelder"],
+      "filename": "stand",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Doc Ock",
+      "creatorId": ["etan"],
+      "filename": "doctoroctopus",
+      "difficulty": "★★★",
+      "categories": ["figures"]
+    },{
+      "title": "Dollar Sign",
+      "creatorId": ["aanselmo"],
+      "filename": "dollarsign",
+      "difficulty": "★",
+      "categories": [
+        "bill-models",
+        "misc"
+      ]
+    },{
+      "title": "Dragon",
+      "creatorId": ["kweidner"],
+      "filename": "dragonkw",
+      "difficulty": "★★",
+      "categories": ["animals"]
+    },{
+      "title": "Dragon in Flight",
+      "creatorId": ["cesseltine"],
+      "filename": "dragoninflight",
+      "difficulty": "★★★",
+      "categories": ["animals"]
+    },{
+      "title": "Dragon With 3 Heads",
+      "creatorId": ["avoyer"],
+      "filename": "dragon3heads",
+      "difficulty": "★★★",
+      "categories": ["animals"]
+    },{
+      "title": "Dragonfly",
+      "creatorId": ["shecht"],
+      "filename": "dollardragonfly",
+      "difficulty": "★★",
+      "categories": [
+        "bill-models",
+        "insects"
+      ]
+    },{
+      "title": "Dragonfly version 2",
+      "creatorId": ["shecht"],
+      "filename": "dollardragonfly2",
+      "difficulty": "★★",
+      "categories": [
+        "bill-models",
+        "insects"
+      ]
+    },{
+      "title": "Drip Catcher",
+      "creatorId": ["mvgelder"],
+      "filename": "dripcatcher",
+      "difficulty": "★",
+      "categories": ["misc"]
+    },{
+      "title": "Duck",
+      "creatorId": ["ecorrie"],
+      "filename": "duckec",
+      "difficulty": "★",
+      "categories": ["birds"]
+    },{
+      "title": "Alien (E.T.)",
+      "creatorId": [
+        "jmaekawa", 
+        "osn"
+      ],
+      "filename": "et",
+      "difficulty": "★★★",
+      "categories": ["figures"]
+    },{
+      "title": "Eagle",
+      "creatorId": ["bewins"],
+      "filename": "eaglebewins",
+      "difficulty": "★★",
+      "categories": ["birds"]
+    },{
+      "title": "Eagle",
+      "creatorId": ["jwu"],
+      "filename": "eaglejwu",
+      "difficulty": "★★",
+      "categories": ["birds"]
+    },{
+      "title": "Eagle",
+      "creatorId": ["rkoh"],
+      "filename": "eaglerk",
+      "difficulty": "★★★",
+      "categories": ["birds"]
+    },{
+      "title": "Eastern Dragon",
+      "creatorId": ["jwu"],
+      "filename": "easterndragon",
+      "difficulty": "★★★",
+      "categories": ["animals"]
+    },{
+      "title": "Eiffel Tower",
+      "creatorId": ["rglynn"],
+      "filename": "eiffeltower",
+      "difficulty": "★★★",
+      "categories": ["misc"]
+    },{
+      "title": "Elephant",
+      "creatorId": ["mkirschenbaum"],
+      "filename": "elephantmkirsch",
+      "difficulty": "★★★",
+      "categories": ["animals"]
+    },{
+      "title": "F-102",
+      "creatorId": ["mlafosse"],
+      "filename": "f102",
+      "difficulty": "★★",
+      "categories": ["vehicles"]
+    },{
+      "title": "Fancy Stand",
+      "creatorId": ["afehl"],
+      "filename": "standafa",
+      "difficulty": "★★★",
+      "categories": ["furniture"]
+    },{
+      "title": "Fancy Stand Variation",
+      "creatorId": ["afehl"],
+      "filename": "standafb",
+      "difficulty": "★★★",
+      "categories": ["furniture"]
+    },{
+      "title": "Fire Lizard",
+      "creatorId": ["pbailey"],
+      "filename": "firelizard",
+      "difficulty": "★",
+      "categories": ["animals"]
+    },{
+      "title": "Fish (Pureland)",
+      "creatorId": ["mkirschenbaum"],
+      "filename": "fishmkirsch",
+      "difficulty": "★",
+      "categories": ["fish"]
+    },{
+      "title": "Fish Tesselation",
+      "creatorId": ["movermars"],
+      "filename": "fishtesselation",
+      "difficulty": "★★",
+      "categories": ["tesselation"]
+    },{
+      "title": "Flower",
+      "creatorId": ["shecht"],
+      "filename": "dollarflowersh",
+      "difficulty": "★★",
+      "categories": [
+        "bill-models",
+        "plants"
+      ]
+    },{
+      "title": "Fozzie Bear",
+      "creatorId": ["rglynn"],
+      "filename": "fozzie",
+      "difficulty": "★★★",
+      "categories": ["muppets"]
+    },{
+      "title": "Gas Pump",
+      "creatorId": ["afehl"],
+      "filename": "gaspump",
+      "difficulty": "★★★",
+      "categories": ["misc"]
+    },{
+      "title": "Garland",
+      "creatorId": ["kvgelder"],
+      "filename": "garlandkvg",
+      "difficulty": "★",
+      "categories": ["modular"]
+    },{
+      "title": "Garland",
+      "creatorId": ["mvgelder"],
+      "filename": "garlandmvg1",
+      "difficulty": "★",
+      "categories": ["modular"]
+    },{
+      "title": "Garland",
+      "creatorId": ["mvgelder"],
+      "filename": "garlandmvg2",
+      "difficulty": "★",
+      "categories": ["modular"]
+    },{
+      "title": "Gearwheel",
+      "creatorId": ["mvgelder"],
+      "filename": "gearwheel",
+      "difficulty": "★★★",
+      "categories": ["modular"]
+    },{
+      "title": "Gecko and Fly on a Wall",
+      "creatorId": ["hvgoubergen"],
+      "filename": "geckoandflyonwall",
+      "difficulty": "★★★",
+      "categories": ["animals"]
+    },{
+      "title": "Giant Spider Crab",
+      "creatorId": ["mkirschenbaum"],
+      "filename": "giantspidercrab",
+      "difficulty": "★★★",
+      "categories": ["animals"]
+    },{
+      "title": "Goldfish",
+      "creatorId": ["rkoh"],
+      "filename": "goldfishrkoh",
+      "difficulty": "★★★",
+      "categories": ["fish"]
+    },{
+      "title": "Grasshopper",
+      "creatorId": ["avoyer"],
+      "filename": "grasshopper",
+      "difficulty": "★★★",
+      "categories": ["insects"]
+    },{
+      "title": "Guitar - Flying V",
+      "creatorId": ["afehl"],
+      "filename": "flyingv",
+      "difficulty": "★★★",
+      "categories": ["misc"]
+    },{
+      "title": "Guitar Amp",
+      "creatorId": ["afehl"],
+      "filename": "amp",
+      "difficulty": "★★★",
+      "categories": ["misc"]
+    },{
+      "title": "Heart (For Alida)",
+      "creatorId": ["mvgelder"],
+      "filename": "heartalida",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Heart (Shining)",
+      "creatorId": ["wbrown"],
+      "filename": "heartshining",
+      "difficulty": "★",
+      "categories": ["misc"]
+    },{
+      "title": "Heart",
+      "creatorId": ["mvgelder"],
+      "filename": "heartmvg",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Heart and Arrow",
+      "creatorId": ["shecht"],
+      "filename": "dollararrowheart",
+      "difficulty": "★★",
+      "categories": [
+        "bill-models",
+        "misc"
+      ]
+    },{
+      "title": "Heart Bookmark",
+      "creatorId": ["kbest"],
+      "filename": "bookmarkheartkb",
+      "difficulty": "★",
+      "categories": ["misc"]
+    },{
+      "title": "Heart Card",
+      "creatorId": ["schen"],
+      "filename": "heartcard",
+      "difficulty": "★",
+      "categories": ["misc"]
+    },{
+      "title": "Heart Ring",
+      "creatorId": ["shecht"],
+      "filename": "dollarheartring",
+      "difficulty": "★★",
+      "categories": [
+        "bill-models",
+        "misc"
+      ]
+    },{
+      "title": "Heron",
+      "creatorId": ["gwillow"],
+      "filename": "heron",
+      "difficulty": "★★",
+      "categories": ["birds"]
+    },{
+      "title": "Hexagon Star",
+      "creatorId": ["gfolds"],
+      "filename": "hexagonstar",
+      "difficulty": "★",
+      "categories": ["misc"]
+    },{
+      "title": "Horse",
+      "creatorId": ["avoyer"],
+      "filename": "horse",
+      "difficulty": "★★★",
+      "categories": ["animals"]
+    },{
+      "title": "Ibis (White)",
+      "creatorId": ["gwillow"],
+      "filename": "ibis",
+      "difficulty": "★★",
+      "categories": ["birds"]
+    },{
+      "title": "Inflation",
+      "creatorId": ["mkirschenbaum"],
+      "filename": "dollarinflation",
+      "difficulty": "★",
+      "categories": [
+        "bill-models",
+        "misc"
+      ]
+    },{
+      "title": "Kimberly's Krystal",
+      "creatorId": ["mymckinnon"],
+      "filename": "kimbkrystal",
+      "difficulty": "★",
+      "categories": ["modular"]
+    },{
+      "title": "Ladybug (Simple)",
+      "creatorId": ["mkirschenbaum"],
+      "filename": "ladybugsimple",
+      "difficulty": "★",
+      "categories": ["insects"]
+    },{
+      "title": "Leaf",
+      "creatorId": ["mvgelder"],
+      "filename": "leaf",
+      "difficulty": "★",
+      "categories": ["plants"]
+    },{
+      "title": "Manatee",
+      "creatorId": ["gwillow"],
+      "filename": "manatee",
+      "difficulty": "★★",
+      "categories": ["animals"]
+    },{
+      "title": "Mantis",
+      "creatorId": ["rjlang"],
+      "filename": "mantis",
+      "difficulty": "★★★",
+      "categories": ["insects"]
+    },{
+      "title": "Missionary",
+      "creatorId": ["mkirschenbaum"],
+      "filename": "missionary",
+      "difficulty": "★★★",
+      "categories": ["figures"]
+    },{
+      "title": "Money Star",
+      "creatorId": ["tchung"],
+      "filename": "dollarstar",
+      "difficulty": "",
+      "categories": [
+        "bill-models",
+        "modular"
+      ]
+    },{
+      "title": "Moon Lander",
+      "creatorId": ["kbest"],
+      "filename": "moonlander",
+      "difficulty": "★★",
+      "categories": ["vehicles"]
+    },{
+      "title": "Mountain",
+      "creatorId": ["nrobinson"],
+      "filename": "mountainnr1",
+      "difficulty": "★",
+      "categories": ["misc"]
+    },{
+      "title": "Mountain",
+      "creatorId": ["nrobinson"],
+      "filename": "mountainnr2",
+      "difficulty": "★",
+      "categories": ["misc"]
+    },{
+      "title": "Mushroom",
+      "creatorId": ["mvgelder"],
+      "filename": "mushroom",
+      "difficulty": "★★",
+      "categories": ["plants"]
+    },{
+      "title": "On the Water, Under Water",
+      "creatorId": ["hvgoubergen"],
+      "filename": "onwaterunderwater",
+      "difficulty": "★★★",
+      "categories": ["animals"]
+    },{
+      "title": "Open House",
+      "creatorId": ["schen"],
+      "filename": "openhouse",
+      "difficulty": "★",
+      "categories": ["misc"]
+    },{
+      "title": "Peacock",
+      "creatorId": ["rjlang"],
+      "filename": "dollarpeacock",
+      "difficulty": "★",
+      "categories": [
+        "bill-models",
+        "birds"
+      ]
+    },{
+      "title": "Pencil Pot",
+      "creatorId": ["mvanglada"],
+      "filename": "pencilpot",
+      "difficulty": "★★",
+      "categories": ["furniture"]
+    },{
+      "title": "Penguin Bookmark",
+      "creatorId": ["vvann"],
+      "filename": "penguinbm",
+      "difficulty": "★",
+      "categories": ["birds"]
+    },{
+      "title": "Pikachu",
+      "creatorId": ["rjlang"],
+      "filename": "pikachu",
+      "difficulty": "★",
+      "categories": ["anime"]
+    },{
+      "title": "Pine Tree",
+      "creatorId": ["mvgelder"],
+      "filename": "pinetree",
+      "difficulty": "★",
+      "categories": ["plants"]
+    },{
+      "title": "Pterodactyl",
+      "creatorId": ["mvanglada"],
+      "filename": "pterodactyl",
+      "difficulty": "★★",
+      "categories": ["dinosaurs"]
+    },{
+      "title": "Pumpkin Face",
+      "creatorId": ["schen"],
+      "filename": "pumpkinface",
+      "difficulty": "★★",
+      "categories": ["plants"]
+    },{
+      "title": "Puppy (Pureland)",
+      "creatorId": ["jcnolan"],
+      "filename": "puppyjcn",
+      "difficulty": "★",
+      "categories": ["animals"]
+    },{
+      "title": "Pyramid",
+      "creatorId": ["mvgelder"],
+      "filename": "pyramid1",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Pyramid",
+      "creatorId": ["mvgelder"],
+      "filename": "pyramid2",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Pyramid",
+      "creatorId": ["mvgelder"],
+      "filename": "pyramid3",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Pyramid Container",
+      "creatorId": ["schen"],
+      "filename": "pyramidcontainer",
+      "difficulty": "★",
+      "categories": ["furniture"]
+    },{
+      "title": "Radio Telescope",
+      "creatorId": ["mvgelder"],
+      "filename": "radiotelescope",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Reading the Paper",
+      "creatorId": ["hvgoubergen"],
+      "filename": "readingpaper",
+      "difficulty": "★★",
+      "categories": ["figures"]
+    },{
+      "title": "Rooster",
+      "creatorId": ["ebinzinger"],
+      "filename": "rooster",
+      "difficulty": "★★",
+      "categories": ["birds"]
+    },{
+      "title": "Rose (Andrea's)",
+      "creatorId": ["jcnolan"],
+      "filename": "roseandreas",
+      "difficulty": "★★",
+      "categories": ["plants"]
+    },{
+      "title": "Rose (Kawasaki, Crystalized)",
+      "creatorId": [
+        "bstephens", 
+        "tkawasaki"
+      ],
+      "filename": "rosekawacrystal",
+      "difficulty": "★★★",
+      "categories": ["plants"]
+    },{
+      "title": "Rose (Kawasaki, Tesselation)",
+      "creatorId": ["tkawasaki"],
+      "filename": "rosekawatesselation",
+      "difficulty": "★★★",
+      "categories": ["tesselation"]
+    },{
+      "title": "Rose (Kawasaki, Traditional)",
+      "creatorId": [
+        "wchan", 
+        "tkawasaki"
+      ],
+      "filename": "rosetkawasaki",
+      "difficulty": "★★★",
+      "categories": ["plants"]
+    },{
+      "title": "Rose (Kawasaki, Base)",
+      "creatorId": ["jwu"],
+      "filename": "rosekawabase",
+      "difficulty": "★★",
+      "categories": ["plants"]
+    },{
+      "title": "Rose Brooch",
+      "creatorId": ["ttakahama"],
+      "filename": "rosebrooch",
+      "difficulty": "★★",
+      "categories": ["plants"]
+    },{
+      "title": "Serviette Flower",
+      "creatorId": ["mvgelder"],
+      "filename": "servietteflower",
+      "difficulty": "★",
+      "categories": ["plants"]
+    },{
+      "title": "Skeleton",
+      "creatorId": ["mkirschenbaum"],
+      "filename": "skeleton",
+      "difficulty": "★★★",
+      "categories": ["figures"]
+    },{
+      "title": "Sliding Telescope",
+      "creatorId": ["mvgelder"],
+      "filename": "slidingtelescope",
+      "difficulty": "★",
+      "categories": ["modular"]
+    },{
+      "title": "Spinning Top",
+      "creatorId": ["bcole"],
+      "filename": "spinningtop",
+      "difficulty": "★",
+      "categories": ["action-models"]
+    },{
+      "title": "Star Kusudama",
+      "creatorId": ["mvgelder"],
+      "filename": "starkusudama",
+      "difficulty": "★★",
+      "categories": ["modular"]
+    },{
+      "title": "Starship Enterprise",
+      "creatorId": ["mkirschenbaum"],
+      "filename": "enterprise",
+      "difficulty": "★★",
+      "categories": [
+        "vehicles",
+        "star-trek"
+      ]
+    },{
+      "title": "Stegosaurus (One-Fold)",
+      "creatorId": ["jwu"],
+      "filename": "stegosaurusonefold",
+      "difficulty": "★",
+      "categories": ["dinosaurs"]
+    },{
+      "title": "Swan",
+      "creatorId": ["mvgelder"],
+      "filename": "swan",
+      "difficulty": "★",
+      "categories": ["birds"]
+    },{
+      "title": "Teddy Bear",
+      "creatorId": ["mkirschenbaum"],
+      "filename": "teddybear",
+      "difficulty": "★★★",
+      "categories": ["animals"]
+    },{
+      "title": "Temate Bake Cube",
+      "creatorId": ["kkasahara"],
+      "filename": "tematecube",
+      "difficulty": "★",
+      "categories": ["modular"]
+    },{
+      "title": "Tic-Tac-Toe Board",
+      "creatorId": ["afehl"],
+      "filename": "tictactoe",
+      "difficulty": "★★★",
+      "categories": ["misc"]
+    },{
+      "title": "TIE Fighter",
+      "creatorId": ["pschulz"],
+      "filename": "tiefighter",
+      "difficulty": "★★",
+      "categories": [
+        "vehicles",
+        "star-wars"
+      ]
+    },{
+      "title": "Totoro",
+      "creatorId": ["rglynn"],
+      "filename": "totororg",
+      "difficulty": "★★",
+      "categories": ["anime"]
+    },{
+      "title": "Toy Car",
+      "creatorId": ["hvgoubergen"],
+      "filename": "toycar",
+      "difficulty": "★★★",
+      "categories": ["vehicles"]
+    },{
+      "title": "Triangular Module Unit",
+      "creatorId": ["yevron"],
+      "filename": "triangularmodule",
+      "difficulty": "★",
+      "categories": ["modular"]
+    },{
+      "title": "Triceratops",
+      "creatorId": ["jharris"],
+      "filename": "triceratops",
+      "difficulty": "★★★",
+      "categories": ["dinosaurs"]
+    },{
+      "title": "Trumpet",
+      "creatorId": ["mvgelder"],
+      "filename": "trumpet",
+      "difficulty": "★",
+      "categories": ["misc"]
+    },{
+      "title": "Tut n' Cleo",
+      "creatorId": ["jcnolan"],
+      "filename": "tutncleo",
+      "difficulty": "★",
+      "categories": ["misc"]
+    },{
+      "title": "Unicorn (Simple)",
+      "creatorId": ["pbailey"],
+      "filename": "unicornsimple",
+      "difficulty": "★",
+      "categories": ["animals"]
+    },{
+      "title": "Water Lily and Pad (Lily)",
+      "creatorId": ["mvgelder"],
+      "filename": "waterlily",
+      "difficulty": "★★",
+      "categories": ["plants"]
+    },{
+      "title": "Water Lily and Pad (Pad)",
+      "creatorId": ["mvgelder"],
+      "filename": "lilypad",
+      "difficulty": "★★",
+      "categories": ["plants"]
+    },{
+      "title": "Weasel",
+      "creatorId": ["gwillow"],
+      "filename": "weasel",
+      "difficulty": "★★",
+      "categories": ["animals"]
+    },{
+      "title": "Wheelchair and Human (Wheelchair)",
+      "creatorId": ["mvgelder"],
+      "filename": "wheelchairchair",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Wheelchair and Human (Human)",
+      "creatorId": ["mvgelder"],
+      "filename": "wheelchairhuman",
+      "difficulty": "★★",
+      "categories": ["figures"]
+    },{
+      "title": "Windmill",
+      "creatorId": ["mvgelder"],
+      "filename": "windmill",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Wreath",
+      "creatorId": ["dpetty"],
+      "filename": "wreath",
+      "difficulty": "★",
+      "categories": ["modular"]
+    },{
+      "title": "Yoda",
+      "creatorId": [
+        "fkawahata", 
+        "mmichaelis"
+      ],
+      "filename": "yodafumiaki",
+      "difficulty": "★★",
+      "categories": [
+        "figures",
+        "star-wars"
+      ]
+    },{
+      "title": "Insect",
+      "creatorId": ["hpereira"],
+      "filename": "insecthpereira",
+      "difficulty": "★★★",
+      "categories": ["insects"]
+    },{
+      "title": "Jack in the Box",
+      "creatorId": ["hpereira"],
+      "filename": "jackinabox",
+      "difficulty": "★★★",
+      "categories": [
+        "action-models",
+        "figures"
+    ]
+    },{
+      "title": "Martini",
+      "creatorId": ["shecht"],
+      "filename": "dollarmartini",
+      "difficulty": "★★★",
+      "categories": [
+        "bill-models",
+        "misc"
+      ]
+    },{
+      "title": "Matchbox",
+      "creatorId": ["mkirschenbaum"],
+      "filename": "matchbox",
+      "difficulty": "★★★",
+      "categories": ["misc"]
+    },{
+      "title": "Miss Piggy",
+      "creatorId": ["rglynn"],
+      "filename": "misspiggy",
+      "difficulty": "★★★",
+      "categories": ["muppets"]
+    },{
+      "title": "Monkey",
+      "creatorId": ["rglynn"],
+      "filename": "monkeyrg",
+      "difficulty": "★★★",
+      "categories": ["animals"]
+    },{
+      "title": "Electric Chair",
+      "creatorId": ["afehl"],
+      "filename": "oldsparky",
+      "difficulty": "★★★",
+      "categories": ["misc"]
+    },{
+      "title": "Oscar the Grouch",
+      "creatorId": ["rglynn"],
+      "filename": "oscargrouch",
+      "difficulty": "★★★",
+      "categories": ["muppets"]
+    },{
+      "title": "Patterned Tiles",
+      "creatorId": ["pbudai"],
+      "filename": "patternedtiles",
+      "difficulty": "★★★",
+      "categories": ["tesselation"]
+    },{
+      "title": "Pegasus",
+      "creatorId": ["avoyer"],
+      "filename": "pegasusav",
+      "difficulty": "★★★",
+      "categories": ["animals"]
+    },{
+      "title": "Penguin",
+      "creatorId": ["hpereira"],
+      "filename": "penguinhpereira",
+      "difficulty": "★★★",
+      "categories": ["birds"]
+    },{
+      "title": "Pteranodon Baby",
+      "creatorId": ["fgilgado"],
+      "filename": "pteranodonbaby",
+      "difficulty": "★★★",
+      "categories": ["dinosaurs"]
+    },{
+      "title": "Rhinoceros (Black)",
+      "creatorId": ["rkoh"],
+      "filename": "rhinoblackrkoh",
+      "difficulty": "★★★",
+      "categories": ["animals"]
+    },{
+      "title": "Rocking Horse",
+      "creatorId": ["rkoh"],
+      "filename": "rockinghorserkoh",
+      "difficulty": "★★★",
+      "categories": ["action-models"]
+    },{
+      "title": "Santa",
+      "creatorId": ["scasey"],
+      "filename": "santascasey",
+      "difficulty": "★★★",
+      "categories": ["figures"]
+    },{
+      "title": "Sea Turtle",
+      "creatorId": ["cweber"],
+      "filename": "seaturtlecweber",
+      "difficulty": "★★★",
+      "categories": ["animals"]
+    },{
+      "title": "Shamrock",
+      "creatorId": ["shecht"],
+      "filename": "shamrocksh",
+      "difficulty": "★★★",
+      "categories": [
+        "bill-models",
+        "misc"
+      ]
+    },{
+      "title": "Shark",
+      "creatorId": ["jwu"],
+      "filename": "sharkjwu",
+      "difficulty": "★★★",
+      "categories": ["fish"]
+    },{
+      "title": "Snake Dragon",
+      "creatorId": ["mvanglada"],
+      "filename": "snakedragonmva",
+      "difficulty": "★★★",
+      "categories": ["animals"]
+    },{
+      "title": "Sphinx",
+      "creatorId": ["avoyer"],
+      "filename": "sphinxavoyer",
+      "difficulty": "★★★",
+      "categories": ["animals"]
+    },{
+      "title": "Squirrel",
+      "creatorId": ["pbailey"],
+      "filename": "squirrelpbailey",
+      "difficulty": "★★★",
+      "categories": ["animals"]
+    },{
+      "title": "Stegosaurus Baby",
+      "creatorId": ["fgilgado"],
+      "filename": "stegosaurusbabyfgil",
+      "difficulty": "★★★",
+      "categories": ["dinosaurs"]
+    },{
+      "title": "Tank",
+      "creatorId": ["cesseltine"],
+      "filename": "tankcess",
+      "difficulty": "★★★",
+      "categories": [
+        "bill-models",
+        "vehicles"
+      ]
+    },{
+      "title": "Teddy Bear",
+      "creatorId": ["rglynn"],
+      "filename": "teddybearrglynn",
+      "difficulty": "★★★",
+      "categories": ["animals"]
+    },{
+      "title": "Tyrannosaurus",
+      "creatorId": ["jharris"],
+      "filename": "trexjh",
+      "difficulty": "★★★",
+      "categories": ["dinosaurs"]
+    },{
+      "title": "Triceratops Baby",
+      "creatorId": ["fgilgado"],
+      "filename": "triceratopsbabyfgil",
+      "difficulty": "★★★",
+      "categories": ["dinosaurs"]
+    },{
+      "title": "Twisted Dancer",
+      "creatorId": ["rglynn"],
+      "filename": "twisteddancer",
+      "difficulty": "★★★",
+      "categories": ["figures"]
+    },{
+      "title": "Wasp",
+      "creatorId": ["avoyer"],
+      "filename": "waspav",
+      "difficulty": "★★★",
+      "categories": ["insects"]
+    },{
+      "title": "Yacht",
+      "creatorId": ["rglynn"],
+      "filename": "yachtrg",
+      "difficulty": "★★★",
+      "categories": ["vehicles"]
+    },{
+      "title": "Angel",
+      "creatorId": ["afehl"],
+      "filename": "angel_fehl",
+      "difficulty": "★★",
+      "categories": ["figures"]
+    },{
+      "title": "Athletic Bear",
+      "creatorId": ["efridrikh"],
+      "filename": "athletic_bear",
+      "difficulty": "★★",
+      "categories": [
+        "animals",
+        "action-models"
+      ]
+    },{
+      "title": "Azalea",
+      "creatorId": ["klundberg"],
+      "filename": "azalea",
+      "difficulty": "★★",
+      "categories": ["plants"]
+    },{
+      "title": "Badger",
+      "creatorId": ["rglynn"],
+      "filename": "badger",
+      "difficulty": "★★",
+      "categories": ["animals"]
+    },{
+      "title": "Bassinet and Stand",
+      "creatorId": ["klundberg"],
+      "filename": "bassinet_and_stand",
+      "difficulty": "★★",
+      "categories": ["furniture"]
+    },{
+      "title": "Belle Damsel",
+      "creatorId": ["pbailey"],
+      "filename": "belleful",
+      "difficulty": "★★",
+      "categories": ["figures"]
+    },{
+      "title": "Big Bird",
+      "creatorId": ["rglynn"],
+      "filename": "bigbird",
+      "difficulty": "★★",
+      "categories": [
+        "muppets",
+        "action-models"
+      ]
+    },{
+      "title": "Bird in Flight",
+      "creatorId": ["mbright"],
+      "filename": "bird-in-flight",
+      "difficulty": "★★",
+      "categories": ["birds"]
+    },{
+      "title": "Bird of Paradise",
+      "creatorId": ["rkoh"],
+      "filename": "birdofparadise",
+      "difficulty": "★★",
+      "categories": ["birds"]
+    },{
+      "title": "Bottle and Stand",
+      "creatorId": ["mbright"],
+      "filename": "bottle-and-stand",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Boxes with Pajaritas",
+      "creatorId": ["efridrikh"],
+      "filename": "boxes_with_pajaritas",
+      "difficulty": "★★",
+      "categories": [
+        "modular",
+        "furniture"
+      ]
+    },{
+      "title": "Butterfly",
+      "creatorId": ["cweber"],
+      "filename": "butterfly_weber",
+      "difficulty": "★★",
+      "categories": ["insects"]
+    },{
+      "title": "C-3PO",
+      "creatorId": ["rglynn"],
+      "filename": "c3po",
+      "difficulty": "★★",
+      "categories": ["star-wars"]
+    },{
+      "title": "Canadian Mountie",
+      "creatorId": ["mbright"],
+      "filename": "canadian-mountie",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Candy Wrapper Dragon",
+      "creatorId": ["aanselmo"],
+      "filename": "candy_wrapper_dragon",
+      "difficulty": "★★",
+      "categories": ["animals"]
+    },{
+      "title": "Cannon",
+      "creatorId": ["rglynn"],
+      "filename": "cannon",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Canoe",
+      "creatorId": ["mbright"],
+      "filename": "canoe",
+      "difficulty": "★★",
+      "categories": ["vehicles"]
+    },{
+      "title": "Cartoon Dragon",
+      "creatorId": ["pbailey"],
+      "filename": "toondragon",
+      "difficulty": "★★",
+      "categories": ["animals"]
+    },{
+      "title": "Cat",
+      "creatorId": ["avoyer"],
+      "filename": "cat_voyer",
+      "difficulty": "★★",
+      "categories": ["animals"]
+    },{
+      "title": "Chameleon",
+      "creatorId": ["mvanglada"],
+      "filename": "chameleon",
+      "difficulty": "★★",
+      "categories": ["animals"]
+    },{
+      "title": "Chess Set",
+      "creatorId": ["jwu"],
+      "filename": "chess",
+      "difficulty": "★★",
+      "categories": ["modular"]
+    },{
+      "title": "Chewing Gum Wrapper Modules",
+      "creatorId": ["vvann"],
+      "filename": "gumwrap",
+      "difficulty": "★★",
+      "categories": ["modular"]
+    },{
+      "title": "Chirp Chirp",
+      "creatorId": ["mbright"],
+      "filename": "chirp-chirp",
+      "difficulty": "★★",
+      "categories": ["birds"]
+    },{
+      "title": "Christmas Tree",
+      "creatorId": ["cesseltine"],
+      "filename": "xmastree_esseltine",
+      "difficulty": "★★",
+      "categories": ["plants"]
+    },{
+      "title": "Christmas Tree",
+      "creatorId": ["shecht"],
+      "filename": "xmastree",
+      "difficulty": "★★",
+      "categories": [
+        "bill-models",
+        "plants"
+      ]
+    },{
+      "title": "Clapping Monk",
+      "creatorId": ["efridrikh"],
+      "filename": "clapping_monk",
+      "difficulty": "★★",
+      "categories": [
+        "action-models",
+        "figures"
+      ]
+    },{
+      "title": "Clock",
+      "creatorId": ["rglynn"],
+      "filename": "clock",
+      "difficulty": "★★",
+      "categories": ["furniture"]
+    },{
+      "title": "Columbine",
+      "creatorId": ["klundberg"],
+      "filename": "columbine",
+      "difficulty": "★★",
+      "categories": ["plants"]
+    },{
+      "title": "Columbine",
+      "creatorId": ["abarbour"],
+      "filename": "afbcol",
+      "difficulty": "★★",
+      "categories": ["plants"]
+    },{
+      "title": "Compact Dragon",
+      "creatorId": ["pbailey"],
+      "filename": "compactdragon",
+      "difficulty": "★★",
+      "categories": ["animals"]
+    },{
+      "title": "Dachshund",
+      "creatorId": ["mbright"],
+      "filename": "dachshund",
+      "difficulty": "★★",
+      "categories": ["animals"]
+    },{
+      "title": "Dinosaur Footprint",
+      "creatorId": ["pbudai"],
+      "filename": "dinofootprint",
+      "difficulty": "★★",
+      "categories": ["dinosaurs"]
+    },{
+      "title": "Diplodocus",
+      "creatorId": ["rkoh"],
+      "filename": "diplodocus",
+      "difficulty": "★★",
+      "categories": ["dinosaurs"]
+    },{
+      "title": "Diplodocus Baby",
+      "creatorId": ["fgilgado"],
+      "filename": "diplodocus_baby",
+      "difficulty": "★★",
+      "categories": ["dinosaurs"]
+    },{
+      "title": "Dog",
+      "creatorId": ["mvanglada"],
+      "filename": "dog-vigo",
+      "difficulty": "★★",
+      "categories": ["animals"]
+    },{
+      "title": "Basket",
+      "creatorId": ["klundberg"],
+      "filename": "dollar_basket",
+      "difficulty": "★★",
+      "categories": [
+        "bill-models",
+        "furniture"
+      ]
+    },{
+      "title": "Eighth Notes",
+      "creatorId": ["afehl"],
+      "filename": "dollar_notes",
+      "difficulty": "★★",
+      "categories": [
+        "bill-models",
+        "misc"
+      ]
+    },{
+      "title": "Guitar",
+      "creatorId": ["afehl"],
+      "filename": "dollar_gtr",
+      "difficulty": "★★",
+      "categories": [
+        "bill-models",
+        "misc"
+      ]
+    },{
+      "title": "Dolphin",
+      "creatorId": [null],
+      "filename": "dolphin",
+      "difficulty": "★★",
+      "categories": ["fish"]
+    },{
+      "title": "Dracula",
+      "creatorId": ["rglynn"],
+      "filename": "dracula",
+      "difficulty": "★★",
+      "categories": ["figures"]
+    },{
+      "title": "Dragon in the Water",
+      "creatorId": ["pbailey"],
+      "filename": "drgnwtr",
+      "difficulty": "★★",
+      "categories": ["animals"]
+    },{
+      "title": "Easter Egg",
+      "creatorId": ["mbright"],
+      "filename": "easter-egg",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Edelweiss",
+      "creatorId": ["fgrebenicek"],
+      "filename": "edelweiss",
+      "difficulty": "★★",
+      "categories": ["plants"]
+    },{
+      "title": "Elephant",
+      "creatorId": ["mbright"],
+      "filename": "elephant-bright",
+      "difficulty": "★★",
+      "categories": ["animals"]
+    },{
+      "title": "Elephant",
+      "creatorId": ["shecht"],
+      "filename": "elephant_hecht",
+      "difficulty": "★★",
+      "categories": [
+        "bill-models",
+        "animals"
+      ]
+    },{
+      "title": "Starship Enterprise",
+      "creatorId": ["pbailey"],
+      "filename": "enterprise_bill",
+      "difficulty": "★★",
+      "categories": [
+        "vehicles",
+        "bill-models",
+        "star-trek"
+      ]
+    },{
+      "title": "Eyebrows, the Watcher",
+      "creatorId": ["pbailey"],
+      "filename": "eyebrows",
+      "difficulty": "★★",
+      "categories": ["figures"]
+    },{
+      "title": "Fangs for the Memory",
+      "creatorId": ["mbright"],
+      "filename": "fangs-for-the-memory",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Fantail Dragon",
+      "creatorId": ["pbailey"],
+      "filename": "fantaildragon_bill",
+      "difficulty": "★★",
+      "categories": [
+        "bill-models",
+        "animals"
+      ]
+    },{
+      "title": "Fantasy Mask",
+      "creatorId": ["mslayton"],
+      "filename": "mask",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Fat Controller",
+      "creatorId": ["mbright"],
+      "filename": "fat-controller",
+      "difficulty": "★★",
+      "categories": ["figures"]
+    },{
+      "title": "Flapping Bird",
+      "creatorId": ["bminch"],
+      "filename": "flapbird2",
+      "difficulty": "★★",
+      "categories": [
+        "birds",
+        "action-models"
+      ]
+    },{
+      "title": "Flapping Dragon",
+      "creatorId": ["etan"],
+      "filename": "flapping_dragon",
+      "difficulty": "★★",
+      "categories": [
+        "animals",
+        "action-models"
+      ]
+    },{
+      "title": "Flower with Leaves",
+      "creatorId": ["pbudai"],
+      "filename": "flowerwithleaves",
+      "difficulty": "★★",
+      "categories": ["plants"]
+    },{
+      "title": "Frog on Lily Pad",
+      "creatorId": ["cweber"],
+      "filename": "frogonlilypad",
+      "difficulty": "★★",
+      "categories": ["animals"]
+    },{
+      "title": "Frog Prince",
+      "creatorId": ["rglynn"],
+      "filename": "frogprince",
+      "difficulty": "★★",
+      "categories": ["animals"]
+    },{
+      "title": "Froggy Went a-Hunting",
+      "creatorId": ["rglynn"],
+      "filename": "froggy",
+      "difficulty": "★★",
+      "categories": ["animals"]
+    },{
+      "title": "Ghost",
+      "creatorId": ["avoyer"],
+      "filename": "ghost",
+      "difficulty": "★★",
+      "categories": ["figures"]
+    },{
+      "title": "Ghost",
+      "creatorId": ["rglynn"],
+      "filename": "ghost-glynn",
+      "difficulty": "★★",
+      "categories": ["figures"]
+    },{
+      "title": "Gift Box",
+      "creatorId": ["rglynn"],
+      "filename": "giftbox",
+      "difficulty": "★★",
+      "categories": ["furniture"]
+    },{
+      "title": "Golden Slipper Orchid",
+      "creatorId": ["klundberg"],
+      "filename": "orchid",
+      "difficulty": "★★",
+      "categories": ["plants"]
+    },{
+      "title": "Gonzo",
+      "creatorId": ["rglynn"],
+      "filename": "gonzo",
+      "difficulty": "★★",
+      "categories": ["muppets"]
+    },{
+      "title": "Grim Reaper",
+      "creatorId": ["rglynn"],
+      "filename": "reaper",
+      "difficulty": "★★",
+      "categories": ["figures"]
+    },{
+      "title": "Hacky Sack",
+      "creatorId": ["wchan"],
+      "filename": "hackysack",
+      "difficulty": "★★",
+      "categories": ["modular"]
+    },{
+      "title": "Hand Clawing Out From Grave",
+      "creatorId": ["etan"],
+      "filename": "grabber",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Heart Box",
+      "creatorId": ["rglynn"],
+      "filename": "heartbox",
+      "difficulty": "★★",
+      "categories": ["furniture"]
+    },{
+      "title": "Hexagon Ring",
+      "creatorId": ["shecht"],
+      "filename": "hexring",
+      "difficulty": "★★",
+      "categories": [
+        "bill-models",
+        "misc"
+      ]
+    },{
+      "title": "Horse Bookmark",
+      "creatorId": ["klundberg"],
+      "filename": "horse_bookmark",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Hummingbird",
+      "creatorId": ["cweber"],
+      "filename": "hummingbird",
+      "difficulty": "★★",
+      "categories": ["birds"]
+    },{
+      "title": "Hummingbird",
+      "creatorId": ["klundberg"],
+      "filename": "hummingbird_lundberg",
+      "difficulty": "★★",
+      "categories": ["birds"]
+    },{
+      "title": "Humpty Dumpty",
+      "creatorId": ["klundberg"],
+      "filename": "humpty_dumpty",
+      "difficulty": "★★",
+      "categories": ["figures"]
+    },{
+      "title": "Ibis",
+      "creatorId": ["cweber"],
+      "filename": "ibis_weber",
+      "difficulty": "★★",
+      "categories": ["birds"]
+    },{
+      "title": "Jay Leno-cchio",
+      "creatorId": ["afehl"],
+      "filename": "jay",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Jiji",
+      "creatorId": ["rglynn"],
+      "filename": "gigi-cat",
+      "difficulty": "★★",
+      "categories": ["anime"]
+    },{
+      "title": "Jonathon Jump Ant",
+      "creatorId": ["pbailey"],
+      "filename": "jonathon",
+      "difficulty": "★★",
+      "categories": [
+        "action-models",
+        "insects"
+      ]
+    },{
+      "title": "Katana",
+      "creatorId": ["klundberg"],
+      "filename": "katana",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Kayak",
+      "creatorId": ["rglynn"],
+      "filename": "kayak",
+      "difficulty": "★★",
+      "categories": ["vehicles"]
+    },{
+      "title": "Kermit the Frog",
+      "creatorId": ["rglynn"],
+      "filename": "kermit",
+      "difficulty": "★★",
+      "categories": ["muppets"]
+    },{
+      "title": "Kissy Fish",
+      "creatorId": [
+        "jjaquet",
+        "rdonachie"
+      ],
+      "filename": "kissy-fish",
+      "difficulty": "★★",
+      "categories": [
+        "action-models",
+        "fish"
+      ]
+    },{
+      "title": "Klingon D-7 Battle Cruiser",
+      "creatorId": ["pbailey"],
+      "filename": "d7cruiser",
+      "difficulty": "★★",
+      "categories": [
+        "vehicles",
+        "star-trek"
+      ]
+    },{
+      "title": "Mouse",
+      "creatorId": ["rdonachie"],
+      "filename": "lapetitesouris",
+      "difficulty": "★★",
+      "categories": ["animals"]
+    },{
+      "title": "Lily-Fly",
+      "creatorId": ["klundberg"],
+      "filename": "lilyfly",
+      "difficulty": "★★",
+      "categories": ["insects"]
+    },{
+      "title": "Bat",
+      "creatorId": ["rdonachie"],
+      "filename": "littlebat",
+      "difficulty": "★★",
+      "categories": ["animals"]
+    },{
+      "title": "Macaw",
+      "creatorId": ["rfoelker"],
+      "filename": "macaw",
+      "difficulty": "★★",
+      "categories": ["birds"]
+    },{
+      "title": "Martian Bouncing Spider",
+      "creatorId": ["pbailey"],
+      "filename": "bspider",
+      "difficulty": "★★",
+      "categories": [
+        "misc",
+        "action-models"
+      ]
+    },{
+      "title": "Miss Muffet's Spider",
+      "creatorId": ["rglynn"],
+      "filename": "spider-glynn",
+      "difficulty": "★★",
+      "categories": ["insects"]
+    },{
+      "title": "Monkey Head",
+      "creatorId": ["rglynn"],
+      "filename": "monkeyhead",
+      "difficulty": "★★",
+      "categories": ["animals"]
+    },{
+      "title": "Mushroom",
+      "creatorId": [
+        "mslayton",
+        "abarber"
+      ],
+      "filename": "mushroomabarber",
+      "difficulty": "★★",
+      "categories": ["plants"]
+    },{
+      "title": "Eighth Note",
+      "creatorId": ["afehl"],
+      "filename": "eighth_note",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Nuclear Crane",
+      "creatorId": ["afehl"],
+      "filename": "nuclear_crane",
+      "difficulty": "★★",
+      "categories": ["birds"]
+    },{
+      "title": "One-Way Arrow",
+      "creatorId": ["shecht"],
+      "filename": "arrow",
+      "difficulty": "★★",
+      "categories": [
+        "bill-models",
+        "misc"
+      ]
+    },{
+      "title": "Ornithopter",
+      "creatorId": ["etan"],
+      "filename": "orni",
+      "difficulty": "★★",
+      "categories": ["vehicles"]
+    },{
+      "title": "Parrot",
+      "creatorId": ["mvanglada"],
+      "filename": "parrot",
+      "difficulty": "★★",
+      "categories": ["birds"]
+    },{
+      "title": "Peacock",
+      "creatorId": ["cweber"],
+      "filename": "peacock_weber",
+      "difficulty": "★★",
+      "categories": ["birds"]
+    },{
+      "title": "Pelican",
+      "creatorId": ["cweber"],
+      "filename": "pelican",
+      "difficulty": "★★",
+      "categories": ["birds"]
+    },{
+      "title": "Pencil",
+      "creatorId": ["mkirschenbaum"],
+      "filename": "pencil",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Phoenix",
+      "creatorId": ["etan"],
+      "filename": "phoenix",
+      "difficulty": "★★",
+      "categories": ["birds"]
+    },{
+      "title": "Phoenix Version 2",
+      "creatorId": ["etan"],
+      "filename": "phoenix2",
+      "difficulty": "★★",
+      "categories": ["birds"]
+    },{
+      "title": "Pigeon",
+      "creatorId": ["sfriedman"],
+      "filename": "pigeon",
+      "difficulty": "★★",
+      "categories": ["birds"]
+    },{
+      "title": "Plane Unit",
+      "creatorId": ["mvgelder"],
+      "filename": "planeunt",
+      "difficulty": "★★",
+      "categories": ["modular"]
+    },{
+      "title": "Playing Cards",
+      "creatorId": ["efridrikh"],
+      "filename": "playing_cards",
+      "difficulty": "★★",
+      "categories": ["figures"]
+    },{
+      "title": "Pot With Leaves and Steam",
+      "creatorId": ["klundberg"],
+      "filename": "pot_with_leaves_and_stem",
+      "difficulty": "★★",
+      "categories": ["plants"]
+    },{
+      "title": "Pregnant Woman",
+      "creatorId": ["afehl"],
+      "filename": "pregnant",
+      "difficulty": "★★",
+      "categories": ["figures"]
+    },{
+      "title": "Pumpkin",
+      "creatorId": ["klundberg"],
+      "filename": "pumpkin",
+      "difficulty": "★★",
+      "categories": ["plants"]
+    },{
+      "title": "Puppy Pounce",
+      "creatorId": ["pbailey"],
+      "filename": "puppyp",
+      "difficulty": "★★",
+      "categories": [
+        "action-models",
+        "animals"
+      ]
+    },{
+      "title": "Puzzle Ring Cube",
+      "creatorId": ["vvann"],
+      "filename": "puzzle",
+      "difficulty": "★★",
+      "categories": ["modular"]
+    },{
+      "title": "RatRacer",
+      "creatorId": ["etan"],
+      "filename": "ratracer",
+      "difficulty": "★★",
+      "categories": ["vehicles"]
+    },{
+      "title": "Resting Pet",
+      "creatorId": ["jmolina"],
+      "filename": "resting_pet",
+      "difficulty": "★★",
+      "categories": ["animals"]
+    },{
+      "title": "Rocket Ship",
+      "creatorId": ["pbailey"],
+      "filename": "spaceship",
+      "difficulty": "★★",
+      "categories": ["vehicles"]
+    },{
+      "title": "Romantic Rose",
+      "creatorId": ["smassis"],
+      "filename": "romantic-rose",
+      "difficulty": "★★",
+      "categories": ["plants"]
+    },{
+      "title": "Romeo and Juliet",
+      "creatorId": ["efridrikh"],
+      "filename": "romeo_juliet",
+      "difficulty": "★★",
+      "categories": ["figures"]
+    },{
+      "title": "Rose Placecard",
+      "creatorId": ["klundberg"],
+      "filename": "rosecard",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Rowlf",
+      "creatorId": ["rglynn"],
+      "filename": "rowlf",
+      "difficulty": "★★",
+      "categories": ["muppets"]
+    },{
+      "title": "Scarecrow",
+      "creatorId": ["afehl"],
+      "filename": "edward",
+      "difficulty": "★★",
+      "categories": ["figures"]
+    },{
+      "title": "Shark Tooth",
+      "creatorId": ["mslayton"],
+      "filename": "sharktooth",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Sheep",
+      "creatorId": ["acarpenter"],
+      "filename": "sheep",
+      "difficulty": "★★",
+      "categories": ["animals"]
+    },{
+      "title": "Six Pointed Star Box",
+      "creatorId": ["rglynn"],
+      "filename": "starbox",
+      "difficulty": "★★",
+      "categories": [
+        "furniture",
+        "modular"
+      ]
+    },{
+      "title": "Snowflake",
+      "creatorId": ["jwu"],
+      "filename": "snowflake",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Sorceror",
+      "creatorId": ["jmolina"],
+      "filename": "sorceror",
+      "difficulty": "★★",
+      "categories": ["figures"]
+    },{
+      "title": "Alien",
+      "creatorId": ["mvanglada"],
+      "filename": "space-invader",
+      "difficulty": "★★",
+      "categories": ["figures"]
+    },{
+      "title": "Space Shuttle",
+      "creatorId": ["pbailey"],
+      "filename": "shuttle",
+      "difficulty": "★★",
+      "categories": ["vehicles"]
+    },{
+      "title": "Sparrow",
+      "creatorId": ["pbailey"],
+      "filename": "sparrow",
+      "difficulty": "★★",
+      "categories": ["birds"]
+    },{
+      "title": "Spiral Snake",
+      "creatorId": ["klundberg"],
+      "filename": "spiral_snake",
+      "difficulty": "★★",
+      "categories": ["animals"]
+    },{
+      "title": "Squirrel",
+      "creatorId": ["fgrebenicek"],
+      "filename": "squirrel_fg",
+      "difficulty": "★★",
+      "categories": ["animals"]
+    },{
+      "title": "Starship",
+      "creatorId": ["pbailey"],
+      "filename": "racer",
+      "difficulty": "★★",
+      "categories": ["vehicles"]
+    },{
+      "title": "Storm Cloud",
+      "creatorId": ["pbudai"],
+      "filename": "stormcloud",
+      "difficulty": "★★",
+      "categories": [
+        "action-models",
+        "misc"
+      ]
+    },{
+      "title": "Submarine",
+      "creatorId": ["rglynn"],
+      "filename": "submarine",
+      "difficulty": "★★",
+      "categories": ["vehicles"]
+    },{
+      "title": "Talking Heads",
+      "creatorId": ["pbailey"],
+      "filename": "talkingheads",
+      "difficulty": "★★",
+      "categories": [
+        "action-models",
+        "misc"
+      ]
+    },{
+      "title": "Teeth",
+      "creatorId": ["rglynn"],
+      "filename": "teeth",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Thanks for the Chocolates",
+      "creatorId": ["rglynn"],
+      "filename": "chocs",
+      "difficulty": "★★",
+      "categories": [
+        "action-models",
+        "misc"
+      ]
+    },{
+      "title": "Tower Box",
+      "creatorId": ["wchan"],
+      "filename": "towerbox",
+      "difficulty": "★★",
+      "categories": ["furniture"]
+    },{
+      "title": "Transforming Heart",
+      "creatorId": ["klundberg"],
+      "filename": "transforming_heart",
+      "difficulty": "★★",
+      "categories": [
+        "action-models",
+        "misc"
+      ]
+    },{
+      "title": "Trays",
+      "creatorId": ["mvanglada"],
+      "filename": "trays",
+      "difficulty": "★★",
+      "categories": [
+        "furniture",
+        "modular"
+      ]
+    },{
+      "title": "Turtle",
+      "creatorId": ["pbailey"],
+      "filename": "8by11turtle",
+      "difficulty": "★★",
+      "categories": ["animals"]
+    },{
+      "title": "Twin Crane",
+      "creatorId": ["jkusserow"],
+      "filename": "twncrane",
+      "difficulty": "★★",
+      "categories": ["birds"]
+    },{
+      "title": "Tyrannosaurus Baby",
+      "creatorId": ["fgilgado"],
+      "filename": "tyrannosaurus_baby",
+      "difficulty": "★★",
+      "categories": ["dinosaurs"]
+    },{
+      "title": "Tyrannosaurus",
+      "creatorId": ["mkirschenbaum"],
+      "filename": "trex",
+      "difficulty": "★★",
+      "categories": ["dinosaurs"]
+    },{
+      "title": "Unicorn Bust",
+      "creatorId": ["etan"],
+      "filename": "unicorn_bust",
+      "difficulty": "★★",
+      "categories": ["furniture"]
+    },{
+      "title": "Vampire",
+      "creatorId": ["mslayton"],
+      "filename": "vampire",
+      "difficulty": "★★",
+      "categories": ["figures"]
+    },{
+      "title": "Vase",
+      "creatorId": ["shecht"],
+      "filename": "vase",
+      "difficulty": "★★",
+      "categories": ["furniture"]
+    },{
+      "title": "Verdi's Vase",
+      "creatorId": ["mkennedy"],
+      "filename": "verdisvase",
+      "difficulty": "★★",
+      "categories": ["furniture"]
+    },{
+      "title": "Vest",
+      "creatorId": ["mvgelder"],
+      "filename": "vest",
+      "difficulty": "★★",
+      "categories": ["modular"]
+    },{
+      "title": "Elephant",
+      "creatorId": ["pbailey"],
+      "filename": "elephant",
+      "difficulty": "★★",
+      "categories": ["animals"]
+    },{
+      "title": "Vulture",
+      "creatorId": ["cweber"],
+      "filename": "vulture",
+      "difficulty": "★★",
+      "categories": ["birds"]
+    },{
+      "title": "Wren",
+      "creatorId": ["cweber"],
+      "filename": "wren",
+      "difficulty": "★★",
+      "categories": ["birds"]
+    },{
+      "title": "X-Wing Fighter",
+      "creatorId": ["wko"],
+      "filename": "filename",
+      "difficulty": "★★",
+      "categories": [
+        "vehicles",
+        "star-wars"
+      ]
+    },{
+      "title": "Yin and Yang Symbol",
+      "creatorId": ["schen"],
+      "filename": "yinyang",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Yuan Bao",
+      "creatorId": ["jwu"],
+      "filename": "yuanbao",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    },{
+      "title": "Yuan Bao",
+      "creatorId": ["rkoh"],
+      "filename": "yuanbao2",
+      "difficulty": "★★",
+      "categories": ["misc"]
+    }
+  ],
   "creators": [
     {
       "id": "afehl",
@@ -166,6 +2411,11 @@
       "site": null,
       "youtube": null
     },{
+      "id": "klundberg",
+      "name": "Kalei Anne Lundberg",
+      "site": null,
+      "youtube": null
+    },{
       "id": "mvgelder",
       "name": "Maarten van Gelder",
       "site": "https://web.archive.org/web/20080304032218/http://origami.kvi.nl/",
@@ -272,7 +2522,7 @@
       "youtube": null
     },{
       "id": "wchan",
-      "name": "Winston Chan",
+      "name": "Winson Chan",
       "site": null,
       "youtube": null
     },{
@@ -300,1274 +2550,95 @@
       "name": "Collin Weber",
       "site": null,
       "youtube": null
-    }
-  ],
-  "diagrams": [
-    {
-      "title": "Acrocanthosaurus",
-      "creatorId": ["jharris"],
-      "filename": "acrocanthosaurus",
-      "difficulty": "★★★",
-      "categories": ["dinosaurs"]
     },{
-      "title": "Alien (Xenomorph)",
-      "creatorId": ["fgilgado"],
-      "filename": "alienxeno",
-      "difficulty": "★★★",
-      "categories": ["misc"]
-    },{
-      "title": "Angel",
-      "creatorId": ["mvgelder"],
-      "filename": "angel",
-      "difficulty": "★★",
-      "categories": ["misc"]
-    },{
-      "title": "Angelfish Two-fold",
-      "creatorId": ["jcnolan"],
-      "filename": "angelfish",
-      "difficulty": "★",
-      "categories": ["fish"]
-    },{
-      "title": "Ankylosaurus",
-      "creatorId": ["rkoh"],
-      "filename": "ankylosaurus",
-      "difficulty": "★★★",
-      "categories": ["dinosaurs"]
-    },{
-      "title": "Arasaurolopus Baby",
-      "creatorId": ["fgilgado"],
-      "filename": "arasaurolopusbaby",
-      "difficulty": "★★",
-      "categories": ["dinosaurs"]
-    },{
-      "title": "Armadillo (Three-Banded)",
-      "creatorId": ["jwu"],
-      "filename": "armadillothreeband",
-      "difficulty": "★★★",
-      "categories": ["animals"]
-    },{
-      "title": "B-Wing Starfighter",
-      "creatorId": ["jbraasch"],
-      "filename": "bwing",
-      "difficulty": "★★",
-      "categories": [
-        "vehicles",
-        "star-wars"
-      ]
-    },{
-      "title": "Ballerina",
-      "creatorId": ["mvgelder"],
-      "filename": "ballerina",
-      "difficulty": "★★",
-      "categories": ["misc"]
-    },{
-      "title": "Balloon with Basket",
-      "creatorId": ["mvgelder"],
-      "filename": "balloonbasket",
-      "difficulty": "★",
-      "categories": ["misc"]
-    },{
-      "title": "Balrog",
-      "creatorId": ["etan"],
-      "filename": "balroget",
-      "difficulty": "★★★",
-      "categories": ["misc"]
-    },{
-      "title": "Basket",
-      "creatorId": ["aanselmo"],
-      "filename": "dollarbasket",
-      "difficulty": "★",
-      "categories": [
-        "bill-models",
-        "misc"
-      ]
-    },{
-      "title": "Bat (Happy)",
-      "creatorId": ["mlafosse"],
-      "filename": "bathappy",
-      "difficulty": "★★",
-      "categories": ["animals"]
-    },{
-      "title": "Bee",
-      "creatorId": ["mkirschenbaum"],
-      "filename": "beemkirsch",
-      "difficulty": "★★★",
-      "categories": ["insects"]
-    },{
-      "title": "Beetle",
-      "creatorId": ["mvanglada"],
-      "filename": "beetle",
-      "difficulty": "★★★",
-      "categories": ["insects"]
-    },{
-      "title": "Big Head Monster",
-      "creatorId": ["mvanglada"],
-      "filename": "bigheadmonster",
-      "difficulty": "★★★",
-      "categories": ["misc"]
-    },{
-      "title": "Biplane",
-      "creatorId": ["mkirschenbaum"],
-      "filename": "biplane",
-      "difficulty": "★★★",
-      "categories": ["vehicles"]
-    },{
-      "title": "Bird",
-      "creatorId": ["acarpenter"],
-      "filename": "birdac",
-      "difficulty": "★★★",
-      "categories": ["birds"]
-    },{
-      "title": "Bird\u207F",
-      "creatorId": ["nrobinson"],
-      "filename": "birdn",
-      "difficulty": "★★",
-      "categories": ["birds"]
-    },{
-      "title": "Black Belt",
-      "creatorId": ["rglynn"],
-      "filename": "blackbelt",
-      "difficulty": "★★★",
-      "categories": ["misc"]
-    },{
-      "title": "Blintz Icosidodecahedron",
-      "creatorId": ["tklam"],
-      "filename": "blintzico",
-      "difficulty": "★★",
-      "categories": ["misc"]
-    },{
-      "title": "Blue Crab",
-      "creatorId": ["mkirschenbaum"],
-      "filename": "bluecrab",
-      "difficulty": "★★★",
-      "categories": ["animals"]
-    },{
-      "title": "Boat",
-      "creatorId": ["schen"],
-      "filename": "chenboat1",
-      "difficulty": "★",
-      "categories": ["vehicles"]
-    },{
-      "title": "Boat",
-      "creatorId": ["schen"],
-      "filename": "chenboat2",
-      "difficulty": "★",
-      "categories": ["vehicles"]
-    },{
-      "title": "Bookmark",
-      "creatorId": ["kbest"],
-      "filename": "kbestbookmark1",
-      "difficulty": "★",
-      "categories": ["misc"]
-    },{
-      "title": "Bookmark",
-      "creatorId": ["kbest"],
-      "filename": "kbestbookmark2",
-      "difficulty": "★",
-      "categories": ["misc"]
-    },{
-      "title": "Bowl de Vicenza",
-      "creatorId": ["mvgelder"],
-      "filename": "bowldevicenza",
-      "difficulty": "★★",
-      "categories": ["misc"]
-    },{
-      "title": "Box (Simple)",
-      "creatorId": ["joksanen"],
-      "filename": "boxsimple",
-      "difficulty": "★",
-      "categories": [
-        "modular",
-        "misc"
-      ]
-    },{
-      "title": "Braided Paper",
-      "creatorId": ["jcnolan"],
-      "filename": "paperbraid",
-      "difficulty": "★★",
-      "categories": ["misc"]
-    },{
-      "title": "Bull",
-      "creatorId": ["aanselmo"],
-      "filename": "dollarbull",
-      "difficulty": "★",
-      "categories": [
-        "bill-models",
-        "animals"
-      ]
-    },{
-      "title": "Butterfly",
-      "creatorId": ["aanselmo"],
-      "filename": "dollarbutterflyaa",
-      "difficulty": "",
-      "categories": [
-        "bill-models",
-        "insects"
-      ]
-    },{
-      "title": "Butterfly",
-      "creatorId": ["jgilardi"],
-      "filename": "dollarbutterflyjg",
-      "difficulty": "",
-      "categories": [
-        "bill-models",
-        "insects"
-      ]
-    },{
-      "title": "Butterfly",
-      "creatorId": ["mkirschenbaum"],
-      "filename": "butterflymk",
-      "difficulty": "★★★",
-      "categories": ["insects"]
-    },{
-      "title": "Butterfly",
-      "creatorId": ["shecht"],
-      "filename": "dollarbutterflysh",
-      "difficulty": "★★",
-      "categories": [
-        "bill-models",
-        "insects"
-      ]
-    },{
-      "title": "Butterfly (Flapping)",
-      "creatorId": ["pbailey"],
-      "filename": "flappingbutterfly",
-      "difficulty": "★",
-      "categories": ["insects"]
-    },{
-      "title": "Butterfly (For Alice Gray)",
-      "creatorId": ["mlafosse"],
-      "filename": "butterflyagray",
-      "difficulty": "★★",
-      "categories": ["insects"]
-    },{
-      "title": "Cankerworm",
-      "creatorId": ["mkirschenbaum"],
-      "filename": "cankerworm",
-      "difficulty": "★★★",
-      "categories": ["insects"]
-    },{
-      "title": "Car (VW)",
-      "creatorId": ["cesseltine"],
-      "filename": "carvwce",
-      "difficulty": "★★★",
-      "categories": ["vehicles"]
-    },{
-      "title": "Cat",
-      "creatorId": ["hvgoubergen"],
-      "filename": "cathvg",
-      "difficulty": "★★★",
-      "categories": ["animals"]
-    },{
-      "title": "Catamaran",
-      "creatorId": ["mvgelder"],
-      "filename": "catamaran",
-      "difficulty": "★★",
-      "categories": ["vehicles"]
-    },{
-      "title": "Caterpillar",
-      "creatorId": ["mvgelder"],
-      "filename": "caterpillar",
-      "difficulty": "★★",
-      "categories": ["insects"]
-    },{
-      "title": "Caterpillar on Leaf",
-      "creatorId": ["efridrikh"],
-      "filename": "caterpillaronleaf",
-      "difficulty": "★★★",
-      "categories": ["insects"]
-    },{
-      "title": "Chain",
-      "creatorId": ["mvgelder"],
-      "filename": "chainmvg1",
-      "difficulty": "★",
-      "categories": ["modular"]
-    },{
-      "title": "Chain",
-      "creatorId": ["mvgelder"],
-      "filename": "chainmvg2",
-      "difficulty": "★",
-      "categories": ["modular"]
-    },{
-      "title": "Chain",
-      "creatorId": ["mvgelder"],
-      "filename": "chainmvg3",
-      "difficulty": "★★",
-      "categories": ["modular"]
-    },{
-      "title": "Chef Hat",
-      "creatorId": ["mvgelder"],
-      "filename": "chefhat",
-      "difficulty": "★★",
-      "categories": ["misc"]
-    },{
-      "title": "Chessboard",
-      "creatorId": ["kbest"],
-      "filename": "chessboard",
-      "difficulty": "★★",
-      "categories": ["modular"]
-    },{
-      "title": "Chessboard",
-      "creatorId": ["mkirschenbaum"],
-      "filename": "chessboardmk",
-      "difficulty": "★★★",
-      "categories": ["tesselation"]
-    },{
-      "title": "Cicada",
-      "creatorId": ["kmorigami"],
-      "filename": "cicadakmori",
-      "difficulty": "★★★",
-      "categories": ["insects"]
-    },{
-      "title": "Clock Case",
-      "creatorId": ["mvgelder"],
-      "filename": "clockcase",
-      "difficulty": "★",
-      "categories": ["misc"]
-    },{
-      "title": "Coat",
-      "creatorId": ["mvanglada"],
-      "filename": "coat",
-      "difficulty": "★★",
-      "categories": ["misc"]
-    },{
-      "title": "Compass Rose",
-      "creatorId": ["joksanen"],
-      "filename": "compassrose",
-      "difficulty": "★",
-      "categories": ["misc"]
-    },{
-      "title": "Cookie Monster",
-      "creatorId": ["rglynn"],
-      "filename": "cookiemonster",
-      "difficulty": "★★★",
-      "categories": ["muppets"]
-    },{
-      "title": "Cup (Three Variations)",
-      "creatorId": ["mvgelder"],
-      "filename": "cupmvg",
-      "difficulty": "★",
-      "categories": ["misc"]
-    },{
-      "title": "Dahlia",
-      "creatorId": ["mvgelder"],
-      "filename": "dahlia",
-      "difficulty": "★★★",
-      "categories": ["plants"]
-    },{
-      "title": "Decoration (Star)",
-      "creatorId": ["jmeeusen"],
-      "filename": "decorationstar",
-      "difficulty": "★★",
-      "categories": ["misc"]
-    },{
-      "title": "Deer (From Teabag)",
-      "creatorId": ["mvgelder"],
-      "filename": "deerteabag",
-      "difficulty": "★★",
-      "categories": ["animals"]
-    },{
-      "title": "Diplodocus",
-      "creatorId": ["mvgelder"],
-      "filename": "diplodocusmvg",
-      "difficulty": "★★",
-      "categories": ["dinosaurs"]
-    },{
-      "title": "Display Stand",
-      "creatorId": ["mvgelder"],
-      "filename": "stand",
-      "difficulty": "★★",
-      "categories": ["misc"]
-    },{
-      "title": "Doc Ock",
-      "creatorId": ["etan"],
-      "filename": "doctoroctopus",
-      "difficulty": "★★★",
-      "categories": ["misc"]
-    },{
-      "title": "Dollar Sign",
-      "creatorId": ["aanselmo"],
-      "filename": "dollarsign",
-      "difficulty": "★",
-      "categories": [
-        "bill-models",
-        "misc"
-      ]
-    },{
-      "title": "Dragon",
-      "creatorId": ["kweidner"],
-      "filename": "dragonkw",
-      "difficulty": "★★",
-      "categories": ["animals"]
-    },{
-      "title": "Dragon in Flight",
-      "creatorId": ["cesseltine"],
-      "filename": "dragoninflight",
-      "difficulty": "★★★",
-      "categories": ["animals"]
-    },{
-      "title": "Dragon With 3 Heads",
-      "creatorId": ["avoyer"],
-      "filename": "dragon3heads",
-      "difficulty": "★★★",
-      "categories": ["animals"]
-    },{
-      "title": "Dragonfly",
-      "creatorId": ["shecht"],
-      "filename": "dollardragonfly",
-      "difficulty": "★★",
-      "categories": [
-        "bill-models",
-        "insects"
-      ]
-    },{
-      "title": "Dragonfly version 2",
-      "creatorId": ["shecht"],
-      "filename": "dollardragonfly2",
-      "difficulty": "★★",
-      "categories": [
-        "bill-models",
-        "insects"
-      ]
-    },{
-      "title": "Drip Catcher",
-      "creatorId": ["mvgelder"],
-      "filename": "dripcatcher",
-      "difficulty": "★",
-      "categories": ["misc"]
-    },{
-      "title": "Duck",
-      "creatorId": ["ecorrie"],
-      "filename": "duckec",
-      "difficulty": "★",
-      "categories": ["birds"]
-    },{
-      "title": "E.T.",
-      "creatorId": [
-        "jmaekawa", 
-        "osn"
-      ],
-      "filename": "et",
-      "difficulty": "★★★",
-      "categories": ["misc"]
-    },{
-      "title": "Eagle",
-      "creatorId": ["bewins"],
-      "filename": "eaglebewins",
-      "difficulty": "★★",
-      "categories": ["birds"]
-    },{
-      "title": "Eagle",
-      "creatorId": ["jwu"],
-      "filename": "eaglejwu",
-      "difficulty": "★★",
-      "categories": ["birds"]
-    },{
-      "title": "Eagle",
-      "creatorId": ["rkoh"],
-      "filename": "eaglerk",
-      "difficulty": "★★★",
-      "categories": ["birds"]
-    },{
-      "title": "Eastern Dragon",
-      "creatorId": ["jwu"],
-      "filename": "easterndragon",
-      "difficulty": "★★★",
-      "categories": ["animals"]
-    },{
-      "title": "Eiffel Tower",
-      "creatorId": ["rglynn"],
-      "filename": "eiffeltower",
-      "difficulty": "★★★",
-      "categories": ["misc"]
-    },{
-      "title": "Elephant",
-      "creatorId": ["mkirschenbaum"],
-      "filename": "elephantmkirsch",
-      "difficulty": "★★★",
-      "categories": ["animals"]
-    },{
-      "title": "F-102",
-      "creatorId": ["mlafosse"],
-      "filename": "f102",
-      "difficulty": "★★",
-      "categories": ["vehicles"]
-    },{
-      "title": "Fancy Stand",
-      "creatorId": ["afehl"],
-      "filename": "standafa",
-      "difficulty": "★★★",
-      "categories": ["misc"]
-    },{
-      "title": "Fancy Stand Variation",
-      "creatorId": ["afehl"],
-      "filename": "standafb",
-      "difficulty": "★★★",
-      "categories": ["misc"]
-    },{
-      "title": "Fire Lizard",
-      "creatorId": ["pbailey"],
-      "filename": "firelizard",
-      "difficulty": "★",
-      "categories": ["animals"]
-    },{
-      "title": "Fish (Pureland)",
-      "creatorId": ["mkirschenbaum"],
-      "filename": "fishmkirsch",
-      "difficulty": "★",
-      "categories": ["fish"]
-    },{
-      "title": "Fish Tesselation",
-      "creatorId": ["movermars"],
-      "filename": "fishtesselation",
-      "difficulty": "★★",
-      "categories": ["tesselation"]
-    },{
-      "title": "Flower",
-      "creatorId": ["shecht"],
-      "filename": "dollarflowersh",
-      "difficulty": "★★",
-      "categories": [
-        "bill-models",
-        "plants"
-      ]
-    },{
-      "title": "Fozzie Bear",
-      "creatorId": ["rglynn"],
-      "filename": "fozzie",
-      "difficulty": "★★★",
-      "categories": ["muppets"]
-    },{
-      "title": "Gas Pump",
-      "creatorId": ["afehl"],
-      "filename": "gaspump",
-      "difficulty": "★★★",
-      "categories": ["misc"]
-    },{
-      "title": "Garland",
-      "creatorId": ["kvgelder"],
-      "filename": "garlandkvg",
-      "difficulty": "★",
-      "categories": ["misc"]
-    },{
-      "title": "Garland",
-      "creatorId": ["mvgelder"],
-      "filename": "garlandmvg1",
-      "difficulty": "★",
-      "categories": ["misc"]
-    },{
-      "title": "Garland",
-      "creatorId": ["mvgelder"],
-      "filename": "garlandmvg2",
-      "difficulty": "★",
-      "categories": ["misc"]
-    },{
-      "title": "Gearwheel",
-      "creatorId": ["mvgelder"],
-      "filename": "gearwheel",
-      "difficulty": "★★★",
-      "categories": ["modular"]
-    },{
-      "title": "Gecko and Fly on a Wall",
-      "creatorId": ["hvgoubergen"],
-      "filename": "geckoandflyonwall",
-      "difficulty": "★★★",
-      "categories": ["animals"]
-    },{
-      "title": "Giant Spider Crab",
-      "creatorId": ["mkirschenbaum"],
-      "filename": "giantspidercrab",
-      "difficulty": "★★★",
-      "categories": ["animals"]
-    },{
-      "title": "Goldfish",
-      "creatorId": ["rkoh"],
-      "filename": "goldfishrkoh",
-      "difficulty": "★★★",
-      "categories": ["fish"]
-    },{
-      "title": "Grasshopper",
-      "creatorId": ["avoyer"],
-      "filename": "grasshopper",
-      "difficulty": "★★★",
-      "categories": ["insects"]
-    },{
-      "title": "Guitar - Flying V",
-      "creatorId": ["afehl"],
-      "filename": "flyingv",
-      "difficulty": "★★★",
-      "categories": ["misc"]
-    },{
-      "title": "Guitar Amp",
-      "creatorId": ["afehl"],
-      "filename": "amp",
-      "difficulty": "★★★",
-      "categories": ["misc"]
-    },{
-      "title": "Heart (For Alida)",
-      "creatorId": ["mvgelder"],
-      "filename": "heartalida",
-      "difficulty": "★★",
-      "categories": ["misc"]
-    },{
-      "title": "Heart (Shining)",
-      "creatorId": ["wbrown"],
-      "filename": "heartshining",
-      "difficulty": "★",
-      "categories": ["misc"]
-    },{
-      "title": "Heart",
-      "creatorId": ["mvgelder"],
-      "filename": "heartmvg",
-      "difficulty": "★★",
-      "categories": ["misc"]
-    },{
-      "title": "Heart and Arrow",
-      "creatorId": ["shecht"],
-      "filename": "dollararrowheart",
-      "difficulty": "★★",
-      "categories": [
-        "bill-models",
-        "misc"
-      ]
-    },{
-      "title": "Heart Bookmark",
-      "creatorId": ["kbest"],
-      "filename": "bookmarkheartkb",
-      "difficulty": "★",
-      "categories": ["misc"]
-    },{
-      "title": "Heart Card",
-      "creatorId": ["schen"],
-      "filename": "heartcard",
-      "difficulty": "★",
-      "categories": ["misc"]
-    },{
-      "title": "Heart Ring",
-      "creatorId": ["shecht"],
-      "filename": "dollarheartring",
-      "difficulty": "★★",
-      "categories": [
-        "bill-models",
-        "misc"
-      ]
-    },{
-      "title": "Heron",
-      "creatorId": ["gwillow"],
-      "filename": "heron",
-      "difficulty": "★★",
-      "categories": ["birds"]
-    },{
-      "title": "Hexagon Star",
-      "creatorId": ["gfolds"],
-      "filename": "hexagonstar",
-      "difficulty": "★",
-      "categories": ["misc"]
-    },{
-      "title": "Horse",
-      "creatorId": ["avoyer"],
-      "filename": "horse",
-      "difficulty": "★★★",
-      "categories": ["animals"]
-    },{
-      "title": "Ibis (White)",
-      "creatorId": ["gwillow"],
-      "filename": "ibis",
-      "difficulty": "★★",
-      "categories": ["birds"]
-    },{
-      "title": "Inflation",
-      "creatorId": ["mkirschenbaum"],
-      "filename": "dollarinflation",
-      "difficulty": "★",
-      "categories": [
-        "bill-models",
-        "misc"
-      ]
-    },{
-      "title": "Kimberly's Krystal",
-      "creatorId": ["mymckinnon"],
-      "filename": "kimbkrystal",
-      "difficulty": "★",
-      "categories": ["modular"]
-    },{
-      "title": "Ladybug (Simple)",
-      "creatorId": ["mkirschenbaum"],
-      "filename": "ladybugsimple",
-      "difficulty": "★",
-      "categories": ["insects"]
-    },{
-      "title": "Leaf",
-      "creatorId": ["mvgelder"],
-      "filename": "leaf",
-      "difficulty": "★",
-      "categories": ["plants"]
-    },{
-      "title": "Manatee",
-      "creatorId": ["gwillow"],
-      "filename": "manatee",
-      "difficulty": "★★",
-      "categories": ["animals"]
-    },{
-      "title": "Mantis",
-      "creatorId": ["rjlang"],
-      "filename": "mantis",
-      "difficulty": "★★★",
-      "categories": ["insects"]
-    },{
-      "title": "Missionary",
-      "creatorId": ["mkirschenbaum"],
-      "filename": "missionary",
-      "difficulty": "★★★",
-      "categories": ["misc"]
-    },{
-      "title": "Money Star",
-      "creatorId": ["tchung"],
-      "filename": "dollarstar",
-      "difficulty": "",
-      "categories": [
-        "bill-models",
-        "misc"
-      ]
-    },{
-      "title": "Moon Lander",
-      "creatorId": ["kbest"],
-      "filename": "moonlander",
-      "difficulty": "★★",
-      "categories": ["vehicles"]
-    },{
-      "title": "Mountain",
-      "creatorId": ["nrobinson"],
-      "filename": "mountainnr1",
-      "difficulty": "★",
-      "categories": ["misc"]
-    },{
-      "title": "Mountain",
-      "creatorId": ["nrobinson"],
-      "filename": "mountainnr2",
-      "difficulty": "★",
-      "categories": ["misc"]
-    },{
-      "title": "Mushroom",
-      "creatorId": ["mvgelder"],
-      "filename": "mushroom",
-      "difficulty": "★★",
-      "categories": ["plants"]
-    },{
-      "title": "On the Water, Under Water",
-      "creatorId": ["hvgoubergen"],
-      "filename": "onwaterunderwater",
-      "difficulty": "★★★",
-      "categories": ["animals"]
-    },{
-      "title": "Open House",
-      "creatorId": ["schen"],
-      "filename": "openhouse",
-      "difficulty": "★",
-      "categories": ["misc"]
-    },{
-      "title": "Peacock",
-      "creatorId": ["rjlang"],
-      "filename": "dollarpeacock",
-      "difficulty": "★",
-      "categories": [
-        "bill-models",
-        "birds"
-      ]
-    },{
-      "title": "Pencil Pot",
-      "creatorId": ["mvanglada"],
-      "filename": "pencilpot",
-      "difficulty": "★★",
-      "categories": ["misc"]
-    },{
-      "title": "Penguin Bookmark",
-      "creatorId": ["vvann"],
-      "filename": "penguinbm",
-      "difficulty": "★",
-      "categories": ["birds"]
-    },{
-      "title": "Pikachu",
-      "creatorId": ["rjlang"],
-      "filename": "pikachu",
-      "difficulty": "★",
-      "categories": ["anime"]
-    },{
-      "title": "Pine Tree",
-      "creatorId": ["mvgelder"],
-      "filename": "pinetree",
-      "difficulty": "★",
-      "categories": ["plants"]
-    },{
-      "title": "Pterodactyl",
-      "creatorId": ["mvanglada"],
-      "filename": "pterodactyl",
-      "difficulty": "★★",
-      "categories": ["dinosaurs"]
-    },{
-      "title": "Pumpkin Face",
-      "creatorId": ["schen"],
-      "filename": "pumpkinface",
-      "difficulty": "★★",
-      "categories": ["plants"]
-    },{
-      "title": "Puppy (Pureland)",
-      "creatorId": ["jcnolan"],
-      "filename": "puppyjcn",
-      "difficulty": "★",
-      "categories": ["animals"]
-    },{
-      "title": "Pyramid",
-      "creatorId": ["mvgelder"],
-      "filename": "pyramid1",
-      "difficulty": "★★",
-      "categories": ["misc"]
-    },{
-      "title": "Pyramid",
-      "creatorId": ["mvgelder"],
-      "filename": "pyramid2",
-      "difficulty": "★★",
-      "categories": ["misc"]
-    },{
-      "title": "Pyramid",
-      "creatorId": ["mvgelder"],
-      "filename": "pyramid3",
-      "difficulty": "★★",
-      "categories": ["misc"]
-    },{
-      "title": "Pyramid Container",
-      "creatorId": ["schen"],
-      "filename": "pyramidcontainer",
-      "difficulty": "★",
-      "categories": ["misc"]
-    },{
-      "title": "Radio Telescope",
-      "creatorId": ["mvgelder"],
-      "filename": "radiotelescope",
-      "difficulty": "★★",
-      "categories": ["misc"]
-    },{
-      "title": "Reading the Paper",
-      "creatorId": ["hvgoubergen"],
-      "filename": "readingpaper",
-      "difficulty": "★★",
-      "categories": ["misc"]
-    },{
-      "title": "Rooster",
-      "creatorId": ["ebinzinger"],
-      "filename": "rooster",
-      "difficulty": "★★",
-      "categories": ["birds"]
-    },{
-      "title": "Rose (Andrea's)",
-      "creatorId": ["jcnolan"],
-      "filename": "roseandreas",
-      "difficulty": "★★",
-      "categories": ["plants"]
-    },{
-      "title": "Rose (Kawasaki, Crystalized)",
-      "creatorId": [
-        "bstephens", 
-        "tkawasaki"
-      ],
-      "filename": "rosekawacrystal",
-      "difficulty": "★★★",
-      "categories": ["plants"]
-    },{
-      "title": "Rose (Kawasaki, Tesselation)",
-      "creatorId": ["tkawasaki"],
-      "filename": "rosekawatesselation",
-      "difficulty": "★★★",
-      "categories": ["tesselation"]
-    },{
-      "title": "Rose (Kawasaki, Traditional)",
-      "creatorId": [
-        "wchan", 
-        "tkawasaki"
-      ],
-      "filename": "rosetkawasaki",
-      "difficulty": "★★★",
-      "categories": ["plants"]
-    },{
-      "title": "Rose (Kawasaki, Base)",
-      "creatorId": ["jwu"],
-      "filename": "rosekawabase",
-      "difficulty": "★★",
-      "categories": ["plants"]
-    },{
-      "title": "Rose Brooch",
-      "creatorId": ["ttakahama"],
-      "filename": "rosebrooch",
-      "difficulty": "★★",
-      "categories": ["plants"]
-    },{
-      "title": "Serviette Flower",
-      "creatorId": ["mvgelder"],
-      "filename": "servietteflower",
-      "difficulty": "★",
-      "categories": ["plants"]
-    },{
-      "title": "Skeleton",
-      "creatorId": ["mkirschenbaum"],
-      "filename": "skeleton",
-      "difficulty": "★★★",
-      "categories": ["misc"]
-    },{
-      "title": "Sliding Telescope",
-      "creatorId": ["mvgelder"],
-      "filename": "slidingtelescope",
-      "difficulty": "★",
-      "categories": ["misc"]
-    },{
-      "title": "Spinning Top",
-      "creatorId": ["bcole"],
-      "filename": "spinningtop",
-      "difficulty": "★",
-      "categories": ["misc"]
-    },{
-      "title": "Star Kusudama",
-      "creatorId": ["mvgelder"],
-      "filename": "starkusudama",
-      "difficulty": "★★",
-      "categories": ["modular"]
-    },{
-      "title": "Starship Enterprise",
-      "creatorId": ["mkirschenbaum"],
-      "filename": "enterprise",
-      "difficulty": "★★",
-      "categories": ["vehicles"]
-    },{
-      "title": "Stegosaurus (One-Fold)",
-      "creatorId": ["jwu"],
-      "filename": "stegosaurusonefold",
-      "difficulty": "★",
-      "categories": ["dinosaurs"]
-    },{
-      "title": "Swan",
-      "creatorId": ["mvgelder"],
-      "filename": "swan",
-      "difficulty": "★",
-      "categories": ["birds"]
-    },{
-      "title": "Teddy Bear",
-      "creatorId": ["mkirschenbaum"],
-      "filename": "teddybear",
-      "difficulty": "★★★",
-      "categories": ["animals"]
-    },{
-      "title": "Temate Bake Cube",
-      "creatorId": ["kkasahara"],
-      "filename": "tematecube",
-      "difficulty": "★",
-      "categories": ["modular"]
-    },{
-      "title": "Tic-Tac-Toe Board",
-      "creatorId": ["afehl"],
-      "filename": "tictactoe",
-      "difficulty": "★★★",
-      "categories": ["misc"]
-    },{
-      "title": "TIE Fighter",
-      "creatorId": ["pschulz"],
-      "filename": "tiefighter",
-      "difficulty": "★★",
-      "categories": [
-        "vehicles",
-        "star-wars"
-      ]
-    },{
-      "title": "Totoro",
-      "creatorId": ["rglynn"],
-      "filename": "totororg",
-      "difficulty": "★★",
-      "categories": ["anime"]
-    },{
-      "title": "Toy Car",
-      "creatorId": ["hvgoubergen"],
-      "filename": "toycar",
-      "difficulty": "★★★",
-      "categories": ["vehicles"]
-    },{
-      "title": "Triangular Module Unit",
-      "creatorId": ["yevron"],
-      "filename": "triangularmodule",
-      "difficulty": "★",
-      "categories": ["modular"]
-    },{
-      "title": "Triceratops",
-      "creatorId": ["jharris"],
-      "filename": "triceratops",
-      "difficulty": "★★★",
-      "categories": ["dinosaurs"]
-    },{
-      "title": "Trumpet",
-      "creatorId": ["mvgelder"],
-      "filename": "trumpet",
-      "difficulty": "★",
-      "categories": ["misc"]
-    },{
-      "title": "Tut n' Cleo",
-      "creatorId": ["jcnolan"],
-      "filename": "tutncleo",
-      "difficulty": "★",
-      "categories": ["misc"]
-    },{
-      "title": "Unicorn (Simple)",
-      "creatorId": ["pbailey"],
-      "filename": "unicornsimple",
-      "difficulty": "★",
-      "categories": ["animals"]
-    },{
-      "title": "Water Lily and Pad (Lily)",
-      "creatorId": ["mvgelder"],
-      "filename": "waterlily",
-      "difficulty": "★★",
-      "categories": ["plants"]
-    },{
-      "title": "Water Lily and Pad (Pad)",
-      "creatorId": ["mvgelder"],
-      "filename": "lilypad",
-      "difficulty": "★★",
-      "categories": ["plants"]
-    },{
-      "title": "Weasel",
-      "creatorId": ["gwillow"],
-      "filename": "weasel",
-      "difficulty": "★★",
-      "categories": ["animals"]
-    },{
-      "title": "Wheelchair and Human (Wheelchair)",
-      "creatorId": ["mvgelder"],
-      "filename": "wheelchairchair",
-      "difficulty": "★★",
-      "categories": ["misc"]
-    },{
-      "title": "Wheelchair and Human (Human)",
-      "creatorId": ["mvgelder"],
-      "filename": "wheelchairhuman",
-      "difficulty": "★★",
-      "categories": ["misc"]
-    },{
-      "title": "Windmill",
-      "creatorId": ["mvgelder"],
-      "filename": "windmill",
-      "difficulty": "★★",
-      "categories": ["misc"]
-    },{
-      "title": "Wreath",
-      "creatorId": ["dpetty"],
-      "filename": "wreath",
-      "difficulty": "★",
-      "categories": ["modular"]
-    },{
-      "title": "Yoda",
-      "creatorId": [
-        "fkawahata", 
-        "mmichaelis"
-      ],
-      "filename": "yodafumiaki",
-      "difficulty": "★★",
-      "categories": [
-        "misc",
-        "star-wars"
-      ]
-    },{
-      "title": "Insect",
-      "creatorId": ["hpereira"],
-      "filename": "insecthpereira",
-      "difficulty": "★★★",
-      "categories": ["insects"]
-    },{
-      "title": "Jack in the Box",
-      "creatorId": ["hpereira"],
-      "filename": "jackinabox",
-      "difficulty": "★★★",
-      "categories": ["misc"]
-    },{
-      "title": "Martini",
-      "creatorId": ["shecht"],
-      "filename": "dollarmartini",
-      "difficulty": "★★★",
-      "categories": [
-        "bill-models",
-        "misc"
-      ]
-    },{
-      "title": "Matchbox",
-      "creatorId": ["mkirschenbaum"],
-      "filename": "matchbox",
-      "difficulty": "★★★",
-      "categories": ["misc"]
-    },{
-      "title": "Miss Piggy",
-      "creatorId": ["rglynn"],
-      "filename": "misspiggy",
-      "difficulty": "★★★",
-      "categories": ["muppets"]
-    },{
-      "title": "Monkey",
-      "creatorId": ["rglynn"],
-      "filename": "monkeyrg",
-      "difficulty": "★★★",
-      "categories": ["animals"]
-    },{
-      "title": "Electric Chair",
-      "creatorId": ["afehl"],
-      "filename": "oldsparky",
-      "difficulty": "★★★",
-      "categories": ["misc"]
-    },{
-      "title": "Oscar the Grouch",
-      "creatorId": ["rglynn"],
-      "filename": "oscargrouch",
-      "difficulty": "★★★",
-      "categories": ["muppets"]
-    },{
-      "title": "Patterned Tiles",
-      "creatorId": ["pbudai"],
-      "filename": "patternedtiles",
-      "difficulty": "★★★",
-      "categories": ["tesselation"]
-    },{
-      "title": "Pegasus",
-      "creatorId": ["avoyer"],
-      "filename": "pegasusav",
-      "difficulty": "★★★",
-      "categories": ["animals"]
-    },{
-      "title": "Penguin",
-      "creatorId": ["hpereira"],
-      "filename": "penguinhpereira",
-      "difficulty": "★★★",
-      "categories": ["birds"]
-    },{
-      "title": "Baby Pteranodon",
-      "creatorId": ["fgilgado"],
-      "filename": "pteranodonbaby",
-      "difficulty": "★★★",
-      "categories": ["dinosaurs"]
-    },{
-      "title": "Rhinoceros (Black)",
-      "creatorId": ["rkoh"],
-      "filename": "rhinoblackrkoh",
-      "difficulty": "★★★",
-      "categories": ["animals"]
-    },{
-      "title": "Rocking Horse",
-      "creatorId": ["rkoh"],
-      "filename": "rockinghorserkoh",
-      "difficulty": "★★★",
-      "categories": ["misc"]
-    },{
-      "title": "Santa",
-      "creatorId": ["scasey"],
-      "filename": "santascasey",
-      "difficulty": "★★★",
-      "categories": ["misc"]
-    },{
-      "title": "Sea Turtle",
-      "creatorId": ["cweber"],
-      "filename": "seaturtlecweber",
-      "difficulty": "★★★",
-      "categories": ["animals"]
-    },{
-      "title": "Shamrock",
-      "creatorId": ["shecht"],
-      "filename": "shamrocksh",
-      "difficulty": "★★★",
-      "categories": [
-        "bill-models",
-        "misc"
-      ]
-    },{
-      "title": "Shark",
-      "creatorId": ["jwu"],
-      "filename": "sharkjwu",
-      "difficulty": "★★★",
-      "categories": ["fish"]
-    },{
-      "title": "Snake Dragon",
-      "creatorId": ["mvanglada"],
-      "filename": "snakedragonmva",
-      "difficulty": "★★★",
-      "categories": ["animals"]
-    },{
-      "title": "Sphinx",
-      "creatorId": ["avoyer"],
-      "filename": "sphinxavoyer",
-      "difficulty": "★★★",
-      "categories": ["animals"]
-    },{
-      "title": "Squirrel",
-      "creatorId": ["pbailey"],
-      "filename": "squirrelpbailey",
-      "difficulty": "★★★",
-      "categories": ["animals"]
-    },{
-      "title": "Baby Stegosaurus",
-      "creatorId": ["fgilgado"],
-      "filename": "stegosaurusbabyfgil",
-      "difficulty": "★★★",
-      "categories": ["dinosaurs"]
-    },{
-      "title": "Tank",
-      "creatorId": ["cesseltine"],
-      "filename": "tankcess",
-      "difficulty": "★★★",
-      "categories": [
-        "bill-models",
-        "vehicles"
-      ]
-    },{
-      "title": "Teddy Bear",
-      "creatorId": ["rglynn"],
-      "filename": "teddybearrglynn",
-      "difficulty": "★★★",
-      "categories": ["misc"]
-    },{
-      "title": "Tyrannosaurus",
-      "creatorId": ["jharris"],
-      "filename": "trexjh",
-      "difficulty": "★★★",
-      "categories": ["dinosaurs"]
-    },{
-      "title": "Baby Triceratops",
-      "creatorId": ["fgilgado"],
-      "filename": "triceratopsbabyfgil",
-      "difficulty": "★★★",
-      "categories": ["dinosaurs"]
-    },{
-      "title": "Twisted Dancer",
-      "creatorId": ["rglynn"],
-      "filename": "twisteddancer",
-      "difficulty": "★★★",
-      "categories": ["misc"]
-    },{
-      "title": "Wasp",
-      "creatorId": ["avoyer"],
-      "filename": "waspav",
-      "difficulty": "★★★",
-      "categories": ["insects"]
-    },{
-      "title": "Yacht",
-      "creatorId": ["rglynn"],
-      "filename": "yachtrg",
-      "difficulty": "★★★",
-      "categories": ["vehicles"]
+      "id": "mbright",
+      "name": "Mike Bright",
+      "site": null,
+      "youtube": null
+    },{
+      "id": "abarbour",
+      "name": "Anita Barbour",
+      "site": null,
+      "youtube": null
+    },{
+      "id": "fgrebenicek",
+      "name": "Frantisek Grebenicek",
+      "site": null,
+      "youtube": null
+    },{
+      "id": "mslayton",
+      "name": "Matt Slayton",
+      "site": null,
+      "youtube": null
+    },{
+      "id": "bminch",
+      "name": "Bradley A. Minch",
+      "site": null,
+      "youtube": null
+    },{
+      "id": "jjaquet",
+      "name": "Junior Jaquet",
+      "site": null,
+      "youtube": null
+    },{
+      "id": "rdonachie",
+      "name": "Rikki Donachie",
+      "site": null,
+      "youtube": null
+    },{
+      "id": "rfoelker",
+      "name": "Rita Foelker",
+      "site": null,
+      "youtube": null
+    },{
+      "id": "abarber",
+      "name": "Alex Barber",
+      "site": "https://web.archive.org/web/20150208123045/http://www.origami.org/index.html",
+      "youtube": null
+    },{
+      "id": "sfriedman",
+      "name": "Seth Friedman",
+      "site": null,
+      "youtube": null
+    },{
+      "id": "jmolina",
+      "name": "Jose Tomas Buitrao Molina",
+      "site": null,
+      "youtube": null
+    },{
+      "id": "smassis",
+      "name": "Sergei Massis",
+      "site": null,
+      "youtube": null
+    },{
+      "id": "jkusserow",
+      "name": "Julius Kusserow",
+      "site": null,
+      "youtube": null
+    },{
+      "id": "wko",
+      "name": "Wayne Ko",
+      "site": null,
+      "youtube": null
     }
   ],
   "categories": [
+    "action-models",
+    "airships",
     "animals",
     "anime",
     "bill-models",
     "birds",
     "dinosaurs",
+    "figures",
     "fish",
+    "furniture",
     "insects",
     "misc",
     "muppets",
     "plants",
-    "starwars",
+    "star-wars",
+    "star-trek",
     "tesselations",
     "modular",
     "vehicles"

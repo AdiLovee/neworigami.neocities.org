@@ -1,6 +1,6 @@
 console.log("Loading versionCheck.js");
 
-fetch("./data/version.json?v=" + Date.now())
+fetch("./data/versionManifest.json?v=" + Date.now())
   .then(response => response.json())
   .then(versionData => {
     let versionMismatch = false;
@@ -17,6 +17,19 @@ fetch("./data/version.json?v=" + Date.now())
           console.log(`Updated GIF image: ${srcBase}`);
         });
         localStorage.setItem("*.gif", gifVersion);
+        versionMismatch = true;
+        return;
+      }
+      if (file === "*.pdf") {
+        // Special case: update all .pdf files
+        const pdfVersion = versionData[file];
+        const pdfImages = document.querySelectorAll("img[src$=\".pdf\"]");
+        pdfImages.forEach(img => {
+          const srcBase = img.src.split("?")[0]; // Remove any existing version param
+          img.src = `${srcBase}?v=${pdfVersion}`;
+          console.log(`Updated PDF files: ${srcBase}`);
+        });
+        localStorage.setItem("*.pdf", pdfVersion);
         versionMismatch = true;
         return;
       }
@@ -43,7 +56,7 @@ fetch("./data/version.json?v=" + Date.now())
     }
   })
   .catch(error => {
-    console.error("Error fetching version.json:", error);
+    console.error("Error fetching versionManifest.json:", error);
 });
 
 // Function to reload specific resources (JS, CSS, or JSON)

@@ -1,12 +1,14 @@
 :root {
-  --light-background-color: #fdf4dc;
-  --dark-background-color: #1a1d23;
-  --off-white:    #f8f4e9;
-  --near-black:   #0f0f0f;
-  --link:         #0099ff;
-  --link-visited: #0066ff;
-  --link-hover:   #0033ff;
-  --link-active:  #0000ff;
+  --light-bg-color: #fdf4dc;
+  --off-white:      #f8f4e9;
+  --dark-bg-color:  #1a1d23;
+  --near-black:     #0f0f0f;
+  --link:           #0099ff;
+  --link-visited:   #0066ff;
+  --link-hover:     #0033ff;
+  --link-active:    #0000ff;
+  --dark-grey:      #414141;
+  --light-grey:     #7e7e7e;
 }
 /*
 * {
@@ -19,7 +21,7 @@
 }
 */
 body {
-  background-color: var(--light-background-color);
+  background-color: var(--light-bg-color);
   color: var(--near-black);
   font-family: 'Consolas';
   height: 100vh;
@@ -56,20 +58,30 @@ img {
   max-height: 80px;
 }
 
+.hover-button {
+  background-color: var(--dark-grey);
+  color: var(--off-white);
+  border-radius: 6px 6px 6px 6px;
+  border: 1px solid var(--light-grey);
+  transition: background-color 0.2s ease;
+}
+.hover-button:hover {
+  background-color: var(--light-grey);
+}
+
 
 .dark-mode {
-  background-color: var(--dark-background-color);
+  background-color: var(--dark-bg-color);
   color: var(--off-white);
 }
 
 .update-item {
   border-radius: 12px;
   overflow: hidden;
-  background: #414141;
+  background: var(--dark-grey);
   margin-bottom: 1em;
-  border: 1px solid #7e7e7e;
+  border: 1px solid var(--light-grey);
 }
-
 
 .update-header {
   font-weight: bold;
@@ -78,14 +90,14 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #414141;
-  color: #f8f4e9;
+  background: var(--dark-grey);
+  color: var(--off-white);
   border-radius: 12px 12px 0 0;
 }
 
 
 .update-header:hover {
-  background: #7e7e7e;
+  background: var(--light-grey);
 }
 
 
@@ -94,9 +106,9 @@ img {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out, padding 0.2s ease-out;
-  background: #414141;
-  color: #f8f4e9;
-  border-top: 1px solid #7e7e7e;
+  background: var(--dark-grey);
+  color: var(--off-white);
+  border-top: 1px solid var(--light-grey);
   border-radius: 0 0 12px 12px;
   padding: 0 12px;
 }

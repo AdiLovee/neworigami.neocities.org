@@ -20,6 +20,31 @@
     
     <!-- Scripts needed for page contents go here -->
     <script type="module" src="./scripts/paginationCreators.js" defer></script>
+    <script defer>
+      fetch("./updates/manifest.json")
+      .then(res => res.json())
+      .then(data => {
+        const mostRecentRaw = data
+          .map(entry => entry.replace(".md", ""))
+          .sort((a, b) => new Date(b) - new Date(a))[0];
+
+        // Parse as local date
+        const [year, month, day] = mostRecentRaw.split('-').map(Number);
+        const localDate = new Date(year, month - 1, day); // month is 0-based
+        
+        const formattedDate = localDate.toLocaleDateString("en-US", {
+          year: "numeric",
+          month: "long",
+          day: "numeric"
+        });
+
+        document.getElementById("lastUpdate").textContent = formattedDate;
+      })
+      .catch(err => {
+        console.error("Failed to fetch manifest:", err);
+        document.getElementById("lastUpdate").textContent = "Unavailable";
+      });
+    </script>
   </head>
   <body>
     <table border="0">
@@ -49,7 +74,7 @@
         Have a diagram you'd like to be shared here? Just upload it to any file transfer site and comment the link!<br>
         Have a creator you'd like to share? Comment their site and/or YouTube Channel and I'll also add it!
       </p>
-      <p>Last updated: <a href="./updates.html">May 9, 2025</a></p>
+      <p>Last updated: <a href="./updates.html"><span id="lastUpdate">...</span></p>
       <p><a href="./todo.html">Planned updates</a></p>
       <p>If you are having troubles seeing the updates, try refreshing the page. If that doesnt work, <em>still</em>, please leave a comment on the site or guestbook above.</p>
       <hr>
