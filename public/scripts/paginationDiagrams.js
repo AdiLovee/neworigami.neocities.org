@@ -100,14 +100,6 @@ document.getElementById("sortCategory").addEventListener("click", () => {
   changePage(1);
 });
 
-// Sort filteredData alphabetically by concatenated creators string
-document.getElementById("sortCreator").addEventListener("click", () => {
-  filteredData = [...filteredData].sort((a,b) =>
-    a.creators.join(", ").localeCompare(b.creators.join(", "))
-  );
-  changePage(1);
-});
-
 // Sort filteredData by difficulty using a predefined order (easy < medium < hard)
 document.getElementById("sortDifficulty").addEventListener("click", () => {
   const difficultyOrder = { easy: 1, medium: 2, hard: 3 };
@@ -117,21 +109,18 @@ document.getElementById("sortDifficulty").addEventListener("click", () => {
   changePage(1);
 });
 
-// Reset all filters to default "all" and clear URL parameters, then refresh display
-document.getElementById("resetFilters").addEventListener("click", () => {
-  document.getElementById("filterDifficulty").value = "all";
-  document.getElementById("filterCategory").value = "all";
-  document.getElementById("filterCreator").value = "all";
-  // Remove all query parameters from URL without reloading page
-  window.history.replaceState({}, "", window.location.pathname);
-  // Reset filtered data to full sorted dataset
-  filteredData = sortByName([...fullData]);
-  document.getElementById("filteredCount").textContent = filteredData.length;
-  changePage(1);  // Reset to first page of results
+// Sort filteredData alphabetically by concatenated creators string
+document.getElementById("sortCreator").addEventListener("click", () => {
+  filteredData = [...filteredData].sort((a,b) =>
+    a.creators.join(", ").localeCompare(b.creators.join(", "))
+  );
+  changePage(1);
 });
 
+
+
 document.getElementById("resetFilters").addEventListener("click", () => {
-  // Reset dropdowns to default
+  // Reset all filters to default "all" and clear URL parameters, then refresh display
   document.getElementById("filterDifficulty").value = "all";
   document.getElementById("filterCategory").value = "all";
   document.getElementById("filterCreator").value = "all";
@@ -209,10 +198,10 @@ function displayTable(page) {
       row.insertCell(2).innerHTML = item.name;
 
       // Category cell: each category linked to filtered results by category
-      row.insertCell(3).innerHTML = item.categories.map(cat => `<a href="./diagrams.html?category=${encodeURIComponent(cat)}">${cat}</a>`).join("<br>");
+      row.insertCell(3).innerHTML = item.categories.map(cat => `<a href="./diagrams?category=${encodeURIComponent(cat)}">${cat}</a>`).join("<br>");
      
       // Creator cell: each creator linked to filtered results by creator
-      row.insertCell(4).innerHTML = item.creators.map(cid => `<a href="./diagrams.html?creator=${encodeURIComponent(cid)}">${cid}</a>`).join("<br>");
+      row.insertCell(4).innerHTML = item.creators.map(cid => `<a href="./diagrams?creator=${encodeURIComponent(cid)}">${cid}</a>`).join("<br>");
     });
 
     // Update pagination controls (buttons) to reflect current page and total pages
