@@ -9,6 +9,9 @@
   --link-active:    #0000ff;
   --dark-grey:      #414141;
   --light-grey:     #7e7e7e;
+
+  --bg:         var(--light-bg-color);
+  --fg:         var(--near-black);
 }
 /*
 * {
@@ -21,8 +24,8 @@
 }
 */
 body {
-  background-color: var(--light-bg-color);
-  color: var(--near-black);
+  background-color: var(--bg);
+  color: var(--fg);
   font-family: 'Consolas';
   height: 100vh;
 }
