@@ -11,15 +11,19 @@ function handleHover(button, isHover) {
 
 window.onload = function () {
   if (localStorage.getItem("darkMode") === "enabled") {
-    document.body.classList.add("dark-mode");
+    document.documentElement.style.setProperty("--bg", "var(--dark-bg-color)");
+    document.documentElement.style.setProperty("--fg", "var(--off-white)");
   }
 };
 
 function darkModeToggle() {
-  document.body.classList.toggle("dark-mode");
-  if (document.body.classList.contains("dark-mode")) {
+  if (document.documentElement.style.getPropertyValue("--bg") !== "var(--dark-bg-color)") {
+    document.documentElement.style.setProperty("--bg", "var(--dark-bg-color)");
+    document.documentElement.style.setProperty("--fg", "var(--off-white)");
     localStorage.setItem("darkMode", "enabled");
   } else {
+    document.documentElement.style.setProperty("--bg", "var(--light-bg-color)");
+    document.documentElement.style.setProperty("--fg", "var(--near-black)");
     localStorage.setItem("darkMode", "disabled");
   }
 }

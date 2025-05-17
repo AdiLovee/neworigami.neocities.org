@@ -5,6 +5,7 @@
 
   //Apply dark mode if enabled in storage or no preference but system pref is dark
   if (storedPreference === "enabled" || (storedPreference === null && prefersDark)) {
-    document.documentElement.classList.add("dark-mode");
+    document.documentElement.style.setProperty("--bg", "var(--dark-bg-color)");
+    document.documentElement.style.setProperty("--fg", "var(--off-white)");
   }
 })();
