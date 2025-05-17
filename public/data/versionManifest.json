@@ -1,15 +1,18 @@
 {
-  "htmlVersion": "2025.05.16.0208",
+  "htmlVersion": "2025.05.17.0414",
   "./scripts/themeInit.js": "2025.05.16.0208",
   "./scripts/style.css": "2025.05.16.0208",
   "./scripts/footer.js": "2025.05.16.0208",
   "./scripts/darkMode.js": "2025.05.16.0208",
   "./scripts/versionCheck.js": "2025.05.16.0208",
 
+  "./scripts/lastUpdate.js": "2025.17.0414",
   "./scripts/updates.js": "2025.05.16.0208",
-  
+  "./scripts/dailyDiagram.js": "2025.05.17.0414",
+  "./scripts/randomDiagram.js": "2025.05.17.0414",
+
   "./scripts/shared.js": "2025.05.16.0208",
-  "./scripts/paginationDiagrams.js": "2025.05.16.0208",
+  "./scripts/paginationDiagrams.js": "2025.05.17.0414",
   "./scripts/paginationCreators.js": "2025.05.16.0208",
   "./data/diagramDict.json": "2025.05.16.0337",
   "*.gif": "2025.05.16.0208",

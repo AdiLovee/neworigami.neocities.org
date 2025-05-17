@@ -20,31 +20,9 @@
     
     <!-- Scripts needed for page contents go here -->
     <script type="module" src="./scripts/paginationCreators.js" defer></script>
-    <script defer>
-      fetch("./updates/manifest.json")
-      .then(res => res.json())
-      .then(data => {
-        const mostRecentRaw = data
-          .map(entry => entry.replace(".md", ""))
-          .sort((a, b) => new Date(b) - new Date(a))[0];
-
-        // Parse as local date
-        const [year, month, day] = mostRecentRaw.split('-').map(Number);
-        const localDate = new Date(year, month - 1, day); // month is 0-based
-        
-        const formattedDate = localDate.toLocaleDateString("en-US", {
-          year: "numeric",
-          month: "long",
-          day: "numeric"
-        });
-
-        document.getElementById("lastUpdate").textContent = formattedDate;
-      })
-      .catch(err => {
-        console.error("Failed to fetch manifest:", err);
-        document.getElementById("lastUpdate").textContent = "Unavailable";
-      });
-    </script>
+    <script src="./scripts/lastUpdate.js" defer></script>
+    <script src="./scripts/dailyDiagram.js" defer></script>
+    <script src="./scripts/randomDiagram.js" defer></script>
   </head>
   <body>
     <table border="0">
@@ -65,21 +43,12 @@
       </tbody>
     </table>
     <ul style="list-style: none; width:75%">
-      <p>NewOrigami is the spiritual successor to <a href="https://web.archive.org/web/20130317080729/http://www.origami.org/index.html">Origami.com</a>, formerly by Alex Barber.</p>
-      <p>This is an archive dedicated to preserving and sharing as many publicly-available origami diagrams as possible, with a heavy focus on diagrams shared on sites that no longer existor only exist in the Wayback Machine now.</p>
-      <p>In the future I would like to turn this into a giant hub of free diagrams contributed by the community, so please feel free to share any diagrams you'd like with me!</p>
-      <p>All diagrams are presented in PDF format.</p>
-      <p>This site is regularly being updated, so please follow the <a href="https://neocities.org/site/neworigami">site</a> and leave feedback and comments in the <a href="https://neworigami.atabook.org">guestbook</a>.</p>
-      <p>
-        Have a diagram you'd like to be shared here? Just upload it to any file transfer site and comment the link!<br>
-        Have a creator you'd like to share? Comment their site and/or YouTube Channel and I'll also add it!
-      </p>
+      <p><a href=./about.html>What is this?</a></p>
       <p>Last updated: <a href="./updates.html"><span id="lastUpdate">...</span></p>
       <p><a href="./todo.html">Planned updates</a></p>
-      <p>If you are having troubles seeing the updates, try refreshing the page. If that doesnt work, <em>still</em>, please leave a comment on the site or guestbook above.</p>
+      <p>If you are having troubles seeing the updates, try a hard refresh with (CTRL+SHIFT+R). If that doesnt work, <em>still</em>, please leave a comment on the <a href="https://neocities.org/site/neworigami">site's page</a> or <a href="https://neworigami.atabook.org">guestbook</a>.</p>
       <hr>
-      <ul><h2>Sandbox</h2></ul>
-      <li>Click <a href="./experimental/sandbox.html">here</a> to visit the sandbox and view any updates currently under testing.</li>
+      <div id="diagram-of-the-day" class="diagram-feature"></div>
       <hr>
       <!--
         <ul><h2>Learner's Lair</h2></ul>
@@ -89,6 +58,10 @@
         <hr>
       -->
       <ul><h2>Archives</h2></ul>
+      <li>
+        <button id="random-diagram-btn" class="hover-button">Show Random Diagram</button>
+        <div id="random-diagram-display" style="margin-top: 1rem;"></div>
+      </li>
       <li><a href="./diagrams.html">All diagrams sorted by Name</a></li>
       <br>
       <ul><h3>Diagrams by Difficulty</h3></ul>
@@ -133,6 +106,11 @@
           </tbody>
         </table>
       </div>
+      <hr>
+      <ul><h2>Sandbox</h2></ul>
+      <li>Click <a href="./experimental/sandbox.html">here</a> to visit the sandbox and view any updates currently under testing.</li>
+      <li>Currently testing: Nothing</li>
+      <p></p>
       <div id="footer"></div>
     </ul>
   </body>

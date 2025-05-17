@@ -32,16 +32,20 @@ async function initializeTable() {
         const found = data.creators.find(c => c.id === id);
         return found ? found.name : "Unknown";
       });
+      // Format categories to individual entries; fallback to "Unknown" if not found
+      const categories = diagram.categories.map(data => {
+        const found = data.replace(/-/g, " ").replace(/\b\w/g, letter => letter.toUpperCase());
+        return found ? found : "Unknown";
+      });
+      // Convert difficulty stars to simple string labels for easier filtering
+      const difficulty = diagram.difficulty === "★★★" ? "hard" :
+                    diagram.difficulty === "★★" ? "medium" : "easy";
       
       return {
         name: diagram.title,  // Diagram title
-        // Convert difficulty stars to simple string labels for easier filtering
-        difficulty: diagram.difficulty === "★★★" ? "hard" :
-                    diagram.difficulty === "★★" ? "medium" : "easy",
+        difficulty: difficulty,
         // Format categories by replacing dashes with spaces and capitalizing words
-        categories: diagram.categories.map(cat =>
-          cat.replace(/-/g, " ").replace(/\b\w/g, letter => letter.toUpperCase())
-        ),
+        categories: categories,                                // Category array
         creators: creators,                                    // Creator names array
         download: `./assets/diagrams/${diagram.filename}.pdf`, // Link to downloadable PDF
         image: `./assets/thumbnails/${diagram.filename}.gif`,  // Thumbnail image path
