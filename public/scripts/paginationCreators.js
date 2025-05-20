@@ -43,7 +43,7 @@ function displayTable(page) {
 
     // Column 1: Creator name with link to filtered diagrams page
     const nameCell = row.insertCell(0);
-    nameCell.innerHTML = `<a href="./diagrams?creator=${encodeURIComponent(item.name)}">${item.name}</a>`;
+    nameCell.innerHTML = `<a href="./diagrams.html?creator=${encodeURIComponent(item.name)}">${item.name}</a>`;
     nameCell.style.width = "250px";
 
     // Column 2: Optional link to creator's site

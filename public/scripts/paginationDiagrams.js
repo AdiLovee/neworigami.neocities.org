@@ -202,10 +202,10 @@ function displayTable(page) {
       row.insertCell(2).innerHTML = item.name;
 
       // Category cell: each category linked to filtered results by category
-      row.insertCell(3).innerHTML = item.categories.map(cat => `<a href="./diagrams?category=${encodeURIComponent(cat)}">${cat}</a>`).join("<br>");
+      row.insertCell(3).innerHTML = item.categories.map(cat => `<a href="diagrams.html?category=${encodeURIComponent(cat)}">${cat}</a>`).join("<br>");
      
       // Creator cell: each creator linked to filtered results by creator
-      row.insertCell(4).innerHTML = item.creators.map(cid => `<a href="./diagrams?creator=${encodeURIComponent(cid)}">${cid}</a>`).join("<br>");
+      row.insertCell(4).innerHTML = item.creators.map(cid => `<a href="diagrams.html?creator=${encodeURIComponent(cid)}">${cid}</a>`).join("<br>");
     });
 
     // Update pagination controls (buttons) to reflect current page and total pages
