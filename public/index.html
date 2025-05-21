@@ -25,24 +25,15 @@
     <script src="./scripts/randomDiagram.js" defer></script>
   </head>
   <body>
-    <table border="0">
-      <tbody>
-        <tr>
-          <th>
-            <h2>Welcome to the new Origami.com</h2>
-          </th>
-          <th>
-            &nbsp; &nbsp; &nbsp; &nbsp;
-          </th>
-          <th align="right">
+    <header>
+      <span class="title">Welcome to the new Origami.com</span>
+      <div>
             A website by Adinah Levi
             <br>
             <div id="darkMode"></div>
-          </th>
-        </tr>
-      </tbody>
-    </table>
-    <ul style="list-style: none; width:75%">
+      </div>
+    </header>
+    <main>
       <p><a href=./about.html>What is this?</a></p>
       <p>Last updated: <a href="./updates.html"><span id="lastUpdate">...</span></p>
       <p><a href="./todo.html">Planned updates</a></p>
@@ -57,19 +48,20 @@
           <li><a href="./intro/beginner.html">Beginner Models</a></li>
         <hr>
       -->
-      <ul><h2>Archives</h2></ul>
-      <li>
-        <button id="random-diagram-btn" class="hover-button">Show Random Diagram</button>
+      <h2>Archives</h2>
+      <div>
+        <button id="random-diagram-btn">Show Random Diagram</button>
         <div id="random-diagram-display" style="margin-top: 1rem;"></div>
-      </li>
-      <li><a href="./diagrams.html">All diagrams sorted by Name</a></li>
+      </div>
       <br>
-      <ul><h3>Diagrams by Difficulty</h3></ul>
+      <a href="./diagrams.html">All diagrams sorted by Name</a></li>
+      <br>
+      <h3>Diagrams by Difficulty</h3><ul>
         <li><a href="diagrams.html?difficulty=easy">Easy Models</a></li>
         <li><a href="diagrams.html?difficulty=medium">Medium Models</a></li>
         <li><a href="diagrams.html?difficulty=hard">Hard Models</a></li>
-      <br>
-      <ul><h3>Diagrams by Category</h3></ul>
+      </ul>
+      <h3>Diagrams by Category</h3><ul>
         <li><a href="diagrams.html?category=Action+Models">Action Models</a></li>
         <li><a href="diagrams.html?category=Animals">Animals</a></li>
         <li><a href="diagrams.html?category=Anime">Anime</a></li>
@@ -89,12 +81,11 @@
         <li><a href="diagrams.html?category=Star+Wars">Star Wars</a></li>
         <li><a href="diagrams.html?category=Tesselation">Tesselations</a></li>
         <li><a href="diagrams.html?category=Vehicles">Vehicles</a></li>
+      </ul>
       <br>
       <hr>
-      <ul><h2>Creator Site Links</h2>
-      </ul>
+      <h2>Creator Site Links</h2>
       <div id="pagination"></div>
-      <hr>
       <div id="tableContainer">
         <table border="0" id="tablePaginated">
           <tbody>
@@ -107,12 +98,11 @@
           </tbody>
         </table>
       </div>
+      <br>
       <hr>
-      <ul><h2>Sandbox</h2></ul>
-      <li>Click <a href="./experimental/sandbox.html">here</a> to visit the sandbox and view any updates currently under testing.</li>
-      <li>Currently testing: Nothing</li>
-      <p></p>
-      <div id="footer"></div>
-    </ul>
+      <h2>Sandbox</h2>
+      <p>Click <a href="./experimental/sandbox.html">here</a> to visit the sandbox and view any updates currently under testing.<br>Currently testing: Nothing</p>
+    </main>
+    <footer id="footer"></footer>
   </body>
 </html>

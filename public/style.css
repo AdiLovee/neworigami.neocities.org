@@ -24,14 +24,28 @@
 }
 */
 body {
+  font-size: 18px;
   background-color: var(--bg);
   color: var(--fg);
-  font-family: 'Consolas';
-  height: 100vh;
+  font-family: 'Consolas', monospace;
+  width: min(1000px, calc(100vw - 100px));
+  margin: auto;
+  padding: 50px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 24px;
 }
 
 main {
-  flex: 1;
+  margin-inline: 10px;
 }
 
 a{

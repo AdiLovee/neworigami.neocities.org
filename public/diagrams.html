@@ -23,26 +23,17 @@
     <script type="module" src="./scripts/paginationDiagrams.js" defer></script>
   </head>
   <body>
-    <table border="0">
-      <tbody>
-        <tr>
-          <th>
-            <h2>Welcome to the new Origami.com</h2>
-          </th>
-          <th>&nbsp; &nbsp; &nbsp; &nbsp;</th>
-          <th align="right">
+    <header>
+      <span class="title">Welcome to the new Origami.com</span>
+      <div>
             A website by Adinah Levi
-            <br />
+            <br>
             <div id="darkMode"></div>
-          </th>
-        </tr>
-      </tbody>
-    </table>
+      </div>
+    </header>
 
-    <ul>
-      <p>
-        ← Back to <a href="./index.html">Main Page</a>.
-      </p>
+    <main>
+      <p>← Back to <a href="./index.html">Main Page</a>.</p>
       <hr>
       <p>Alphabetical list of diagrams.</p>
       <p>Currently Viewing: <span id="filteredCount">...</span> out of <span id="diagramCount">...</span> Diagrams</p>
@@ -90,7 +81,7 @@
         <div id="paginationLower"></div>
       </div>
       <p>← Back to <a href="./index.html">Main Page</a>.</p>
-      <div id="footer"></div>
-    </ul>
+    </main>
+    <footer id="footer"></footer>
   </body>
 </html>
