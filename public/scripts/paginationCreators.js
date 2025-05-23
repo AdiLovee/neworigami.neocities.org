@@ -25,7 +25,7 @@ function loadDiagramData() {
 
 // Display the table based on the current page number
 function displayTable(page) {
-  const table = document.getElementById("tablePaginated");
+  const table = document.getElementById("tablePaginatedCreator");
 
   // Calculate slice range for current page
   const startIndex = (page - 1) * ROWSPERPAGE;

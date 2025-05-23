@@ -15,6 +15,7 @@
     <!-- Template scripts -->
     <link rel="stylesheet" href="./style.css" />
     <script src="./scripts/themeInit.js"></script>
+    <script src="./scripts/header.js" defer></script>
     <script src="./scripts/footer.js" defer></script>
     <script src="./scripts/darkMode.js" defer></script>
     
@@ -25,94 +26,81 @@
     <script src="./scripts/randomDiagram.js" defer></script>
   </head>
   <body>
-    <table border="0">
-      <tbody>
-        <tr>
-          <th>
-            <h2>Welcome to the new Origami.com</h2>
-          </th>
-          <th>
-            &nbsp; &nbsp; &nbsp; &nbsp;
-          </th>
-          <th align="right">
-            A website by Adinah Levi
-            <br>
-            <div id="darkMode"></div>
-          </th>
-        </tr>
-      </tbody>
-    </table>
-    <ul style="list-style: none; width:75%">
-      <p><a href=./about.html>What is this?</a></p>
-      <p>Last updated: <a href="./updates.html"><span id="lastUpdate">...</span></p>
-      <p><a href="./todo.html">Planned updates</a></p>
-      <p>If you are having troubles seeing the updates, try a hard refresh with (CTRL+SHIFT+R). If that doesnt work, <em>still</em>, please leave a comment on the <a href="https://neocities.org/site/neworigami">site's page</a> or <a href="https://neworigami.atabook.org">guestbook</a>.</p>
+    <div id="header"></div>
+    <main>
+      <section>
+        <p><a href=./about.html>What is this?</a></p>
+        <p>Last updated: <a href="./updates.html"><span id="lastUpdate">...</span></a></p>
+        <p><a href="./todo.html">Planned updates</a></p>
+        <p>If you are having troubles seeing the updates, try a hard refresh with (CTRL+SHIFT+R). If that doesnt work, <em>still</em>, please leave a comment on the <a href="https://neocities.org/site/neworigami">site's page</a> or <a href="https://neworigami.atabook.org">guestbook</a>.</p>
+      </section>
       <hr>
-      <div id="diagram-of-the-day" class="diagram-feature"></div>
+      <section id="diagram-of-the-day" class="diagram-feature"></section>
       <hr>
-      <!--
-        <ul><h2>Learner's Lair</h2></ul>
-          <li><a href="./intro/symbols.html">Symbols</a></li>
-          <li><a href="./intro/bases.html">Bases</a></li>
-          <li><a href="./intro/beginner.html">Beginner Models</a></li>
-        <hr>
-      -->
-      <ul><h2>Archives</h2></ul>
-      <li>
-        <button id="random-diagram-btn" class="hover-button">Show Random Diagram</button>
-        <div id="random-diagram-display" style="margin-top: 1rem;"></div>
-      </li>
-      <li><a href="./diagrams.html">All diagrams sorted by Name</a></li>
-      <br>
-      <ul><h3>Diagrams by Difficulty</h3></ul>
-        <li><a href="diagrams.html?difficulty=easy">Easy Models</a></li>
-        <li><a href="diagrams.html?difficulty=medium">Medium Models</a></li>
-        <li><a href="diagrams.html?difficulty=hard">Hard Models</a></li>
-      <br>
-      <ul><h3>Diagrams by Category</h3></ul>
-        <li><a href="diagrams.html?category=Action+Models">Action Models</a></li>
-        <li><a href="diagrams.html?category=Animals">Animals</a></li>
-        <li><a href="diagrams.html?category=Anime">Anime</a></li>
-        <li><a href="diagrams.html?category=Bill+Models">Bill Models</a></li>
-        <li><a href="diagrams.html?category=Birds">Birds</a></li>
-        <li><a href="diagrams.html?category=Bookmarks">Bookmarks</a></li>
-        <li><a href="diagrams.html?category=Dinosaurs">Dinosaurs</a></li>
-        <li><a href="diagrams.html?category=Figures">Figures</a></li>
-        <li><a href="diagrams.html?category=Fish">Fish</a></li>
-        <li><a href="diagrams.html?category=Furniture">Furniture</a></li>
-        <li><a href="diagrams.html?category=Insects">Insects</a></li>
-        <li><a href="diagrams.html?category=Misc">Misc</a></li>
-        <li><a href="diagrams.html?category=Modular">Modular Units</a></li>
-        <li><a href="diagrams.html?category=Muppets">Muppets</a></li>
-        <li><a href="diagrams.html?category=Plants">Plants</a></li>
-        <li><a href="diagrams.html?category=Star+Trek">Star Trek</a></li>
-        <li><a href="diagrams.html?category=Star+Wars">Star Wars</a></li>
-        <li><a href="diagrams.html?category=Tesselation">Tesselations</a></li>
-        <li><a href="diagrams.html?category=Vehicles">Vehicles</a></li>
-      <br>
+      <section>
+        <h2>Fold School</h2>
+          <li><a href="./school.html#symbols">Symbols</a></li>
+          <li><a href="./school.html#bases">Bases</a></li>
+          <li><a href="./school.html#beginner">Beginner Models</a></li>
+      </section>
       <hr>
-      <ul><h2>Creator Site Links</h2>
-      </ul>
-      <div id="pagination"></div>
+      <section>    
+        <h2>Archives</h2>
+          <button id="random-diagram-btn" class="hover-button">Show Random Diagram</button>
+          <div id="random-diagram-display" style="margin-top: 1rem;"></div>
+          <a href="./diagrams.html">All diagrams sorted by Name</a>
+        <h3>Diagrams by Difficulty</h3>
+        <ul>
+          <li><a href="diagrams.html?difficulty=easy">Easy Models</a></li>
+          <li><a href="diagrams.html?difficulty=medium">Medium Models</a></li>
+          <li><a href="diagrams.html?difficulty=hard">Hard Models</a></li>
+        </ul>
+        <h3>Diagrams by Category</h3>
+        <ul>
+          <li><a href="diagrams.html?category=Action+Models">Action Models</a></li>
+          <li><a href="diagrams.html?category=Animals">Animals</a></li>
+          <li><a href="diagrams.html?category=Anime">Anime</a></li>
+          <li><a href="diagrams.html?category=Bill+Models">Bill Models</a></li>
+          <li><a href="diagrams.html?category=Birds">Birds</a></li>
+          <li><a href="diagrams.html?category=Bookmarks">Bookmarks</a></li>
+          <li><a href="diagrams.html?category=Dinosaurs">Dinosaurs</a></li>
+          <li><a href="diagrams.html?category=Figures">Figures</a></li>
+          <li><a href="diagrams.html?category=Fish">Fish</a></li>
+          <li><a href="diagrams.html?category=Furniture">Furniture</a></li>
+          <li><a href="diagrams.html?category=Insects">Insects</a></li>
+          <li><a href="diagrams.html?category=Misc">Misc</a></li>
+          <li><a href="diagrams.html?category=Modular">Modular Units</a></li>
+          <li><a href="diagrams.html?category=Muppets">Muppets</a></li>
+          <li><a href="diagrams.html?category=Plants">Plants</a></li>
+          <li><a href="diagrams.html?category=Star+Trek">Star Trek</a></li>
+          <li><a href="diagrams.html?category=Star+Wars">Star Wars</a></li>
+          <li><a href="diagrams.html?category=Tesselation">Tesselations</a></li>
+          <li><a href="diagrams.html?category=Vehicles">Vehicles</a></li>
+        </ul>
+      </section>
       <hr>
-      <div id="tableContainer">
-        <table border="0" id="tablePaginated">
-          <tbody>
-            <tr>
-              <th>Name</th>
-              <th></th>
-              <th>Site</th>
-              <th>YouTube</th>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <section>
+        <h2>Creator Site Links</h2>
+        <section id="pagination"></section>
+        <section id="tableContainer">
+          <table border="0" id="tablePaginatedCreator">
+            <thead>
+              <tr>
+                <th>Name</th><th>Site</th><th>YouTube</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </section>
+      </section>
       <hr>
-      <ul><h2>Sandbox</h2></ul>
-      <li>Click <a href="./experimental/sandbox.html">here</a> to visit the sandbox and view any updates currently under testing.</li>
-      <li>Currently testing: Nothing</li>
-      <p></p>
+      <section class="sandbox">
+        <h2>Sandbox</h2>
+        Click <a href="./experimental/sandbox.html">here</a> to visit the sandbox and view any updates currently under testing.
+        <br>
+        Currently testing: Nothing
+      </section>
       <div id="footer"></div>
-    </ul>
+    </main>
   </body>
 </html>

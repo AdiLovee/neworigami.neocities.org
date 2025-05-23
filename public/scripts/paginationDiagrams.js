@@ -158,7 +158,7 @@ function displayTable(page) {
   table.innerHTML = `
     <tr>
       <th><u>↓</u></th>
-      <th>Difficulty</th>
+      <th>Diff</th>
       <th>Name</th>
       <th>Category</th>
       <th>Creator</th>

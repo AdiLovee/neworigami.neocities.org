@@ -36,4 +36,7 @@ FOOT.innerHTML = `
     <a href="https://www.asciiart.eu/art-and-design/origamis">asciiart.eu</a><br>
     All rights for diagrams reserved by respective original creators.
   </p>
+  <div style="text-align:right">
+  <a href="https://cd5k.net/tau/">&tau;</a>
+  </div>
 `;

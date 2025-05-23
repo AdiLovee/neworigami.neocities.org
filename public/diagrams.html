@@ -15,6 +15,7 @@
     <!-- Template scripts -->
     <link rel="stylesheet" href="./style.css" />
     <script src="./scripts/themeInit.js"></script>
+    <script src="./scripts/header.js" defer></script>
     <script src="./scripts/footer.js" defer></script>
     <script src="./scripts/darkMode.js" defer></script>
     
@@ -23,59 +24,53 @@
     <script type="module" src="./scripts/paginationDiagrams.js" defer></script>
   </head>
   <body>
-    <table border="0">
-      <tbody>
-        <tr>
-          <th>
-            <h2>Welcome to the new Origami.com</h2>
-          </th>
-          <th>&nbsp; &nbsp; &nbsp; &nbsp;</th>
-          <th align="right">
-            A website by Adinah Levi
-            <br />
-            <div id="darkMode"></div>
-          </th>
-        </tr>
-      </tbody>
-    </table>
-
+    <div id="header"></div>
     <ul>
       <p>
         ← Back to <a href="./index.html">Main Page</a>.
       </p>
+      <br>
       <hr>
+      <br>
       <p>Alphabetical list of diagrams.</p>
       <p>Currently Viewing: <span id="filteredCount">...</span> out of <span id="diagramCount">...</span> Diagrams</p>
+      <br>
+      <div id="filters">
+        <label for="filterDifficulty">Difficulty:</label>
+        <select id="filterDifficulty">
+          <option value="all">All</option>
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+        <label for="filterCategory">Category:</label>
+        <select id="filterCategory">
+          <option value="all">All</option>
+        </select>
+        <label for="filterCreator">Creator:</label>
+        <select id="filterCreator">
+          <option value="all">All</option>
+        </select>
+      </div>
+      
+      <div id="sortButtons">
+        
+        <button id="resetFilters" class="hover-button">Reset Filters</button>
+        <button id="sortName" class="hover-button">Sort by Name</button>
+        <button id="sortCategory" class="hover-button">Sort by Category</button>
+        <button id="sortDifficulty" class="hover-button">Sort by Difficulty</button>
+        <button id="sortCreator" class="hover-button">Sort by Creator</button>
+      </div>
+
       <div id="tableContainer">
         <div id="paginationUpper"></div>
         
+        <br>
         <hr>
-        <div id="filters">
-          <label for="filterDifficulty">Difficulty:</label>
-          <select id="filterDifficulty">
-            <option value="all">All</option>
-            <option value="easy">Easy</option>
-            <option value="medium">Medium</option>
-            <option value="hard">Hard</option>
-          </select>
-          <label for="filterCategory">Category:</label>
-          <select id="filterCategory">
-            <option value="all">All</option>
-          </select>
-          <label for="filterCreator">Creator:</label>
-          <select id="filterCreator">
-            <option value="all">All</option>
-          </select>
-        </div>
+        <br>
+        
+        
 
-        <div id="sortButtons">
-          
-          <button id="resetFilters" class="hover-button">Reset Filters</button>
-          <button id="sortName" class="hover-button">Sort by Name</button>
-          <button id="sortCategory" class="hover-button">Sort by Category</button>
-          <button id="sortDifficulty" class="hover-button">Sort by Difficulty</button>
-          <button id="sortCreator" class="hover-button">Sort by Creator</button>
-        </div>
 
         <table border="1" id="tablePaginated">
           <tr>
@@ -90,6 +85,7 @@
         <div id="paginationLower"></div>
       </div>
       <p>← Back to <a href="./index.html">Main Page</a>.</p>
+      <br>
       <div id="footer"></div>
     </ul>
   </body>

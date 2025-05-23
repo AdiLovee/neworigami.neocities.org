@@ -1,8 +1,9 @@
 {
-  "htmlVersion": "2025.05.20.0048",
+  "htmlVersion": "2025.05.23.1121",
   "./scripts/themeInit.js": "2025.05.16.0208",
-  "./scripts/style.css": "2025.05.16.0208",
-  "./scripts/footer.js": "2025.05.16.0208",
+  "./scripts/style.css": "2025.05.23.1121",
+  "./scripts/footer.js": "2025.05.23.1121",
+  "./scripts/header.js": "2025.05.23.1121",
   "./scripts/darkMode.js": "2025.05.16.0208",
   "./scripts/versionCheck.js": "2025.05.16.0208",
 
@@ -12,9 +13,9 @@
   "./scripts/randomDiagram.js": "2025.05.17.0414",
 
   "./scripts/shared.js": "2025.05.16.0208",
-  "./scripts/paginationDiagrams.js": "2025.05.20.0048",
-  "./scripts/paginationCreators.js": "2025.05.20.0048",
-  "./data/diagramDict.json": "2025.05.20.0048",
-  "*.gif": "2025.05.20.0048",
-  "*.pdf": "2025.05.20.0048"
+  "./scripts/paginationDiagrams.js": "2025.05.23.1121",
+  "./scripts/paginationCreators.js": "2025.05.23.1121",
+  "./data/diagramDict.json": "2025.05.23.1121",
+  "*.gif": "2025.05.23.1121",
+  "*.pdf": "2025.05.23.1121"
 }

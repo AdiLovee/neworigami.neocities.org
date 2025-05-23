@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewOrigami - Origami Archive</title>
+    <link rel="icon" href="./favicon.png" />
+    <!-- Run before anything else -->
+    <script>
+      const script = document.createElement("script");
+      script.src = "./scripts/versionCheck.js?v=" + Date.now();
+      document.head.appendChild(script);
+    </script>
+    
+    <!-- Template scripts -->
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./scripts/themeInit.js"></script>
+    <script src="./scripts/header.js" defer></script>
+    <script src="./scripts/footer.js" defer></script>
+    <script src="./scripts/darkMode.js" defer></script>
+    
+    <!-- Scripts needed for page contents go here -->
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <main>
+      <section id="symbols"></section>
+      <section id="bases"></section>
+      <section id="beginner"></section>
+    </main>
+  </body>
+</html>
