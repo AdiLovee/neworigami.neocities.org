@@ -1,8 +1,8 @@
-// Import shared utility functions and constants from shared.js
-import { fetchData, sortByName, displayError } from "./shared.js";
+import { fetchData, sortByName, displayError, ROWS_PER_PAGE } from "./shared.js"; // Shared utility functions and constants from shared.js
+import { renderPagination } from "./pagination.js";                               // Shared pagination helpers
+
 
 // Constants
-const ROWSPERPAGE = 15; // Number of rows to show per page
 let currentPage = 1;     // Current pagination page
 let diagramDict = { creators: [] }; // Data container for creator info
 
@@ -10,10 +10,9 @@ let diagramDict = { creators: [] }; // Data container for creator info
 function loadDiagramData() {
   fetchData()
     .then(data => {
-      // Sort creators alphabetically by name
+      // Sort by creators alphabetically then display first page
       sortByName(data.creators);
       diagramDict = data;
-      // Display the first page of results
       displayTable(currentPage);
     })
     .catch(error => {
@@ -28,8 +27,8 @@ function displayTable(page) {
   const table = document.getElementById("tablePaginatedCreator");
 
   // Calculate slice range for current page
-  const startIndex = (page - 1) * ROWSPERPAGE;
-  const endIndex = startIndex + ROWSPERPAGE;
+  const startIndex = (page - 1) * ROWS_PER_PAGE;
+  const endIndex = startIndex + ROWS_PER_PAGE;
 
   // Get the subset of creators for the current page
   const creatorsData = diagramDict.creators.slice(startIndex, endIndex);
@@ -65,54 +64,12 @@ function displayTable(page) {
 
 // Generate and display pagination controls
 function updatePagination(currentPage) {
-  const pageCount = Math.ceil(diagramDict.creators.length / ROWSPERPAGE);
+  const pageCount = Math.ceil(diagramDict.creators.length / ROWS_PER_PAGE);
   const paginationContainer = document.getElementById("pagination");
 
-  // Clear existing pagination
-  paginationContainer.innerHTML = "Page: ";
-
-  // Helper function to create a styled pagination button
-  function createButton(label, onClick, disabled = false, isCurrent = false) {
-    const btn = document.createElement("button");
-    btn.textContent = label;
-    btn.disabled = disabled;
-    btn.style.background = "none";
-    btn.style.border = "none";
-    btn.style.margin = "0 4px";
-    btn.style.padding = "5px 10px";
-    btn.style.cursor = disabled ? "default" : "pointer";
-    btn.style.color = disabled ? "transparent" : "#0099ff";
-    
-    // Highlight current page button
-    if (isCurrent) {
-      btn.style.fontWeight = "bold";
-      btn.style.fontSize = "1.2em";
-    }
-
-    // Assign click handler if button is not disabled
-    if (!disabled) {
-      btn.onclick = onClick;
-    }
-
-    return btn;
-  }
-
-  // "Previous" button
-  paginationContainer.appendChild(
-    createButton("←", () => displayTable(currentPage - 1), currentPage === 1)
-  );
-
-  // Page number buttons
-  for (let i = 1; i <= pageCount; i++) {
-    paginationContainer.appendChild(
-      createButton(i, () => displayTable(i), false, i === currentPage)
-    );
-  }
-
-  // "Next" button
-  paginationContainer.appendChild(
-    createButton("→", () => displayTable(currentPage + 1), currentPage === pageCount)
-  );
+  renderPagination(paginationContainer, currentPage, pageCount, (page) => {
+    displayTable(page);
+  });
 }
 
 // Start loading and displaying data when the page is ready

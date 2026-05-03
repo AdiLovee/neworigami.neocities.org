@@ -1,3 +1,5 @@
+import { encodeQueryParam } from "./shared";
+
 function shuffleArray(array) {
   const arr = array.slice(); // clone
   for (let i = arr.length - 1; i > 0; i--) {
@@ -5,10 +7,6 @@ function shuffleArray(array) {
     [arr[i], arr[j]] = [arr[j], arr[i]];
   }
   return arr;
-}
-
-function encodeQueryParam(str) {
-  return encodeURIComponent(str).replace(/%20/g, '+');
 }
 
 function getRandomDiagramHTML(diagram, creators) {

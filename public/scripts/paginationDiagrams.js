@@ -1,8 +1,8 @@
-// Import shared utility functions and constants from the shared module
-import { fetchData, DIFFICULTY_MAP, sortByName, displayError } from "./shared.js";
+// Import shared utility functions and constants from shared.js
+import { fetchData, DIFFICULTY_MAP, sortByName, displayError, ROWS_PER_PAGE } from "./shared.js";
+import { createPaginationButton, renderPagination } from "./pagination.js";
 
 // Constants for pagination and state management
-const ROWS_PER_PAGE = 15;  // Number of diagram entries to show per page
 let currentPage = 1;       // Tracks the current page number (1-based)
 let fullData = [];         // Stores the complete dataset loaded from the source (unfiltered)
 let filteredData = [];     // Stores the currently filtered and sorted subset of fullData
@@ -300,103 +300,26 @@ function filterAll() {
 
 // Update pagination buttons and display current page info
 function updatePagination(currentPage) {
-  const pageCount = Math.ceil(filteredData.length / ROWS_PER_PAGE); // Calculate total pages
+  const pageCount = Math.ceil(filteredData.length / ROWS_PER_PAGE);
   const paginationContainerUpper = document.getElementById("paginationUpper");
   const paginationContainerLower = document.getElementById("paginationLower");
 
-  // Clear existing pagination buttons
-  paginationContainerUpper.innerHTML = "";
-  paginationContainerLower.innerHTML = "";
+  if (pageCount === 0) {
+    paginationContainerUpper.innerHTML = "";
+    paginationContainerLower.innerHTML = "";
 
-  if (pageCount === 0) return; // Don't display pagination if no results
-
-  paginationContainerUpper.innerHTML = "Page: ";
-  paginationContainerLower.innerHTML = "Page: ";
-
-  // Helper function to create a styled pagination button
-  function createButton(label, onClick, disabled = false, isCurrent = false) {
-    const btn = document.createElement("button");
-    btn.textContent = label;
-    btn.disabled = disabled;
-    btn.style.background = "none";
-    btn.style.border = "none";
-    btn.style.margin = "0 4px";
-    btn.style.padding = "5px 10px";
-    btn.style.cursor = disabled ? "default" : "pointer";
-    btn.style.color = disabled ? "transparent" : "#0099ff";
-    if (isCurrent) {
-      btn.style.fontWeight = "bold";
-      btn.style.fontSize = "1.2em";
-    }
-    if (!disabled) {
-      btn.onclick = onClick;
-    }
-    return btn;
+    return;
   }
 
-  // Add "first" and "previous" navigation buttons
-  paginationContainerUpper.appendChild(
-    createButton("|←", () => changePage(1), currentPage === 1)
-  );
-  paginationContainerLower.appendChild(
-    createButton("|←", () => changePage(1), currentPage === 1)
-  );
-  paginationContainerUpper.appendChild(
-    createButton("←", () => changePage(currentPage - 1), currentPage === 1)
-  );
-  paginationContainerLower.appendChild(
-    createButton("←", () => changePage(currentPage - 1), currentPage === 1)
-  );
+  // Render upper pagination
+  renderPagination(paginationContainerUpper, currentPage, pageCount, (page) => {
+    changePage(page);
+  });
 
-  // Calculate range of page numbers to display
-  const maxVisiblePages = 9;
-  const halfWindow = Math.floor(maxVisiblePages / 2);
-  let startPage = Math.max(1, currentPage - halfWindow);
-  let endPage = Math.min(pageCount, currentPage + halfWindow);
-
-  // Adjust range if near beginning or end of pagination
-  if (endPage - startPage + 1 < maxVisiblePages) {
-    if (startPage === 1) {
-      endPage = Math.min(pageCount, startPage + maxVisiblePages - 1);
-    } else if (endPage === pageCount) {
-      startPage = Math.max(1, endPage - maxVisiblePages + 1);
-    }
-  }
-
-  // Add ellipses if needed to indicate skipped pages
-  if (startPage > 1) {
-    paginationContainerUpper.appendChild(document.createTextNode(" …"));
-    paginationContainerLower.appendChild(document.createTextNode(" …"));
-  }
-
-  // Create numbered page buttons
-  for (let i = startPage; i <= endPage; i++) {
-    paginationContainerUpper.appendChild(
-      createButton(i, () => changePage(i), false, i === currentPage)
-    );
-    paginationContainerLower.appendChild(
-      createButton(i, () => changePage(i), false, i === currentPage)
-    );
-  }
-
-  if (endPage < pageCount) {
-    paginationContainerUpper.appendChild(document.createTextNode("… "));
-    paginationContainerLower.appendChild(document.createTextNode("… "));
-  }
-
-  // Add "next" and "last" navigation buttons
-  paginationContainerUpper.appendChild(
-    createButton("→", () => changePage(currentPage + 1), currentPage === pageCount)
-  );
-  paginationContainerLower.appendChild(
-    createButton("→", () => changePage(currentPage + 1), currentPage === pageCount)
-  );
-  paginationContainerUpper.appendChild(
-    createButton("→|", () => changePage(pageCount), currentPage === pageCount)
-  );
-  paginationContainerLower.appendChild(
-    createButton("→|", () => changePage(pageCount), currentPage === pageCount)
-  );
+  // Render lower pagination
+  renderPagination(paginationContainerLower, currentPage, pageCount, (page) => {
+    changePage(page);
+  });
 }
 
 // Change to a specific page in the paginated results

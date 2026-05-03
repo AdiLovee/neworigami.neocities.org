@@ -1,6 +1,4 @@
-function encodeQueryParam(str) {
-  return encodeURIComponent(str).replace(/%20/g, '+');
-}
+import { encodeQueryParam } from "./shared";
 
 function getTodayDateString() {
   const today = new Date();

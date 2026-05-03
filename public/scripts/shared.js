@@ -3,6 +3,7 @@ export const CATEGORY_BASE_PATH = "./category.html?c=";
 export const CREATOR_BASE_PATH = "./creator.html?id=";
 export const DIFFICULTY_BASE_PATH = "./difficulty.html?d=";
 export const DATA_URL = "./data/diagramDict.json";
+export const ROWS_PER_PAGE = 15; // Number of diagram entries to show per page
 
 export const DIFFICULTY_MAP = {
   easy: "★",
@@ -41,6 +42,10 @@ export function sortByCategory(arr) {
 
 export function sortByTitle(arr) {
   return arr.sort((a, b) => a.title.localeCompare(b.title));
+}
+
+export function encodeQueryParam(str) {
+  return encodeURIComponent(str).replace(/%20/g, '+');
 }
 
 console.log("shared.js loaded");
