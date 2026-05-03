@@ -1,4 +1,4 @@
-import { encodeQueryParam } from "./shared";
+import { encodeQueryParam } from "./shared.js";
 
 function shuffleArray(array) {
   const arr = array.slice(); // clone
@@ -63,52 +63,85 @@ function getRandomDiagramHTML(diagram, creators) {
 
 let diagrams = [];
 let creators = [];
+let dataLoaded = false; // Flag to track state
 
-// Load data once
-fetch('./data/diagramDict.json')
-  .then(response => response.json())
-  .then(data => {
-    diagrams = data.diagrams;
-    creators = data.creators;
-  })
-  .catch(error => {
-    console.error("Error loading diagrams data:", error);
-  });
+const btn = document.getElementById('random-diagram-btn');
+const display = document.getElementById('random-diagram-display');
 
-document.getElementById('random-diagram-btn').addEventListener('click', () => {
-  if (diagrams.length === 0) {
-    alert("Diagram data is still loading, please try again shortly.");
-    return;
-  }
+// Safety check: if elements DNE, stop
+if (!btn || !display) {
+  console.error("Random Diagram elements not found in DOM");
+  if (btn) btn.textContent = "Error: Missing Elements";
+  if (btn) btn.disabled = true;
+} else {
+  // Disable button / show loading state initially
+  btn.disabled = true;
+  btn.textContent = "Loading...";
 
-  // Get shuffle data from localStorage
-  let shuffledOrder = JSON.parse(localStorage.getItem('randomDiagramOrder'));
-  let currentIndex = parseInt(localStorage.getItem('randomDiagramIndex'), 10);
+  // Fetch data
+  fetch('./data/diagramDict.json')
+    .then(response => {
+      // Catches potential fetch error
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
 
-  // Initialize if missing or invalid
-  if (!Array.isArray(shuffledOrder) || shuffledOrder.length !== diagrams.length) {
-    shuffledOrder = shuffleArray(diagrams.map((_, i) => i));
-    currentIndex = 0;
-  }
-  if (isNaN(currentIndex)) currentIndex = 0;
+      return response.json();
+    })
+    .then(data => {
+      diagrams = data.diagrams;
+      creators = data.creators;
+      dataLoaded = true;
 
-  // Pick diagram
-  const diagram = diagrams[shuffledOrder[currentIndex]];
+      // Enable button once data is loaded
+      btn.disabled = false;
+      btn.textContent = "Show Random Diagram";
+      console.log(`Loaded ${diagrams.length} diagrams for random selection.`);
+    })
+    .catch(error => {
+      console.error("Error loading diagrams data:", error);
+      btn.disabled = true;
+      btn.textContent = "Error Loading Data";
+      display.innerHTML = "<p style='color:red'>Failed to load diagram data. Check console.</p>"
+    });
+  
+    // Attach click listener
+    btn.addEventListener('click', () => {
+      if (!dataLoaded || diagrams.length === 0) {
+        alert("Diagram data is still loading, please try again shortly.");
+        return;
+      }
 
-  // Display
-  const html = getRandomDiagramHTML(diagram, creators);
-  document.getElementById('random-diagram-display').innerHTML = html;
+      // Get shuffle data from localStorage
+      let shuffledOrder = JSON.parse(localStorage.getItem('randomDiagramOrder'));
+      let currentIndex = parseInt(localStorage.getItem('randomDiagramIndex'), 10);
 
-  console.log(`Showing diagram index ${currentIndex}: ${diagram.title}`);
+      // Initialize if missing or invalid
+      if (!Array.isArray(shuffledOrder) || shuffledOrder.length !== diagrams.length) {
+        shuffledOrder = shuffleArray(diagrams.map((_, i) => i));
+        currentIndex = 0;
+      }
 
-  // Increment and reset if needed
-  currentIndex++;
-  if (currentIndex >= diagrams.length) {
-    shuffledOrder = shuffleArray(diagrams.map((_, i) => i));
-    currentIndex = 0;
-  }
+      if (isNaN(currentIndex)) currentIndex = 0;
 
-  // Save state
-  localStorage.setItem('randomDiagramOrder', JSON.stringify(shuffledOrder));
-  localStorage.setItem('randomDiagramIndex', currentIndex.toString());
-});
+      // Pick diagram
+      const diagram = diagrams[shuffledOrder[currentIndex]];
+
+      // Display
+      const html = getRandomDiagramHTML(diagram, creators);
+      display.innerHTML = html;
+
+      console.log(`Showing diagram index ${currentIndex}: ${diagram.title}`);
+
+      // Increment and reset if needed
+      currentIndex++;
+      if (currentIndex >= diagrams.length) {
+        shuffledOrder = shuffleArray(diagram.map((_, i) => i));
+        currentIndex = 0;
+      }
+
+      // Save state
+      localStorage.setItem('randomDiagramOrder', JSON.stringify(shuffledOrder));
+      localStorage.setItem('randomDiagramIndex', currentIndex.toString());
+    });
+}

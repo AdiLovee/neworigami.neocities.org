@@ -1,4 +1,4 @@
-import { encodeQueryParam } from "./shared";
+import { encodeQueryParam } from "./shared.js";
 
 function getTodayDateString() {
   const today = new Date();

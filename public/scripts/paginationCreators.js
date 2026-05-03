@@ -1,7 +1,6 @@
 import { fetchData, sortByName, displayError, ROWS_PER_PAGE } from "./shared.js"; // Shared utility functions and constants from shared.js
 import { renderPagination } from "./pagination.js";                               // Shared pagination helpers
 
-
 // Constants
 let currentPage = 1;     // Current pagination page
 let diagramDict = { creators: [] }; // Data container for creator info

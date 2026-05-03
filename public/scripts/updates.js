@@ -1,7 +1,7 @@
 // Asynchronously loads a markdown file from the given path and returns its text content
 async function loadMarkdownFile(path) {
-  const response = await fetch(path);        // Fetch the file from the given path
-  return await response.text();               // Return the file content as plain text
+  const response = await fetch(path);   // Fetch the file from the given path
+  return await response.text();         // Return the file content as plain text
 }
 
 // Converts markdown string to HTML using the marked library

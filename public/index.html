@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NewOrigami - Origami Archive</title>
     <link rel="icon" href="./favicon.png" />
-    <!-- Run before anything else -->
+
+    <!-- Version Check - run before anything else -->
     <script>
       const script = document.createElement("script");
       script.src = "./scripts/versionCheck.js?v=" + Date.now();
       document.head.appendChild(script);
     </script>
     
-    <!-- Template scripts -->
+    <!-- Styles -->
     <link rel="stylesheet" href="./style.css" />
+
+    <!-- Global scripts (non-module) -->
     <script src="./scripts/themeInit.js"></script>
     <script src="./scripts/header.js" defer></script>
     <script src="./scripts/footer.js" defer></script>
     <script src="./scripts/darkMode.js" defer></script>
     
-    <!-- Scripts needed for page contents go here -->
-    <script type="module" src="./scripts/paginationCreators.js" defer></script>
+    <!-- Page-Specific Modules -->
     <script src="./scripts/lastUpdate.js" defer></script>
+    <script type="module" src="./scripts/paginationCreators.js" defer></script>
     <script type="module" src="./scripts/dailyDiagram.js" defer></script>
     <script type="module" src="./scripts/randomDiagram.js" defer></script>
   </head>
@@ -37,7 +40,7 @@
       <hr>
       <section id="diagram-of-the-day" class="diagram-feature"></section>
       <hr>
-      <!--
+      <!-- Suggest to remove if not planned short term
       <section>
         <h2>Fold School</h2>
           <li><a href="./school.html#symbols">Symbols</a></li>
@@ -59,6 +62,7 @@
         </ul>
         <h3>Diagrams by Category</h3>
         <ul>
+          <!-- Suggestion: Move to dynamic generation from diagramDict.json if list continues to grow -->
           <li><a href="diagrams.html?category=Action+Models">Action Models</a></li>
           <li><a href="diagrams.html?category=Animals">Animals</a></li>
           <li><a href="diagrams.html?category=Anime">Anime</a></li>
