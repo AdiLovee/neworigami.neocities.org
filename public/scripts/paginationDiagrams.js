@@ -1,6 +1,6 @@
 // Import shared utility functions and constants from shared.js
 import { fetchData, DIFFICULTY_MAP, sortByName, displayError, ROWS_PER_PAGE } from "./shared.js";
-import { createPaginationButton, renderPagination } from "./pagination.js";
+import { renderPagination } from "./pagination.js";
 
 // Constants for pagination and state management
 let currentPage = 1;       // Tracks the current page number (1-based)
@@ -52,6 +52,7 @@ async function initializeTable() {
         imagename: `${diagram.filename}.gif`                   // Image filename for alt text
       };
     });
+
     // Initially sort the data by name alphabetically and show count after normalization
     filteredData = sortByName([...fullData]);
     document.getElementById("filteredCount").textContent = filteredData.length;
@@ -120,8 +121,6 @@ document.getElementById("sortCreator").addEventListener("click", () => {
   );
   changePage(1);
 });
-
-
 
 document.getElementById("resetFilters").addEventListener("click", () => {
   // Reset all filters to default "all" and clear URL parameters, then refresh display
@@ -203,7 +202,7 @@ function displayTable(page) {
 
       // Category cell: each category linked to filtered results by category
       row.insertCell(3).innerHTML = item.categories.map(cat => `<a href="diagrams.html?category=${encodeURIComponent(cat)}">${cat}</a>`).join("<br>");
-     
+    
       // Creator cell: each creator linked to filtered results by creator
       row.insertCell(4).innerHTML = item.creators.map(cid => `<a href="diagrams.html?creator=${encodeURIComponent(cid)}">${cid}</a>`).join("<br>");
     });
