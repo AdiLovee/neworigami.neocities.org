@@ -3901,6 +3901,83 @@
         "modular",
         "misc"
       ]
+    },{
+      "title": "Batman",
+      "creatorId": ["mvanglada"],
+      "filename": "batman",
+      "difficulty": "★",
+      "categories": [
+        "figures"
+      ]
+    },{
+      "title": "Pony (Crease Pattern)",
+      "creatorId": ["mvanglada"],
+      "filename": "pony",
+      "difficulty": "★★",
+      "categories": [
+        "animals"
+      ]
+    },{
+      "title": "Crab",
+      "creatorId": ["mvanglada"],
+      "filename": "crabvigo",
+      "difficulty": "★★",
+      "categories": [
+        "animals"
+      ]
+    },{
+      "title": "Scorpion",
+      "creatorId": ["mvanglada"],
+      "filename": "scorpion",
+      "difficulty": "★★★",
+      "categories": [
+        "insects",
+        "animals"
+      ]
+    },{
+      "title": "Fish",
+      "creatorId": ["mvanglada"],
+      "filename": "fishvigo",
+      "difficulty": "★★",
+      "categories": [
+        "animals",
+        "fish"
+      ]
+    },{
+      "title": "Papirosaurus",
+      "creatorId": ["mvanglada"],
+      "filename": "papirosaurus",
+      "difficulty": "★",
+      "categories": [
+        "dinosaurs",
+        "animals"
+      ]
+    },{
+      "title": "Rat",
+      "creatorId": ["mvanglada"],
+      "filename": "ratvigo",
+      "difficulty": "★★",
+      "categories": [
+        "animals"
+      ]
+    },{
+      "title": "Rooster",
+      "creatorId": ["mvanglada"],
+      "filename": "roostervigo",
+      "difficulty": "★★★",
+      "categories": [
+        "animals",
+        "birds"
+      ]
+    },{
+      "title": "Chimera (Fish)",
+      "creatorId": ["mvanglada"],
+      "filename": "chimera",
+      "difficulty": "★★",
+      "categories": [
+        "fish",
+        "animals"
+      ]
     }
   ],
   "creators": [
