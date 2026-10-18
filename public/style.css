@@ -235,3 +235,153 @@ header {
     padding-left: 1rem;
   }
 }
+
+
+
+header .home-boxes {
+  margin: 0rem auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+header .home-box {
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  padding: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  min-height: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+
+header .home-box h2,
+header .home-box h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+header {
+  row-gap: 0;
+}
+
+header .home-boxes {
+  margin: 0;
+  gap: 1rem;
+}
+
+header .site-nav {
+  margin-top: 0;
+}
+
+header .home-box:has(ws-widget) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-boxes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.home-box {
+  min-width: 0;
+  min-height: 300px;
+  padding: 1rem;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+}
+
+.home-box h2 {
+  margin-top: 0;
+}
+.home-box ul {
+  list-style: none;
+}
+
+.header-badges {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.header-badges img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Webrings: height is determined by the contents */
+.home-box.webrings-box {
+  min-height: 0;
+  height: auto;
+  align-items: stretch;
+}
+
+/* Updates: fill the row height and allow scrolling inside */
+.home-box.updates-box {
+  min-height: 0;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: stretch;
+}
+
+@media (max-width: 600px) {
+  .home-boxes {
+    grid-template-columns: 1fr;
+  }
+}
+
+.site-nav {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.site-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav li {
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav a {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  white-space: nowrap;
+}
+.content-box {
+  flex: 1;
+  width: calc(100% - 2rem);
+  max-width: 900px;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+
+  background-color: var(--bg);
+  border: 1px solid var(--dark-lilac);
+  border-radius: 8px;
+}
