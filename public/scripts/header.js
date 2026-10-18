@@ -21,7 +21,7 @@ HEAD.innerHTML = `
           <br>
           <p>
             <textarea readonly onclick="this.select();">
-              "<a href="https://neworigami.neocities.org/"> <img src=https://neworigami.neocities.org/assets/button.gif" alt="NewOrigami Button"> </a>"
+              <a href="https://neworigami.neocities.org/"> <img src="https://neworigami.neocities.org/assets/button.gif" alt="NewOrigami Button"> </a>
             </textarea>
           </p>
         </section>
